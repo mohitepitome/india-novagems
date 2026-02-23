@@ -1,0 +1,64 @@
+<!-- ⬇️ Script: only for /customer-stories/* pages -->
+ 
+<div class="modal fade bd-example-modal-sm blog-pop-cus" id="storyModal" tabindex="-1" role="dialog" aria-labelledby="storyModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-sm">
+        <div class="modal-content" style="border-radius: 13px;">
+            <div class="pop-content-cus text-center">
+                <a type="button" class="close-blog" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </a>
+                <h3 class="">Are you ready to maximize your profits by streamlining your operations?</h3>
+                <a href="https://app.novagems.org/" target="_blank" class=" btn btn-default filter-button active pop-meeting-btn " style="background: #ff3266; color: #fff !important;">Yes, I Want a Free Trial Now!</a>
+                <img src="/images/novagems-img/img-popup.png" alt="img-popup">
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ⬇️ Script: only for /customer-stories/* pages -->
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  var path = window.location.pathname;
+
+  // 1. Agar URL me "/customer-stories/" hi nahi hai → return
+  if (!path.includes("/customer-stories/")) return;
+
+  // 2. Agar sirf "/customer-stories/" hi hai (ya trailing slash ke saath) → return
+  if (path === "/customer-stories/" || path === "/customer-stories") return;
+
+  // Ab sirf child pages (e.g. /customer-stories/rohit) par chalega
+  var pageKey = "modalShown_" + path;
+
+  if (localStorage.getItem(pageKey)) return;
+
+  var modalTriggered = false;
+
+  function maybeTriggerModal() {
+    if (modalTriggered) return;
+
+    var scrollTop = window.scrollY || document.documentElement.scrollTop;
+    var docHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+    if (docHeight <= 0) return; 
+
+    var scrollPercent = (scrollTop / docHeight) * 100;
+
+    if (scrollPercent >= 45) {
+      modalTriggered = true;
+      if (window.jQuery && typeof jQuery.fn.modal === "function") {
+        jQuery('#storyModal').modal('show');
+        localStorage.setItem(pageKey, "true");
+        jQuery('#storyModal').on('hidden.bs.modal', function () {
+          localStorage.setItem(pageKey, "true");
+        });
+      } else {
+        localStorage.setItem(pageKey, "true");
+      }
+      window.removeEventListener('scroll', maybeTriggerModal, { passive: true });
+    }
+  }
+
+  window.addEventListener('scroll', maybeTriggerModal, { passive: true });
+  maybeTriggerModal();
+});
+</script>

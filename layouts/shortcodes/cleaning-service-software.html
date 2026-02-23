@@ -1,0 +1,530 @@
+{{$heading := .Get "heading" }}
+{{$formId := .Get "formid" | lower }}
+{{$btnpos := .Get "postion" | default "left" }}
+
+<div class="mb-4 mt-4 {{with $btnpos}} d-block text-{{.}}{{end}}">
+  <button type="button" class="btn btn-primary btn-arrow but-download" data-toggle="modal"
+    data-target="#{{ replace $formId " " " -" }}">
+    {{.Inner | default "Download Now"}}
+  </button>
+</div>
+
+<!-- Modal HTML Markup -->
+<div id="{{ replace $formId " " " -" }}" class="modal fade">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <h4 class="modal-title">{{$heading}}</h4>
+        <!-- Cross Icon (Bootstrap 4) -->
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+
+      <!-- Modal Body -->
+      <div class="modal-body pt-3 pb-0 pl-5 pr-5">
+        {{ if or (eq $formId "dbtn21") }}
+        <div class="pb-5">
+          <div class="container">
+            <!-- ✅ Main Form -->
+            <form id="form-{{$formId}}" data-formid="{{$formId}}">
+
+              <!-- Name -->
+              <div class="form-group mb-3">
+                <label>Name</label>
+                <input type="text" class="form-control" name="name" placeholder="Name" required>
+              </div>
+
+              <!-- Email -->
+              <div class="form-group mb-3">
+                <label>Email address</label>
+                <input type="email" class="form-control" name="email" placeholder="Enter email" required>
+              </div>
+
+              <!-- Phone Section -->
+              <div class="mb-3">
+                <label>Choose country code and phone number</label>
+                <div class="input-group mb-3">
+                  <select class="form-select select-cc" data-role="countryCode" required>
+                    <option value="" selected disabled>Choose country</option>
+                    {{ range .Site.Data.countries }}
+                    <option value="{{ .code }}" data-country="{{ .country }}">
+                      {{ .flag }} {{ .name }} ({{ .code }})
+                    </option>
+                    {{ end }}
+                  </select>
+                  <input type="text" class="form-control" data-role="localPhone" placeholder="Enter phone number"
+                    required>
+                </div>
+
+                <button type="button" class="btn btn-primary" data-role="verifyBtn">
+                  Verify phone number
+                </button>
+              </div>
+
+              <!-- Result -->
+              <div class="mt-3" data-role="result"></div>
+
+              <!-- OTP Section -->
+              <div class="mt-4 d-none" data-role="otpSection">
+                <p class="mb-2">We sent a code to <span data-role="otpTarget"></span></p>
+
+                <div class="d-flex gap-2 justify-content-center mb-2" data-role="otpInputs">
+                  <input type="text" maxlength="1" class="form-control otp-input" data-role="otpInput">
+                  <input type="text" maxlength="1" class="form-control otp-input" data-role="otpInput">
+                  <input type="text" maxlength="1" class="form-control otp-input" data-role="otpInput">
+                  <input type="text" maxlength="1" class="form-control otp-input" data-role="otpInput">
+                </div>
+
+                <div class="text-danger mt-2 d-none" data-role="otpError"></div>
+                <p class="text-secondary mt-2 d-none" data-role="otpTimer"></p>
+
+                <button type="button" class="btn btn-link d-none" data-role="resendOtpBtn">Resend OTP</button>
+
+                <div class="d-grid mt-3">
+                  <button type="button" class="btn btn-success" data-role="confirmOtpBtn">Confirm</button>
+                </div>
+              </div>
+
+              <!-- Company -->
+              <div class="form-group mt-4">
+                <label>Company name</label>
+                <input type="text" class="form-control" name="company" placeholder="Company name" required>
+              </div>
+
+              <!-- Submit Button - Initially Disabled -->
+              <button type="submit" class="btn btn-primary mt-3 submit-btn" disabled data-role="submitBtn" style="opacity: 0.5;">Submit</button>
+
+              <!-- ✅ Bottom Close Button -->
+              <button type="button" class="btn btn-secondary mt-3" data-dismiss="modal">Cancel</button>
+
+            </form>
+
+          </div>
+        </div>
+        {{ end }}
+      </div>
+      <!-- Toast container (Bootstrap 4) -->
+      <div aria-live="polite" aria-atomic="true" style="position: fixed; top: 1rem; right: 1rem; z-index: 9999;">
+        <div id="toastMsg" class="toast" data-delay="5000">
+          <div class="toast-header">
+            <strong class="mr-auto text-primary">Notification</strong>
+            <small class="text-muted">just now</small>
+            <button type="button" class="ml-2 mb-1 close" data-dismiss="toast">&times;</button>
+          </div>
+          <div class="toast-body"></div>
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+</div>
+
+
+<style>
+  .otp-input {
+    width: 55px;
+    height: 55px;
+    font-size: 22px;
+    text-align: center;
+    border-radius: 8px;
+  }
+  
+  /* Submit button disabled state */
+  .submit-btn:disabled {
+    opacity: 0.5 !important;
+    cursor: not-allowed;
+  }
+</style>
+
+
+<script>
+  /* ----------------- CONFIG ----------------- */
+  const GRAPHQL_ENDPOINT = "https://usergateway.novagems.org/graphql";
+
+  const formConfig = {
+    dbtn21: {
+      subject: "Questions To Ask Before Choosing The Cleaning Service Software That Works The Best For You",
+      fileUrl: "https://novagems.com/images/uploads/sample/questions-to-ask-before-choosing-the-cleaning-service-software-that-works-the-best-for-you.pdf",
+    },
+  };
+
+  /* ----------------- OTP STATE (Global once) ----------------- */
+  let currentDeviceId = null;
+  let otpVerified = false;
+  let otpCountdown = null;
+  let otpTimeLeft = 120;
+
+  /* ----------------- Helpers ----------------- */
+  function getEls(scope) {
+    return {
+      countryCode: scope.querySelector('[data-role="countryCode"]'),
+      localPhone: scope.querySelector('[data-role="localPhone"]'),
+      verifyBtn: scope.querySelector('[data-role="verifyBtn"]'),
+      result: scope.querySelector('[data-role="result"]'),
+      otpSection: scope.querySelector('[data-role="otpSection"]'),
+      otpInputsWrap: scope.querySelector('[data-role="otpInputs"]'),
+      otpInputs: scope.querySelectorAll('[data-role="otpInput"]'),
+      otpTarget: scope.querySelector('[data-role="otpTarget"]'),
+      otpError: scope.querySelector('[data-role="otpError"]'),
+      otpTimer: scope.querySelector('[data-role="otpTimer"]'),
+      resendOtpBtn: scope.querySelector('[data-role="resendOtpBtn"]'),
+      confirmOtpBtn: scope.querySelector('[data-role="confirmOtpBtn"]'),
+      submitBtn: scope.querySelector('[data-role="submitBtn"]'),
+    };
+  }
+
+  async function getIp() {
+    try {
+      const res = await fetch("https://api.ipify.org?format=json");
+      return (await res.json()).ip;
+    } catch {
+      return "0.0.0.0";
+    }
+  }
+
+  function getLocation() {
+    return new Promise((resolve) => {
+      if (!navigator.geolocation) {
+        resolve({ latitude: "0", longitude: "0" });
+        return;
+      }
+      navigator.geolocation.getCurrentPosition(
+        (pos) => resolve({ latitude: String(pos.coords.latitude), longitude: String(pos.coords.longitude) }),
+        () => resolve({ latitude: "0", longitude: "0" }),
+        { enableHighAccuracy: true, timeout: 10000 }
+      );
+    });
+  }
+
+  async function buildSignupArgs(scope, phoneNumber, countryCode) {
+    const ip = await getIp();
+    const location = await getLocation();
+    const cc = getEls(scope).countryCode;
+    const country = cc?.selectedOptions?.[0]?.dataset?.country || "Unknown";
+    const deviceName = navigator.platform;
+
+    let deviceType = "WEB";
+    if (/Mobi|Android/i.test(navigator.userAgent)) deviceType = "MOBILE";
+    else if (/Tablet|iPad/i.test(navigator.userAgent)) deviceType = "TABLET";
+
+    return {
+      signupArgs: {
+        phoneNumber,
+        countryCode,
+        appVersion: "1.0.0",
+        country,
+        deviceName,
+        deviceToken: "abc123",
+        deviceType,
+        ip,
+        latitude: location.latitude,
+        longitude: location.longitude,
+      },
+    };
+  }
+
+  /* ----------------- Helper function to update submit button state ----------------- */
+  function updateSubmitButtonState(form) {
+    const submitBtn = form.querySelector('[data-role="submitBtn"]');
+    if (otpVerified) {
+      submitBtn.disabled = false;
+      submitBtn.style.opacity = "1";
+    } else {
+      submitBtn.disabled = true;
+      submitBtn.style.opacity = "0.5";
+    }
+  }
+
+  /* ----------------- GraphQL Calls ----------------- */
+  async function sendOtpRequest(scope, phoneNumber, countryCode) {
+    const query = `
+    mutation signup($signupArgs: SignupArgs!) {
+      signup(signupArgs: $signupArgs) {
+        ... on Users { deviceId phoneNumber countryCode message __typename }
+        ... on Error { message __typename }
+      }
+    }`;
+    const variables = await buildSignupArgs(scope, phoneNumber, countryCode);
+
+    const res = await fetch(GRAPHQL_ENDPOINT, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ query, variables }),
+    });
+    const json = await res.json();
+    return json.data?.signup || { message: "No response", __typename: "Error" };
+  }
+
+  async function verifyOtpRequest(deviceId, otp, phoneNumber, countryCode) {
+    const query = `
+    mutation verifyOtp($verifyOtpArgs: VerifyOtpArgs!) {
+      verifyOtp(verifyOtpArgs: $verifyOtpArgs) {
+        ... on Users { message token __typename }
+        ... on Error { message __typename }
+      }
+    }`;
+    const variables = { verifyOtpArgs: { phoneNumber, countryCode, deviceId, otp } };
+
+    const res = await fetch(GRAPHQL_ENDPOINT, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ query, variables }),
+    });
+    const json = await res.json();
+    return json.data?.verifyOtp || { message: "No response", __typename: "Error" };
+  }
+
+  async function resendOtpRequest(phoneNumber, countryCode, deviceId) {
+    const query = `
+    mutation sendOtp($sendOtpArgs: SendOtpArgs!) {
+      sendOtp(sendOtpArgs: $sendOtpArgs) {
+        ... on Users { deviceId phoneNumber countryCode message __typename }
+        ... on Error { message __typename }
+      }
+    }`;
+    const variables = { sendOtpArgs: { phoneNumber, countryCode, deviceId } };
+
+    const res = await fetch(GRAPHQL_ENDPOINT, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ query, variables }),
+    });
+    const json = await res.json();
+    return json.data?.sendOtp || { message: "No response", __typename: "Error" };
+  }
+
+  /* ----------------- OTP Timer ----------------- */
+  function startOtpTimer(els) {
+    clearInterval(otpCountdown);
+    otpTimeLeft = 120;
+
+    els.resendOtpBtn.classList.add("d-none");
+    els.otpTimer.classList.remove("d-none");
+
+    otpCountdown = setInterval(() => {
+      otpTimeLeft--;
+      const m = Math.floor(otpTimeLeft / 60);
+      const s = otpTimeLeft % 60;
+      els.otpTimer.textContent = `OTP expires in ${m}:${s < 10 ? "0" : ""}${s}`;
+      if (otpTimeLeft <= 0) {
+        clearInterval(otpCountdown);
+        els.otpTimer.classList.add("d-none");
+        els.resendOtpBtn.classList.remove("d-none");
+      }
+    }, 1000);
+  }
+
+  /* ----------------- EVENT DELEGATION ----------------- */
+  document.addEventListener("click", async (e) => {
+    // Find closest modal and form
+    const modal = e.target.closest(".modal");
+    if (!modal) return;
+    const form = modal.querySelector('form[data-formid]');
+    if (!form) return;
+    const els = getEls(form);
+
+    // Send OTP
+    if (e.target.matches('[data-role="verifyBtn"]')) {
+      const phoneNumber = els.localPhone.value.trim();
+      const countryCode = els.countryCode.value;
+      if (!phoneNumber || !countryCode) {
+        alert("Enter phone and country");
+        return;
+      }
+
+      els.verifyBtn.disabled = true;
+      els.verifyBtn.textContent = "Sending OTP...";
+      els.result.textContent = "Sending OTP...";
+      els.result.className = "alert alert-info mt-3";
+
+      const response = await sendOtpRequest(form, phoneNumber, countryCode);
+
+      els.verifyBtn.disabled = false;
+      els.verifyBtn.textContent = "Verify phone number";
+
+      if (response.__typename === "Users") {
+        currentDeviceId = response.deviceId;
+        els.otpTarget.textContent = `${countryCode}${phoneNumber}`;
+        els.result.textContent = "";
+        els.result.className = "";
+        els.otpSection.classList.remove("d-none");
+        els.otpInputs.forEach(inp => inp.value = "");
+        els.otpError.classList.add("d-none");
+        startOtpTimer(els);
+      } else {
+        els.result.textContent = response.message || "Error sending OTP";
+        els.result.className = "alert alert-danger mt-3";
+      }
+    }
+
+    // Confirm OTP
+    if (e.target.matches('[data-role="confirmOtpBtn"]')) {
+      const otp = Array.from(els.otpInputs).map(i => i.value).join("");
+
+      if (otp.length !== 4 || isNaN(otp)) {
+        els.otpError.textContent = "Enter a valid 4-digit OTP";
+        els.otpError.classList.remove("d-none");
+        return;
+      }
+
+      els.confirmOtpBtn.disabled = true;
+      els.confirmOtpBtn.textContent = "Verifying...";
+
+      const response = await verifyOtpRequest(
+        currentDeviceId,
+        parseInt(otp, 10), // ✅ Convert to number
+        els.localPhone.value.trim(),
+        els.countryCode.value
+      );
+
+      els.confirmOtpBtn.disabled = false;
+      els.confirmOtpBtn.textContent = "Confirm";
+
+      if (response.__typename === "Users") {
+        otpVerified = true;
+        // ✅ Enable submit button when OTP is verified
+        updateSubmitButtonState(form);
+        
+        els.result.textContent = "Phone number verified successfully!";
+        els.result.className = "alert alert-success mt-3";
+        els.otpError.classList.add("d-none");
+
+        // ✅ Hide OTP section + message after 3 sec
+        setTimeout(() => {
+          els.result.className = "d-none";
+          els.otpSection.classList.add("d-none");
+        }, 3000);
+
+      } else {
+        els.otpError.textContent = response.message || "Invalid OTP";
+        els.otpError.classList.remove("d-none");
+      }
+    }
+
+    // Resend OTP
+    if (e.target.matches('[data-role="resendOtpBtn"]')) {
+      els.resendOtpBtn.disabled = true;
+      els.resendOtpBtn.textContent = "Resending...";
+
+      const response = await resendOtpRequest(
+        els.localPhone.value.trim(),
+        els.countryCode.value,
+        currentDeviceId
+      );
+
+      els.resendOtpBtn.disabled = false;
+      els.resendOtpBtn.textContent = "Resend OTP";
+
+      if (response.__typename === "Users") {
+        els.otpInputs.forEach(inp => inp.value = "");
+        els.otpError.classList.add("d-none");
+        startOtpTimer(els);
+      } else {
+        els.otpError.textContent = response.message || "Error resending OTP";
+        els.otpError.classList.remove("d-none");
+      }
+    }
+  });
+
+  // OTP auto-move (delegated)
+  document.addEventListener("input", (e) => {
+    if (!e.target.matches('[data-role="otpInput"]')) return;
+    const wrap = e.target.closest('[data-role="otpInputs"]');
+    const inputs = Array.from(wrap.querySelectorAll('[data-role="otpInput"]'));
+    const idx = inputs.indexOf(e.target);
+    if (e.target.value && idx < inputs.length - 1) {
+      inputs[idx + 1].focus();
+    }
+  });
+
+  /* ----------------- Modal event listeners ----------------- */
+  // Reset OTP state when modal is opened
+  document.addEventListener('show.bs.modal', function (e) {
+    const modal = e.target;
+    const form = modal.querySelector('form[data-formid]');
+    if (form) {
+      otpVerified = false;
+      updateSubmitButtonState(form);
+    }
+  });
+
+  // Reset form and OTP state when modal is closed
+  document.addEventListener('hidden.bs.modal', function (e) {
+    const modal = e.target;
+    const form = modal.querySelector('form[data-formid]');
+    if (form) {
+      form.reset();
+      otpVerified = false;
+      currentDeviceId = null;
+      clearInterval(otpCountdown);
+      
+      const els = getEls(form);
+      els.otpSection.classList.add("d-none");
+      els.result.textContent = "";
+      els.result.className = "";
+      
+      updateSubmitButtonState(form);
+    }
+  });
+
+  /* ----------------- FORM SUBMIT (for ALL forms) ----------------- */
+  document.addEventListener("submit", async (e) => {
+    const form = e.target.closest('form[data-formid]');
+    if (!form) return;
+    e.preventDefault();
+
+    // ✅ OTP not verified → Stop submission
+    if (!otpVerified) {
+      alert("Please verify your phone number with OTP before submitting!");
+      return;
+    }
+
+    const els = getEls(form);
+    const formId = form.dataset.formid;
+    const config = formConfig[formId] || {};
+
+    const data = {
+      emails: [form.querySelector('input[name="email"]').value],
+      subject: config.subject,
+      downloadFileUrl: config.fileUrl,
+      name: form.querySelector('input[name="name"]').value,
+      phoneNumber: `${els.countryCode.value}${els.localPhone.value}`,
+      companyName: form.querySelector('input[name="company"]').value,
+    };
+
+    console.log("----- FORM SUBMISSION DEBUG -----", data);
+
+    const res = await fetch("https://leadgeneration.novage.ms/api/leads/email", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(data),
+    });
+
+    const json = await res.json();
+    console.log("API Response:", json);
+
+    // ✅ Show Toast
+    const toastEl = document.getElementById("toastMsg");
+    toastEl.querySelector(".toast-body").textContent = json.message || "Form submitted!";
+    $('#toastMsg').toast('show');
+
+    // ✅ Close modal + reset form
+    setTimeout(() => {
+      $(form.closest(".modal")).modal("hide");
+      form.reset();
+      otpVerified = false; // reset OTP state for next submission
+      updateSubmitButtonState(form);
+    }, 1000);
+
+    // ✅ Refresh page 1s after toast hides
+    $('#toastMsg').on('hidden.bs.toast', function () {
+      setTimeout(() => {
+        location.reload();
+      }, 1000);
+    });
+  });
+</script>

@@ -1,0 +1,59 @@
+<!-- Botoombg Section -->
+<div class="bottombg">
+    <div class="container-fluid my-5 example">
+        <div class="row">
+            <div class="col-md-12 mt-5 mb-5 text-center ">
+                <p class="subheading tex-h color4">Our customer reviews</p>
+                <h3 class="hero-h1">Join 100,000+ highly productive team members</h3>
+            </div>
+        </div>
+
+        <div>
+            {{- partial "customerReviews.html" . -}}
+        </div>
+    </div>
+
+
+    <div class="whychoose mt-5 mb-5">
+        <div class="container">
+            <div class="col-md-10 mx-auto">
+                <div class="row">
+                    <div class="col-md-12 text-center mt-5 mb-2">
+                        <p class="subheading tex-h color2">Knowledge</p>
+                        <h3>Interesting Topics</h3>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <div>
+                            <div class="owl-carousel owl-theme">
+                                {{ if .Params.knowledge }} {{ range .Params.knowledge }}
+                                <div class="item">
+                                    <div class="grids">
+                                        <div class="choosecontent text-center mb-5">
+                                            <h5>{{.title}}</h5>
+                                            <p>{{.text}}</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                {{ end }} {{ else }} {{ range .Site.Data.knowledge.items }}
+
+                                <div class="item">
+                                    <div class="grids">
+                                        <div class="choosecontent text-center mb-5">
+                                            <h5>{{.title}}</h5>
+                                            <p>{{.text}}</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                {{end}} {{end}}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Botoombg Section Ends -->

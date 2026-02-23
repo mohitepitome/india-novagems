@@ -1,0 +1,75 @@
+
+items:
+  - brand: user-thumb
+    image: /images/novagems-img/customer-reviews/user-thumb.svg
+    name: Matt Lumb 
+    designation: Manager
+    brandlogo: Google 
+    logo: /images/novagems-img/customer-reviews/Google.svg
+    content: “It makes work easy and efficient—a great solution for management”
+    star: /images/novagems-img/customer-reviews/rating4Star.svg
+  - brand: user-thumb
+    image: /images/novagems-img/customer-reviews/user-thumb.svg
+    name: Tameka R. 
+    designation: Interim Administrative Manager
+    brandlogo: Capterra 
+    logo: /images/novagems-img/customer-reviews/Capterra.svg
+    content: “Novagems' top features scheduling, GPS monitoring, checkpoints, and timekeeping”
+    star: /images/novagems-img/customer-reviews/rating5Star.svg
+  - brand: user-thumb
+    image: /images/novagems-img/customer-reviews/user-thumb.svg
+    name: Sam
+    designation: Manager
+    brandlogo: Google
+    logo: /images/novagems-img/customer-reviews/Google.svg
+    content: “Novagems simplifies guard management with easy setup and guided support.”
+    star: /images/novagems-img/customer-reviews/rating5Star.svg
+  - brand: user-thumb
+    image: /images/novagems-img/customer-reviews/user-thumb.svg
+    name: Richard S. 
+    designation: Manager
+    brandlogo: Google 
+    logo: /images/novagems-img/customer-reviews/Google.svg
+    content: “Panic Alert ensured timely backup, preventing a mishap. Thanks, Novagems!”
+    star: /images/novagems-img/customer-reviews/rating5Star.svg
+  - brand: user-thumb
+    image: /images/novagems-img/customer-reviews/user-thumb.svg
+    name: MUHAMMAD K. 
+    designation: Director
+    brandlogo: Capterra 
+    logo: /images/novagems-img/customer-reviews/Capterra.svg
+    content: “User-friendly system, 24/7 support, quick response, effective reports, and a professional team.”
+    star: /images/novagems-img/customer-reviews/rating5Star.svg
+  - brand: user-thumb
+    image: /images/novagems-img/customer-reviews/user-thumb.svg
+    name: Nathan O
+    designation: Managing Director
+    brandlogo: Capterra 
+    logo: /images/novagems-img/customer-reviews/Capterra.svg
+    content: “All-in-one platform for staff rostering, attendance tracking, and payroll verification.”
+    star: /images/novagems-img/customer-reviews/rating4Star.svg
+  - brand: user-thumb
+    image: /images/novagems-img/customer-reviews/user-thumb.svg
+    name: Jerome Bell
+    designation: Manager
+    brandlogo: Google
+    logo: /images/novagems-img/customer-reviews/Google.svg
+    content: “We love the app! It made security supervision easy during COVID.”
+    star: /images/novagems-img/customer-reviews/rating4Star.svg
+  - brand: user-thumb
+    image: /images/novagems-img/customer-reviews/user-thumb.svg
+    name: Andrew 
+    designation: Site Incharge
+    brandlogo: Google
+    logo: /images/novagems-img/customer-reviews/Google.svg
+    content: “As a guard, I found the app easy to use. It enables quick supervisor interaction and is very helpful. ”
+    star: /images/novagems-img/customer-reviews/rating5Star.svg
+  - brand: user-thumb
+    image: /images/novagems-img/customer-reviews/user-thumb.svg
+    name: William 
+    designation: Manager
+    brandlogo: Google
+    logo: /images/novagems-img/customer-reviews/Google.svg
+    content: “With years as a guard, I find this solution a game-changer—smart tech at its best.”
+    star: /images/novagems-img/customer-reviews/rating4Star.svg
+  

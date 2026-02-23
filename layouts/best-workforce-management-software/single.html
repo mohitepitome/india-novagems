@@ -1,0 +1,555 @@
+ {{ define "main" }}
+<div>
+    <div class="bwms-bg2">
+        <section>
+            <div class="container">
+                <div class="row bwms-subwrapper-top align-items-center">
+                    <div class="col-lg-6 col-md-6 col-12">
+                        <div>
+                            <div>
+                                <h1 class="hero-h1">
+                                    <span class="color5">Workforce </span>Management Software</h1>
+                                <p>The leading workforce management software for staff scheduling, time & attendance and time clocking with much more! Managing a workforce is made easy with our one stop shop for your workplace scheduling
+                                </p>
+                            </div>
+                            <div class="row my-5">
+                                <div class="col-lg-9 col-md-11 col-12">
+                                    <div class="footer-newsletter">
+                                        <form id="get-started-for-free">
+                                            <input type="email" id="email" name="email" placeholder="Enter your email address">
+                                            <input class="home-btn" type="submit" value="Get Started for Free">
+                                        </form>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-1 col-12"></div>
+                            </div>
+                            <div class="mt-5 ">
+                                {{- partial "clients.html" . -}}
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-1 col-12 "></div>
+                    <div class="col-lg-5 col-md-6 col-12 ">
+                        <img src='{{"/images/novagems-img/bwms/Workforce-main.png" | absURL}}' alt="Workforce-main">
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-md-12 text-center key-schedule ">
+                <img type="button" class="video-btn " data-toggle="modal" data-target="#myModal" src='{{"/images/novagems-img/View-demo-btn.svg" | absURL}}' alt="view-demo">
+            </div>
+        </section>
+        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content" style="background-color: transparent;">
+
+
+                    <div class="modal-body">
+
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+                        <video controls id="video2">
+                            <source src="/images/novagems-img/cleaning-company/Cleaning-company.mp4" type="video/mp4">
+                            <source src="/images/novagems-img/cleaning-company/Cleaning-company.mp4" type="video/ogg">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="mt-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 text-center key-schedule">
+                        <p class="subheading color3">Features</p>
+                        <h2>Features of security guard management system</h2>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-2 col-md-4 col-6 mt-3">
+                        <div class="clients text-center">
+                            <a href="/scheduling">
+                                <figure style="margin-bottom: 20px;"><img class="key-img" src='{{"/images/novagems-img/Scheduling-e.svg" | absURL}}' alt="Scheduling"></figure>
+                                <p class="clients-p">Scheduling</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-4 col-6 mt-3">
+                        <div class="clients text-center">
+                            <a href="/task-mangement">
+                                <figure style="margin-bottom: 20px;"><img class="key-img" src='{{"/images/novagems-img/task&Post.svg" | absURL}}' alt="task&Post"></figure>
+                                <p class="clients-p">Task & Post </p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-4 col-6 mt-3">
+                        <div class="clients text-center">
+                            <a href="/gps-tracking">
+                                <figure style="margin-bottom: 20px;"><img class="key-img" src='{{"/images/novagems-img/GPS-Tracking.svg" | absURL}}' alt="GPS-Tracking"></figure>
+                                <p class="clients-p">GPS Tracking</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-4 col-6 mt-3">
+                        <div class="clients text-center">
+                            <a href="/clock-in-out">
+                                <figure style="margin-bottom: 20px;"><img class="key-img" src='{{"/images/novagems-img/Clock.svg"  | absURL}}' alt="Clock"></figure>
+                                <p class="clients-p">Clock In/Out</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-4 col-6 mt-3">
+                        <div class="clients text-center">
+                            <a href="/time-cost-analysis">
+                                <figure style="margin-bottom: 20px;"><img class="key-img" src='{{"/images/novagems-img/Timesheet.svg"  | absURL}}' alt="Timesheet"></figure>
+                                <p class="clients-p">Timesheet</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-4 col-6 mt-3">
+                        <div class="clients text-center">
+                            <a href="/chat">
+                                <figure style="margin-bottom: 20px;"><img class="key-img" src='{{"/images/novagems-img/Chat.svg" | absURL}}' alt="Chat"></figure>
+                                <p class="clients-p">Chat</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ----------------------------------- -->
+
+    <div class="mt-5">
+        <div class="container">
+            <div id="tabses" class="row ">
+                <div class="col-lg-6 col-md-6 col-12 ">
+                    <div>
+                        <h3>Work Scheduling</h3>
+                        <p>Have a platform where you can make schedules, changes and keep everyone on the same page without having to worry about the lengthy processes. With your work force armed with the software, stay ahead of the game.</p>
+                        <h4 class="open-features">Key Features</h4>
+                    </div>
+                    <ul class="tab-slaider" id="accordiones" role="tablist">
+                        <li>
+                            <a class="step circle active" href="#tabs-11">
+                                <div class="tag">
+                                    <img class="active-img" src="/images/novagems-img/dot.svg" alt="dot">
+                                    <span class="title headimg-color">Staff Scheduling</span>
+                                </div>
+                            </a>
+                            <div class="addon fadein addon-h">
+                                <span>Our platform takes the headache out of manual scheduling, providing a seamless process that optimizes shifts, eliminates conflicts, and ensures that your workforce is perfectly aligned with your operational needs.</span>
+                            </div>
+                        </li>
+
+                        <li>
+                            <a href="#tabs-22">
+                                <div class="tag">
+                                    <img class="active-img" src="/images/novagems-img/dot.svg" alt="dot">
+                                    <span class="title headimg-color">Employee Schedule Template</span>
+                                </div>
+                            </a>
+                            <div class="addon addon-h">
+                                <span>Our wfm software gives you employee scheduling templates that will save hours of manual work. With a staff scheduling template you can send schedules anytime, anywhere!</span>
+                            </div>
+                        </li>
+
+                    </ul>
+                    <div class="my-3" style="margin-left: 0px;">
+                        <div class="footer-newsletter features-newsletter">
+                            <form id="Check_Point_Tours">
+                                <input type="email" id="Check-Point-Tours" name="Check-Point-Tours" placeholder="Enter your email address">
+                                <input type="submit" value="Get Started for Free" class="background2" id="btnsunscribe">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-12 ">
+                    <div class="img-iped">
+                        <div id="tabs-11">
+                            <figure><img src="/images/novagems-img/bwms/Staff-Scheduling.png" alt="Staff-Scheduling"></figure>
+
+                        </div>
+                        <div id="tabs-22">
+                            <figure><img src="/images/novagems-img/bwms/Employee-Schedule.png" alt="Employee-Schedule"></figure>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- inspection-report -->
+
+    <div class="mt-5">
+        <div class="mt-5">
+            <div class="container">
+                <div id="tabs4" class="row ">
+                    <div class="col-lg-6 col-md-6 col-12 employee-scheduling-phone">
+                        <div class="img-iped">
+
+
+                            <div id="tabs-1">
+                                <figure><img src="/images/novagems-img/bwms/Time-Tracking-Software.png" alt="Time-Tracking-Software"></figure>
+
+                            </div>
+                            <div id="tabs-2">
+                                <figure><img src="/images/novagems-img/bwms/Geofencing.png" alt="Geofencing"></figure>
+
+                            </div>
+
+
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-12">
+                        <div>
+                            <h3>Time Clocking</h3>
+                            <p>Give your workplace experience a boost it needs, while keeping a check on the working hours of the employees. Prevent time theft and employee burnout. The wfm software keeps track of exact clock in/clock out with ease.</p>
+                            <h4 class="open-features">Key Features</h4>
+                        </div>
+                        <ul class="tab-slaider" id="accordion4" role="tablist">
+                            <li>
+                                <a class="step circle active" href="#tabs-1">
+                                    <div class="tag">
+                                        <div class="icon">
+                                            <div class="block">
+                                                <div class="circle"></div>
+                                            </div>
+                                        </div>
+                                        <img class="active-img" src="/images/novagems-img/dot.svg" alt="dot">
+                                        <span class="title headimg-color">Time Tracking Software</span>
+                                    </div>
+                                </a>
+                                <div class="addon fadein addon-h">
+                                    <span>Efficiency is at your fingertips with Novagems time-tracking feature. Keep tabs on work hours, breaks, and project durations effortlessly. It's like having a super-smart assistant ensuring that your workforce is making the most out of their time.
+                                    </span>
+                                </div>
+                            </li>
+
+                            <li>
+                                <a href="#tabs-2">
+                                    <div class="tag">
+                                        <div class="icon">
+                                            <div class="block">
+                                                <div class="circle"></div>
+                                            </div>
+                                        </div>
+                                        <img class="active-img" src="/images/novagems-img/dot.svg" alt="dot">
+                                        <span class="title headimg-color">Geofencing</span>
+                                    </div>
+                                </a>
+                                <div class="addon addon-h">
+                                    <span>Geofencing is simplified with Novagems. The software adds an extra layer of security and control. It's like setting virtual boundaries for your team's safety and efficiency.</span>
+                                </div>
+                            </li>
+
+
+                        </ul>
+                        <div class="my-3" style="margin-left: 0px;">
+                            <div class="footer-newsletter features-newsletter">
+                                <form id="Smart_Response">
+                                    <input type="email" id="Smart-Response" name="Smart-Response" placeholder="Enter your email address">
+                                    <input type="submit" value="Get Started for Free" class="background2">
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- work-order-management -->
+
+    <div class="mt-5">
+        <div class="container">
+            <div id="tabs3" class="row ">
+
+                <div class="col-lg-6 col-md-6 col-12">
+                    <div>
+                        <h3>Digital Timesheets</h3>
+                        <p>Eliminate human error and delays with the system and make informed decisions with the data. Digital timesheets will increase transparency and employee engagement with the management and amongst the staff as well. Use this advantage
+                            to keep the organization one step ahead.</p>
+                        <h4 class="open-features">Key Features</h4>
+                    </div>
+                    <ul class="tab-slaider" id="accordion3" role="tablist">
+                        <li>
+                            <a class="step circle active" href="#tabs-11">
+                                <div class="tag">
+                                    <img class="active-img" src="/images/novagems-img/dot.svg" alt="dot">
+                                    <span class="title headimg-color">Digital Timesheets</span>
+                                </div>
+                            </a>
+                            <div class="addon fadein addon-h">
+                                <span>With Novagems, step into the world of digital and leave behind manual logging. Our wfm software will keep track of the staff scheduling, time tracking and total hours worked! And you don’t have to juggle between different sheets to access the data.</span>
+                            </div>
+                        </li>
+
+                        <li>
+                            <a href="#tabs-22">
+                                <div class="tag">
+                                    <img class="active-img" src="/images/novagems-img/dot.svg" alt="dot">
+                                    <span class="title headimg-color">Track Employee Performance</span>
+                                </div>
+                            </a>
+                            <div class="addon addon-h">
+                                <span>Stay on top of the issues reported and prevent time theft. Incase of any issue the wfm software must detect the root cause and provide a solution.</span>
+                            </div>
+                        </li>
+
+                    </ul>
+                    <div class="my-3" style="margin-left: 0px;">
+                        <div class="footer-newsletter features-newsletter">
+                            <form id="Mobile_Patrol">
+                                <input type="email" id="Mobile-Patrol" name="Mobile-Patrol" placeholder="Enter your email address">
+                                <input type="submit" value="Get Started for Free" class="background2">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-12">
+                    <div class="img-iped">
+                        <div id="tabs-11">
+                            <figure><img src="/images/novagems-img/bwms/Digital-Timesheets-img.png" alt="Digital-Timesheets-img"></figure>
+
+                        </div>
+                        <div id="tabs-22">
+                            <figure><img src="/images/novagems-img/bwms/Track-Employee-Performance.png" alt="Track-Employee-Performance"></figure>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- instructions-&-checklist-->
+    <div id="reporting" class="mt-5">
+        <div class="mt-5">
+            <div class="container">
+                <div id="tabs" class="row ">
+                    <div class="col-lg-6 col-md-6 col-12  employee-scheduling-phone">
+                        <div class="img-iped">
+
+                            <div id="tabs-1">
+                                <figure><img src="/images/novagems-img/bwms/Real-Time-Visibility.png" alt="Real-Time-Visibility"></figure>
+
+                            </div>
+                            <div id="tabs-2">
+                                <figure><img src="/images/novagems-img/bwms/GPS-Trail.png" alt="GPS-Trail"></figure>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-12">
+                        <div>
+                            <h3>GPS Tracking</h3>
+                            <p>Have a well connected team in case your employees ever leave the premises. Know where they are at all times and get real time notifications and updates when they detour from their designated path. This works perfectly for remote
+                                working environments.</p>
+                            <h4 class="open-features">Key Features</h4>
+                        </div>
+                        <ul class="tab-slaider" id="accordion" role="tablist">
+                            <li>
+                                <a class="step circle active" href="#tabs-1">
+                                    <div class="tag">
+                                        <div class="icon">
+                                            <div class="block">
+                                                <div class="circle"></div>
+                                            </div>
+                                        </div>
+                                        <img class="active-img" src="/images/novagems-img/dot.svg" alt="dot">
+                                        <span class="title headimg-color">
+                                            Real-Time Visibility</span>
+                                    </div>
+                                </a>
+                                <div class="addon fadein addon-h">
+                                    <span>Gain unparalleled control over your workforce's location with our real-time GPS tracking. Know where your team is at any given moment, enhancing response times and ensuring optimal coverage.</span>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#tabs-2">
+                                    <div class="tag">
+                                        <div class="icon">
+                                            <div class="block">
+                                                <div class="circle"></div>
+                                            </div>
+                                        </div>
+                                        <img class="active-img" src="/images/novagems-img/dot.svg" alt="dot">
+                                        <span class="title headimg-color">GPS Trail</span>
+                                    </div>
+                                </a>
+                                <div class="addon addon-h">
+                                    <span>If your employees are often working on the field, you can see their exact location at any time! Automatic and real time notifications are sent in case the destined routes are not being followed.</span>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="my-3" style="margin-left: 0px;">
+                            <div class="footer-newsletter features-newsletter">
+                                <form id="custom_incident_report">
+                                    <input type="email" id="custom-incident-report" name="custom-incident-report" placeholder="Enter your email address">
+                                    <input type="submit" value="Get Started for Free" class="background2">
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- client-management-->
+
+    <div class="mt-5">
+        <div class="container">
+            <div id="tabs5" class="row ">
+
+                <div class="col-lg-6 col-md-6 col-12">
+                    <div>
+                        <h3>Task & Post Order</h3>
+                        <p>Get detailed and accurate reports of the employees. Avoid any delays or human error in sending the information to the clients. This will help you keep track of your employees and gain bigger client retention too. The wfm software
+                            allows you to add visual proofs and checklists to make the work easy!</p>
+                        <h4 class="open-features">Key Features</h4>
+                    </div>
+                    <ul class="tab-slaider" id="accordion5" role="tablist">
+                        <li>
+                            <a class="step circle active" href="#tabs-11">
+                                <div class="tag">
+                                    <img class="active-img" src="/images/novagems-img/dot.svg" alt="dot">
+                                    <span class="title headimg-color">Task Management</span>
+                                </div>
+                            </a>
+                            <div class="addon fadein addon-h">
+                                <span>Automated task confirmation reduces scheduling conflicts and speeds up the work allocation. It optimizes the operations by improving workflow and increases organizational capacity.</span>
+                            </div>
+                        </li>
+
+                        <li>
+                            <a href="#tabs-22">
+                                <div class="tag">
+                                    <img class="active-img" src="/images/novagems-img/dot.svg" alt="dot">
+                                    <span class="title headimg-color">Task Reports</span>
+                                </div>
+                            </a>
+                            <div class="addon fadein addon-h">
+                                <span>Get insights on how your team is performing with reports! Get a visual backed report with all the data required. This keeps track of all of the tasks assigned and keeps the clients satisfaction at an all time high.</span>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="my-3" style="margin-left: 0px;">
+                        <div class="footer-newsletter features-newsletter">
+                            <form id="Dashboard_Analytics">
+                                <input type="email" id="Dashboard-Analytics" name="Dashboard-Analytics" placeholder="Enter your email address">
+                                <input type="submit" value="Get Started for Free" class="background2">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-12">
+                    <div class="img-iped">
+                        <div id="tabs-11">
+                            <figure><img src="/images/novagems-img/bwms/Task-report.png" alt="Job-Updates"></figure>
+
+                        </div>
+                        <div id="tabs-22">
+                            <figure><img src="/images/novagems-img/bwms/Task-report.png" alt="Task-report"></figure>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- -------- -->
+    <div id="Estimate" class="mt-5">
+        <div class="container">
+            <div id="tabs7" class="row ">
+                <div class="col-lg-6 col-md-6 col-12">
+                    <div class="img-iped">
+                        <div id="tabs-11">
+                            <figure><img src="/images/novagems-img/bwms/Stay-In-Touch-With-Your-Team.png" alt="Stay-In-Touch-With-Your-Team"></figure>
+                        </div>
+                        <div id="tabs-22">
+                            <figure><img src="/images/novagems-img/bwms/All-Employees-Data-In-One-Place.png" alt="All-Employees-Data-In-One-Place"></figure>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-12">
+                    <div>
+                        <h3>Chat</h3>
+                        <p>Send and receive messages, alerts in an instant without any delays. The software acts as a central hub for all of your communication channels. With an inter-connected team be the service provider that is well informed.
+                        </p>
+                        <h4 class="open-features">Key Features</h4>
+                    </div>
+                    <ul class="tab-slaider" id="accordion7">
+                        <li>
+                            <a class="step circle active" href="#tabs-11">
+                                <div class="tag">
+                                    <img class="active-img" src="/images/novagems-img/dot.svg" alt="dot">
+                                    <span class="title headimg-color">Stay In Touch With Your Team</span>
+                                </div>
+                            </a>
+                            <div class="addon fadein addon-h">
+                                <span>Send real time information to your team instantly. Get notified of any issues and reduce wait time. This keeps the team in one loop
+                                </span>
+                            </div>
+                        </li>
+
+                        <li>
+                            <a href="#tabs-22">
+                                <div class="tag">
+                                    <img class="active-img" src="/images/novagems-img/dot.svg" alt="dot">
+                                    <span class="title headimg-color">All Employees Data In One Place</span>
+                                </div>
+                            </a>
+                            <div class="addon addon-h">
+                                <span>When everyone is on the same page, all of the information is passed through one channel. This reduces complexity and inconsistency as everyone is informed of the last minute changes.
+                                </span>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="my-3" style="margin-left: 0px;">
+                        <div class="footer-newsletter features-newsletter">
+                            <form id="Mobile_Patrol">
+                                <input type="email" id="Mobile-Patrol" name="Mobile-Patrol" placeholder="Enter your email address">
+                                <input type="submit" value="Get Started for Free" class="background2">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ------------------------ -->
+
+<div class="Managing-sec-rock">
+            <div class="container ">
+                <div class="testimonial-wrapper">
+                    <div class="quote-left"><img src="/images/novagems-img/novagemsv2/customer-stories/quote-left.png" alt="Clock-In-Out"></div>
+                    <div class="testimonial-container">
+                        <div class="testimonial-text">
+                            <p class="testimonial-message">
+                                “Managing 1,500 Guards Used To Be Overwhelming—Now, Scheduling Takes Minutes, Not Hours” <br> - Ozzie Zarai, CEO
+                            </p>
+                        </div>
+                    </div>
+                    <div class="quote-right"><img src="/images/novagems-img/novagemsv2/customer-stories/quote-right.png" alt="Clock-In-Out"></div>
+                </div>
+            </div>
+        </div>
+    <!-- ------------------------------------ -->
+    <div>
+        {{- partial "cta.html" . -}}
+    </div>
+
+    <div>
+        {{- partial "resources.html" . -}}
+    </div>
+
+</div>
+
+{{end}}

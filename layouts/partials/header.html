@@ -1,0 +1,132 @@
+<!-- Header Section -->
+ <!-- <div class="top-header ">
+    <div class="text-center">
+        <p>Limited Time Offer: 50% OFF <span>New Customers Only</span> <a href="/halloween50off/"> <img src="/images/novagems-img/Save-Now-Button.svg" alt="Save-Now-Button"></a></p>
+    </div>
+ </div> -->
+
+<!-- <div class="top-header ">
+    <div class="text-center">
+        <p class="text-white">Black Friday Sale: 50% OFF <a href="/black-friday"> <img src="/images/novagems-img/Save-Now-Button.svg" alt="Save-Now-Button"></a></p>
+    </div>
+ </div> -->
+
+<!-- Header Section -->
+
+<header class="bsnav bsnav-sticky bsnav-sticky-slide">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <nav class="navbar navbar-expand-lg navbar-light">
+                    <a class="navbar-brand brand-icon" href="/">
+                        <img src='{{ .Site.Params.logo | relURL}}' alt="logo">
+                    </a>
+
+                    <button class="navbar-toggler collapsed" type="button" data-toggle="collapse"
+                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="navbar-collapse main-menu-item collapse products-nav" id="navbarSupportedContent">
+                        <ul class="navbar-nav navbar-nav-custom">
+                            {{ range .Site.Menus.main }}
+                            <li class="nav-item dropdown product-dropdown">
+                                {{ if .HasChildren }}
+                                <a class="nav-link dropdown-toggle" href="{{ .URL | absURL }}"
+                                   role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <b>{{ .Name }}</b>
+                                    <span class="vertical-pipe dark-purple"></span>
+                                </a>
+                                <div class="dropdown-menu hvr-bubble-top">
+                                    <div class="border-slider dark-purple"></div>
+                                    {{ range .Children }}
+                                    <a class="dropdown-item" href="{{ .URL | absURL }}">{{ .Name }}</a>
+                                    {{ end }}
+                                </div>
+                                {{ end }}
+                            </li>
+                            {{ end }}
+                        </ul>
+
+                        <div class="header-text text-header-ipad-phone">
+                            <p style="color:#786ce6 !important;">
+                                <b>{{ .Params.pageName }}</b>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="navbar-collapse main-menu-item collapse justify-content-end" id="navbarSupportedContent">
+                        <ul class="navbar-nav">
+                            {{ $currentPage := . }}
+                            {{ range .Site.Menus.main }}
+                            {{ $active := or (eq $currentPage.Title .Name) (or ($currentPage.HasMenuCurrent "main" .) ($currentPage.IsMenuCurrent "main" .)) }}
+
+                            {{ if .HasChildren }}
+
+                            {{ else if eq .Name "Language" }}
+                            <li class="nav-item {{ if $active }}active{{ end }}">
+
+                                {{ if $.IsHome }}
+                                    <!-- ✅ ONLY HOME PAGE -->
+                                    <img class="canada canada-flg"
+                                        src='{{ "/images/novagems-img/india-flag.png" | absURL }}'
+                                        alt="india">
+                                {{ else }}
+                                    <!-- ✅ ALL OTHER PAGES -->
+                                    <img class="canada canada-flg"
+                                        src='{{ "/images/novagems-img/canada.png" | absURL }}'
+                                        alt="canada">
+                                {{ end }}
+
+                            </li>
+
+                            {{ else if eq .Identifier "login" }}
+                            <li class="nav-item {{ if $active }}active{{ end }}">
+                                <a class="nav-link hvr-icon-wobble-horizontal"
+                                   href="{{ .URL | absURL }}" target="_blank">
+                                    <b>{{ .Name }}</b>
+                                    <img class="fa fa-arrow-right hvr-icon"
+                                         src='{{ "/images/novagems-img/login-arrow.svg" | absURL }}'
+                                         alt="login-arrow">
+                                </a>
+                            </li>
+
+                            {{ else if eq .Identifier "Book a Demo" }}
+                            <li class="nav-item loginlast {{ if $active }}active{{ end }}">
+                                <a class="nav-link d-inline-block"
+                                   href="{{ .URL | absURL }}" target="_blank">
+                                    <b>{{ .Name }}</b>
+                                </a>
+                            </li>
+
+                            {{ else }}
+                            <li class="nav-item {{ if $active }}active{{ end }}">
+                                <a class="nav-link" href="{{ .URL | absURL }}">{{ .Name }}</a>
+                            </li>
+                            {{ end }}
+
+                            {{ end }}
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+
+<!-- <div aria-live="polite" aria-atomic="true" style="position: fixed; top: 1rem; right: 1rem; z-index: 9999;">
+  <div id="toastMsg" class="toast bg-success text-white shadow-lg rounded-lg" role="alert" aria-live="assertive" aria-atomic="true" data-delay="5000">
+    <div class="toast-header bg-success text-white border-0">
+      <strong class="mr-auto"><i class="fas fa-check-circle mr-2"></i> Success</strong>
+      <small class="text-light">just now</small>
+      <button type="button" class="ml-2 mb-1 close text-white" data-dismiss="toast" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    <div class="toast-body font-weight-bold">
+    </div>
+  </div>
+</div> -->

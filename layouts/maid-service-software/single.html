@@ -1,0 +1,783 @@
+{{ define "main" }}
+<!-- schedule Section -->
+<div>
+    <div class="clock-in-out-bg2 pb-5">
+        <div class="container example">
+            <div class="row header-subwrapper-top align-items-center">
+                <div class="col-lg-7 col-md-7 col-12">
+                    <div>
+                        <div>
+                            <h1 class="hero-h1"><span class="color5">Maid Service Scheduling </span> Software for Cleaning Services</h1>
+                            <p>With features such as scheduling, estimating, reporting, and invoicing, Novagems manages your whole operations seamlessly. With additional features like GPS tracking and geofencing make sure that your cleaners are the top choice
+                                in the market .
+                            </p>
+                        </div>
+                        <div class="row my-5">
+                            <div class="col-lg-9 col-md-11 col-12">
+                                <div class="footer-newsletter">
+                                    <form id="get-started-for-free">
+                                        <input type="email" id="email" name="email" placeholder="Enter your email address">
+                                        <input class="home-btn" type="submit" value="Get Started for Free">
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-1 col-12"></div>
+                        </div>
+                        <div id="load">
+                            <div class="container p-md-0" id="clientscroll">
+                                <section class="customer-logos slider" aria-live="polite" aria-label="Client Logos Carousel">
+                                    {{ range .Site.Data.CleaningCompanyClients.items }}
+                                    <div class="slide" role="option" aria-roledescription="client logo">
+                                        <div class="client-slide"><img style="width: 100%;" src="{{ .image | absURL }}" alt="{{.brand}}"></div>
+                                    </div>
+                                    {{end}}
+                                </section>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-5 col-md-5 col-12 p-0 img-iped-head all-img-left">
+                    <img src="/images/novagems-img/maid-service/Main.png" alt="Main">
+                </div>
+            </div>
+            <div class="col-md-12 text-center key-schedule ">
+                <img type="button" class="video-btn " data-toggle="modal" data-target="#myModal" src='{{"/images/novagems-img/View-demo-btn.svg" | absURL}}' alt="view-demo">
+            </div>
+        </div>
+
+
+        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content" style="background-color: transparent;">
+
+
+                    <div class="modal-body">
+
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+
+                        <video controls id="video2">
+                            <source src="/images/novagems-img/cleaning-company/Cleaning-company.mp4" type="video/mp4">
+                            <source src="/images/novagems-img/cleaning-company/Cleaning-company.mp4" type="video/ogg">
+                            Your browser does not support the video tag.
+                        </video>
+
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="mt-5">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 col-md-6 col-12">
+                        <figure><img src="/images/novagems-img/maid-service/Why-choose-maid-service.png" alt="Why-choose-maid-service"></figure>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-12">
+                        <h2>Why Choose Maid Service Business Software?
+                        </h2>
+                        <p>Since most of your cleaners are going to be on the field, it’s better to have a maid software that is beneficial for both commercial and residential cleaning services.
+                        </p>
+                        <p>It’s not only a scheduling software, but a one-stop shop for your field service management that will take care of staff scheduling to invoicing. This way you can close more cleaning contracts easily.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="mt-5">
+            <div class="container">
+                <div class="col-md-9 mx-auto">
+                    <div class="row">
+                        <div class="col-md-12 text-center ">
+                            <p class="subheading color3">Features</p>
+                            <h2>Top Features of The Best Maid Service Software</h2>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-3 col-md-4 col-6 mt-3">
+                            <div class="clients text-center">
+                                <a href="/scheduling">
+                                    <figure style="margin-bottom: 20px;"><img class="key-img" src="/images/novagems-img/maid-service/Estimate.svg" alt="Estimate"></figure>
+                                    <p class="clients-p">Estimating<br><br></p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-6 mt-3">
+                            <div class="clients text-center">
+                                <a href="#Invoices">
+                                    <figure style="margin-bottom: 20px;"><img class="key-img" src="/images/novagems-img/maid-service/Staff-Scheduling.svg" alt="Staff-Scheduling"></figure>
+                                    <p class="clients-p">Staff
+                                        <br>Scheduling</p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-6 mt-3">
+                            <div class="clients text-center">
+                                <a href="#Estimate">
+                                    <figure style="margin-bottom: 20px;"><img class="key-img" src="/images/novagems-img/maid-service/Reporting.svg" alt="Reporting"></figure>
+                                    <p class="clients-p">Reporting
+                                        <br><br></p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-6 mt-3">
+                            <div class="clients text-center">
+                                <a href="/time-cost-analysis">
+                                    <figure style="margin-bottom: 20px;"><img class="key-img" src="/images/novagems-img/maid-service/Invoice.svg" alt="Invoice image"></figure>
+                                    <p class="clients-p">Invoicing<br><br></p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="text-center mt-5">
+                        <p>When you have so many things to handle, business owners look for a helping hand that will take care of most of the important tasks so that there is no error in those.
+                        </p>
+                        <p>For any cleaning service provider, booking new clients, sending correct quoting, providing exceptional service, and making error-free invoices take priority.
+                        </p>
+                        <p>Novagems maid service management software helps the cleaning services streamline their workflow from start to finish. The maid service software keeps everyone on the same page even if your cleaners are in the field.
+                        </p>
+                    </div>
+
+                    <div class="mt-5 text-center">
+                        <h2>Our Other Noticeable Maid Service Scheduling Software</h2>
+                        <div class="row mt-5">
+                            <div class="col-lg-3 col-md-4 col-6 mt-3">
+                                <div class="clients text-center">
+                                    <a href="/work-order-management">
+                                        <figure style="margin-bottom: 20px;"><img class="key-img" src="/images/novagems-img/maid-service/Real-time-notification.svg" alt="Work-Order-Management image"></figure>
+                                        <p class="clients-p">Instant Notifications and Alerts</p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-4 col-6 mt-3">
+                                <div class="clients text-center">
+                                    <a href="/inspection-report">
+                                        <figure style="margin-bottom: 20px;"><img class="key-img" src="/images/novagems-img/maid-service/Work-Order-Management.svg" alt="Work-Order-Management"></figure>
+                                        <p class="clients-p">Work Order Management</p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-4 col-6 mt-3">
+                                <div class="clients text-center">
+                                    <a href="/instructions-checklist">
+                                        <figure style="margin-bottom: 20px;"><img class="key-img" src="/images/novagems-img/maid-service/Client-Management.svg" alt="Client-Management image"></figure>
+                                        <p class="clients-p">Client Management
+                                        </p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-4 col-6 mt-3">
+                                <div class="clients text-center">
+                                    <a href="/task-mangement">
+                                        <figure style="margin-bottom: 20px;"><img class="key-img" src="/images/novagems-img/maid-service/Mobile-Accessibility.svg" alt="Mobile-Accessibility"></figure>
+                                        <p class="clients-p">Mobile Accessibility</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="clearfix"></div>
+    </div>
+    <!-- maintenance-log-sheet -->
+
+    <div class="mt-5">
+        <div class="container">
+            <div id="tabses" class="row ">
+                <div class="col-lg-6 col-md-6 col-12 ">
+                    <div>
+                        <h3>Estimating</h3>
+                        <p>Send accurate and error-free estimates to gain more profits and win more cleaning contracts. With software you eliminate the chances of human error and unnecessary delays. </p>
+                        <h4 class="open-features">Key Features</h4>
+                    </div>
+                    <ul class="tab-slaider" id="accordiones" role="tablist">
+                        <li>
+                            <a class="step circle active" href="#tabs-11">
+                                <div class="tag">
+                                    <img class="active-img" src="/images/novagems-img/dot.svg" alt="dot">
+                                    <span class="title headimg-color">Customizable Templates</span>
+                                </div>
+                            </a>
+                            <div class="addon fadein addon-h">
+                                <span>Use predefined templates that can be tailored to specific jobs or clients, saving time and maintaining consistency. This helps your clients see what they are paying for and you can manage your finances easily.</span>
+                            </div>
+                        </li>
+
+                        <li>
+                            <a href="#tabs-22">
+                                <div class="tag">
+                                    <img class="active-img" src="/images/novagems-img/dot.svg" alt="dot">
+                                    <span class="title headimg-color">Professional Quotes</span>
+                                </div>
+                            </a>
+                            <div class="addon addon-h">
+                                <span>Create and send professional-looking quotes directly to clients, improving your chances of securing new business. These professional quotes make a name for yourself and your company in the market. </span>
+                            </div>
+                        </li>
+
+                    </ul>
+                    <div class="my-3" style="margin-left: 0px;">
+                        <div class="footer-newsletter features-newsletter">
+                            <form id="Check_Point_Tours">
+                                <input type="email" id="Check-Point-Tours" name="Check-Point-Tours" placeholder="Enter your email address">
+                                <input type="submit" value="Get Started for Free" class="background2" id="btnsunscribe">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-12 ">
+                    <div class="img-iped">
+                        <div id="tabs-11">
+                            <figure><img src="/images/novagems-img/maid-service/Customizable-Templates.png" alt="Customizable-Templates"></figure>
+
+                        </div>
+                        <div id="tabs-22">
+                            <figure><img src="/images/novagems-img/maid-service/Professional-Quotes.png" alt="Professional-Quotes"></figure>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- inspection-report -->
+
+    <div class="mt-5">
+        <div class="mt-5">
+            <div class="container">
+                <div id="tabs4" class="row ">
+                    <div class="col-lg-6 col-md-6 col-12 employee-scheduling-phone">
+                        <div class="img-iped">
+
+
+                            <div id="tabs-1">
+                                <figure><img src="/images/novagems-img/maid-service/Drag-and-Drop-Interface.png" alt="Drag-and-Drop-Interface"></figure>
+
+                            </div>
+                            <div id="tabs-2">
+                                <figure><img src="/images/novagems-img/maid-service/Conflict-Resolution.png" alt="Conflict-Resolution"></figure>
+
+                            </div>
+                            <div id="tabs-3">
+                                <figure><img src="/images/novagems-img/maid-service/Shift-Reminders.jpeg" alt="Shift-Reminders"></figure>
+
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-12">
+                        <div>
+                            <h3>Staff Scheduling </h3>
+                            <p>Our maid service software allows you to schedule staff easily and increase customer satisfaction. With simple yet advance scheduling tools you can get done with the process quicker.</p>
+                            <h4 class="open-features">Key Features</h4>
+                        </div>
+                        <ul class="tab-slaider" id="accordion4" role="tablist">
+                            <li>
+                                <a class="step circle active" href="#tabs-1">
+                                    <div class="tag">
+                                        <div class="icon">
+                                            <div class="block">
+                                                <div class="circle"></div>
+                                            </div>
+                                        </div>
+                                        <img class="active-img" src="/images/novagems-img/dot.svg" alt="dot">
+                                        <span class="title headimg-color">Drag and Drop Interface</span>
+                                    </div>
+                                </a>
+                                <div class="addon fadein addon-h">
+                                    <span>Easily create and adjust schedules with a user-friendly drag-and-drop interface. If you need to make any last-minute changes, worry not you can easily use shortcuts and get them done within minutes.
+                                    </span>
+                                </div>
+                            </li>
+
+                            <li>
+                                <a href="#tabs-2">
+                                    <div class="tag">
+                                        <div class="icon">
+                                            <div class="block">
+                                                <div class="circle"></div>
+                                            </div>
+                                        </div>
+                                        <img class="active-img" src="/images/novagems-img/dot.svg" alt="dot">
+                                        <span class="title headimg-color">Conflict Resolution</span>
+                                    </div>
+                                </a>
+                                <div class="addon addon-h">
+                                    <span>Detect and resolve scheduling conflicts proactively to prevent disruptions. Novagems’ maid scheduling software quickly displays which cleaner is available for the shift. With quick conflict resolution, you can see who is available and avoid staff burnout. 
+                                    </span>
+                                </div>
+                            </li>
+
+                            <li>
+                                <a href="#tabs-3">
+                                    <div class="tag">
+                                        <img class="active-img " src="/images/novagems-img/dot.svg" alt="dot">
+                                        <span class="title headimg-color">Shift Reminders</span>
+                                    </div>
+                                </a>
+                                <div class="addon addon-h">
+                                    <span>The software sends automated reminders to employees about their upcoming shifts to reduce no-shows and lateness. This keeps the staff and management in the loop and builds trust.</span>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="my-3" style="margin-left: 0px;">
+                            <div class="footer-newsletter features-newsletter">
+                                <form id="Smart_Response">
+                                    <input type="email" id="Smart-Response" name="Smart-Response" placeholder="Enter your email address">
+                                    <input type="submit" value="Get Started for Free" class="background2">
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- work-order-management -->
+
+    <div class="mt-5">
+        <div class="container">
+            <div id="tabs3" class="row ">
+
+                <div class="col-lg-6 col-md-6 col-12">
+                    <div>
+                        <h3>Reporting</h3>
+                        <p>Detailed reporting helps you make informed decisions and track the performance of your cleaning business. Novagems’ maid service software offers comprehensive reporting capabilities.
+                        </p>
+                        <h4 class="open-features">Key Features</h4>
+                    </div>
+                    <ul class="tab-slaider" id="accordion3" role="tablist">
+                        <li>
+                            <a class="step circle active" href="#tabs-11">
+                                <div class="tag">
+                                    <img class="active-img" src="/images/novagems-img/dot.svg" alt="dot">
+                                    <span class="title headimg-color">Real Time Data</span>
+                                </div>
+                            </a>
+                            <div class="addon fadein addon-h">
+                                <span>Access up-to-date information at any time, allowing for quick decision-making and adjustments. The managers will get notified instantly if there is any missed shift, late acceptance of the shift or if any task has been missed. </span>
+                            </div>
+                        </li>
+
+                        <li>
+                            <a href="#tabs-22">
+                                <div class="tag">
+                                    <img class="active-img" src="/images/novagems-img/dot.svg" alt="dot">
+                                    <span class="title headimg-color">Generate Customizable Reports</span>
+                                </div>
+                            </a>
+                            <div class="addon addon-h">
+                                <span>Ensure quality cleaning services with data on your hands. Use those to get new cleaning contracts and build a loyal community of clients. This increases the accountability and efficiency of the employees.
+                                </span>
+                            </div>
+                        </li>
+
+                    </ul>
+                    <div class="my-3" style="margin-left: 0px;">
+                        <div class="footer-newsletter features-newsletter">
+                            <form id="Mobile_Patrol">
+                                <input type="email" id="Mobile-Patrol" name="Mobile-Patrol" placeholder="Enter your email address">
+                                <input type="submit" value="Get Started for Free" class="background2">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-12">
+                    <div class="img-iped">
+                        <div id="tabs-11">
+                            <figure><img src="/images/novagems-img/maid-service/Real-Time-Data.png" alt="Real-Time-Data"></figure>
+
+                        </div>
+                        <div id="tabs-22">
+                            <figure><img src="/images/novagems-img/maid-service/Generate-Customizable-Reports.png" alt="Generate-Customizable-Reports"></figure>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- instructions-&-checklist-->
+    <div id="reporting" class="mt-5">
+        <div class="mt-5">
+            <div class="container">
+                <div id="tabs" class="row ">
+                    <div class="col-lg-6 col-md-6 col-12  employee-scheduling-phone">
+                        <div class="img-iped">
+
+                            <div id="tabs-1">
+                                <figure><img src="/images/novagems-img/maid-service/Offer-Complete-Transparency.png" alt="Offer-Complete-Transparency"></figure>
+
+                            </div>
+                            <div id="tabs-2">
+                                <figure><img src="/images/novagems-img/maid-service/Invoice-Templates.png" alt="Invoice-Templates"></figure>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-12">
+                        <div>
+                            <h3>Invoicing</h3>
+                            <p>Get paid quicker and faster without any errors. With error-free invoices, you can invest in the future of your cleaning business and manage your finances. </p>
+                            <h4 class="open-features">Key Features</h4>
+                        </div>
+                        <ul class="tab-slaider" id="accordion" role="tablist">
+                            <li>
+                                <a class="step circle active" href="#tabs-1">
+                                    <div class="tag">
+                                        <div class="icon">
+                                            <div class="block">
+                                                <div class="circle"></div>
+                                            </div>
+                                        </div>
+                                        <img class="active-img" src="/images/novagems-img/dot.svg" alt="dot">
+                                        <span class="title headimg-color">
+                                            Offer Complete Transparency</span>
+                                    </div>
+                                </a>
+                                <div class="addon fadein addon-h">
+                                    <span>Novagems is a complete maid business software that will help you manage your business from A to Z. Calculate the total hours scheduled and the actual hours worked and offer the right price range for the same. Reduce overhead costs and make the most of your employees' time. </span>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#tabs-2">
+                                    <div class="tag">
+                                        <div class="icon">
+                                            <div class="block">
+                                                <div class="circle"></div>
+                                            </div>
+                                        </div>
+                                        <img class="active-img" src="/images/novagems-img/dot.svg" alt="dot">
+                                        <span class="title headimg-color">Invoice Templates</span>
+                                    </div>
+                                </a>
+                                <div class="addon addon-h">
+                                    <span>For recurring cleaning jobs, easily maintain templates so that you do not have to start from the beginning every time. Investing in software is always a smart choice so that you can automate the processes from start to finish.</span>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="my-3" style="margin-left: 0px;">
+                            <div class="footer-newsletter features-newsletter">
+                                <form id="custom_incident_report">
+                                    <input type="email" id="custom-incident-report" name="custom-incident-report" placeholder="Enter your email address">
+                                    <input type="submit" value="Get Started for Free" class="background2">
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- client-management-->
+
+    <div class="mt-5">
+        <div class="container">
+            <div id="tabs5" class="row ">
+
+                <div class="col-lg-6 col-md-6 col-12">
+                    <div>
+                        <h3>Instant Notification & Alerts</h3>
+                        <p>A maid management system becomes a top choice for anyone if they keep everyone connected. Especially when your cleaners are in the field. With Novagems you can send any changes or special requirements on the go, without having
+                            any communication gap.</p>
+                        <h4 class="open-features">Key Features</h4>
+                    </div>
+                    <ul class="tab-slaider" id="accordion5" role="tablist">
+                        <li>
+                            <a class="step circle active" href="#tabs-11">
+                                <div class="tag">
+                                    <img class="active-img" src="/images/novagems-img/dot.svg" alt="dot">
+                                    <span class="title headimg-color">Job Updates</span>
+                                </div>
+                            </a>
+                            <div class="addon fadein addon-h">
+                                <span>Notify employees of new jobs, schedule changes, and cancellations in real time. This boosts the productivity and efficiency of the cleaners and makes them feel included. Even your staff can update you regarding any issues they might face while performing their shifts. 
+                                </span>
+                            </div>
+                        </li>
+
+                        <li>
+                            <a href="#tabs-22">
+                                <div class="tag">
+                                    <img class="active-img" src="/images/novagems-img/dot.svg" alt="dot">
+                                    <span class="title headimg-color">Emergency Alerts</span>
+                                </div>
+                            </a>
+                            <div class="addon fadein addon-h">
+                                <span>The staff can send urgent alerts from their mobiles if they are facing any issues to your team for immediate attention to critical issues. When the respective team has been informed swift action can be taken. </span>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="my-3" style="margin-left: 0px;">
+                        <div class="footer-newsletter features-newsletter">
+                            <form id="Dashboard_Analytics">
+                                <input type="email" id="Dashboard-Analytics" name="Dashboard-Analytics" placeholder="Enter your email address">
+                                <input type="submit" value="Get Started for Free" class="background2">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-12">
+                    <div class="img-iped">
+                        <div id="tabs-11">
+                            <figure><img src="/images/novagems-img/maid-service/Job-Updates.png" alt="Job-Updates"></figure>
+
+                        </div>
+                        <div id="tabs-22">
+                            <figure><img src="/images/novagems-img/maid-service/Emergency-Alerts.png" alt="Emergency-Alerts"></figure>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- -------- -->
+    <div id="Estimate" class="mt-5">
+        <div class="container">
+            <div id="tabs7" class="row ">
+
+
+                <div class="col-lg-6 col-md-6 col-12">
+                    <div class="img-iped">
+                        <div id="tabs-11">
+                            <figure><img src="/images/novagems-img/maid-service/Work-Order-Creation.png" alt="Work-Order-Creation"></figure>
+                        </div>
+                        <div id="tabs-22">
+                            <figure><img src="/images/novagems-img/maid-service/Track-Updates-In-Real-Time.png" alt="Track-Updates-In-Real-Time"></figure>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-12">
+                    <div>
+                        <h3>Work Order Management</h3>
+                        <p>Deliver high-quality services to your customers and make your cleaning services the top choice in the cleaning industry. Manage your whole operations from anywhere, anytime. Leverage the use of technology ti build your cleaning
+                            company.
+                        </p>
+                        <h4 class="open-features">Key Features</h4>
+                    </div>
+                    <ul class="tab-slaider" id="accordion7">
+                        <li>
+                            <a class="step circle active" href="#tabs-11">
+                                <div class="tag">
+                                    <img class="active-img" src="/images/novagems-img/dot.svg" alt="dot">
+                                    <span class="title headimg-color">Work Order Creation</span>
+                                </div>
+                            </a>
+                            <div class="addon fadein addon-h">
+                                <span>Easily create detailed work orders with all necessary information, including client details, job specifications, and special instructions. Make any changes while the staff is performing their shifts as per the client's requirements.</span>
+                            </div>
+                        </li>
+
+                        <li>
+                            <a href="#tabs-22">
+                                <div class="tag">
+                                    <img class="active-img" src="/images/novagems-img/dot.svg" alt="dot">
+                                    <span class="title headimg-color">Track Updates In Real Time</span>
+                                </div>
+                            </a>
+                            <div class="addon addon-h">
+                                <span>Update the status of work orders as they progress, providing visibility to both managers and the cleaners. With GPS Tracking and geofencing functionality, you can see the location of the staff at all times.
+                                </span>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="my-3" style="margin-left: 0px;">
+                        <div class="footer-newsletter features-newsletter">
+                            <form id="Mobile_Patrol">
+                                <input type="email" id="Mobile-Patrol" name="Mobile-Patrol" placeholder="Enter your email address">
+                                <input type="submit" value="Get Started for Free" class="background2">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ------------------------ -->
+    <div id="Invoices" class="mt-5">
+        <div class="container">
+            <div id="tabs8" class="row ">
+
+                <div class="col-lg-6 col-md-6 col-12">
+                    <div>
+                        <h3>Client Management</h3>
+                        <p>Building and maintaining strong client relationships is essential for business growth. Our software includes powerful client management features to enhance your customer service. With increased customer satisfaction you can build
+                            a loyal community. </p>
+                        <h4 class="open-features">Key Features</h4>
+                    </div>
+                    <ul class="tab-slaider" id="accordion8">
+                        <li>
+                            <a class="step circle active" href="#tabs-11">
+                                <div class="tag">
+                                    <img class="active-img" src="/images/novagems-img/dot.svg" alt="dot">
+                                    <span class="title headimg-color">Share Progress And Issues Reports </span>
+                                </div>
+                            </a>
+                            <div class="addon fadein addon-h">
+                                <span>Keep clients in the loop with what is happening. Whether they are away from the site send them reports of the task completed and gain their trust. This depicts that you are professional and trustworthy.
+                                </span>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#tabs-22">
+                                <div class="tag">
+                                    <img class="active-img" src="/images/novagems-img/dot.svg" alt="dot">
+                                    <span class="title headimg-color">Improved Client Relationships</span>
+                                </div>
+                            </a>
+                            <div class="addon addon-h">
+                                <span>By maintaining detailed and organized client profiles, you can provide a more personalized service. Build stronger relationships and increase client satisfaction and loyalty.
+                                </span>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="my-3" style="margin-left: 0px;">
+                        <div class="footer-newsletter features-newsletter">
+                            <form id="Mobile_Patrol">
+                                <input type="email" id="Mobile-Patrol" name="Mobile-Patrol" placeholder="Enter your email address">
+                                <input type="submit" value="Get Started for Free" class="background2">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-12">
+                    <div class="img-iped">
+                        <div id="tabs-11">
+                            <figure><img src="/images/novagems-img/maid-service/Share-Progress-Issues-Reports.png" alt="Share-Progress-Issues-Reports"></figure>
+                        </div>
+                        <div id="tabs-22">
+                            <figure><img src="/images/novagems-img/maid-service/Improved-Client-Relationships.png" alt="Improved-Client-Relationships"></figure>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- -------------- -->
+    <!-- ------------------------ -->
+    <div id="Invoices" class="mt-5">
+        <div class="container">
+            <div id="tabs6" class="row ">
+                <div class="col-lg-6 col-md-6 col-12">
+                    <div class="img-iped">
+                        <div id="tabs-11">
+                            <figure><img src="/images/novagems-img/maid-service/Remote-Management.png" alt="Remote-Management"></figure>
+                        </div>
+                        <div id="tabs-22">
+                            <figure><img src="/images/novagems-img/maid-service/Offline-Access.png" alt="Offline Access"></figure>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-lg-6 col-md-6 col-12">
+                    <div>
+                        <h3>Mobile Accessibility</h3>
+                        <p>Stay connected even in low connectivity areas with your team. Manage your whole operations from the palm of your hand without having to stick to your desk all day. Have access to your business on the go. </p>
+                        <h4 class="open-features">Key Features</h4>
+                    </div>
+                    <ul class="tab-slaider" id="accordion6">
+                        <li>
+                            <a class="step circle active" href="#tabs-11">
+                                <div class="tag">
+                                    <img class="active-img" src="/images/novagems-img/dot.svg" alt="dot">
+                                    <span class="title headimg-color">Remote Management</span>
+                                </div>
+                            </a>
+                            <div class="addon fadein addon-h">
+                                <span>Manage schedules, track employees, and communicate with clients from your mobile device, enhancing flexibility and responsiveness. Make the lives of both employees and managers easier as the managers can make changes promptly and the employees can see those changes without missing a beat.
+                                </span>
+                            </div>
+                        </li>
+
+                        <li>
+                            <a href="#tabs-22">
+                                <div class="tag">
+                                    <img class="active-img" src="/images/novagems-img/dot.svg" alt="dot">
+                                    <span class="title headimg-color">Offline Access</span>
+                                </div>
+                            </a>
+                            <div class="addon addon-h">
+                                <span>Use essential features even without internet access, ensuring continuous operation in any situation. Even in low connectivity areas the system will generate reports and create the reports.
+
+                                </span>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="my-3" style="margin-left: 0px;">
+                        <div class="footer-newsletter features-newsletter">
+                            <form id="Mobile_Patrol">
+                                <input type="email" id="Mobile-Patrol" name="Mobile-Patrol" placeholder="Enter your email address">
+                                <input type="submit" value="Get Started for Free" class="background2">
+                            </form>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- -------------- -->
+
+    <div class="bottombg">
+        <div class="container-fluid my-5 example">
+            <div class="row">
+                <div class="col-md-12 mt-5 mb-5 text-center ">
+                    <p class="subheading tex-h color4">Our customer reviews</p>
+                    <h3 class="hero-h1">Join 100,000+ highly productive team members</h3>
+                </div>
+            </div>
+
+            <div>
+                {{- partial "customerReviews.html" . -}}
+            </div>
+        </div>
+
+
+        <div class="whychoose mt-5 mb-5">
+            <div class="container">
+                <div class="col-md-10 mx-auto">
+                    <div class="row">
+                        <div class="col-md-12 text-center mt-5 mb-2">
+                            <p class="subheading tex-h color2">Knowledge</p>
+                            <h3>Interesting Topics</h3>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-12 text-center">
+                            <div class="mt-5">
+                                <h5>What makes a strong maid service software?</h5>
+                                <p>A strong maid service software should offer seamless staff scheduling, real-time employee tracking, and easy reporting. It must also include invoicing and payment processing capabilities. Additionally, mobile accessibility
+                                    ensures efficient management on the go.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div> {{- partial "faq.html" . -}}</div>
+    <div>
+        {{- partial "resources.html" . -}}
+    </div>
+
+</div>
+
+
+{{end}}

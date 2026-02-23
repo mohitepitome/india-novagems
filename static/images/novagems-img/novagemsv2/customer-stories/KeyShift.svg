@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="185.061" height="92.803" viewBox="0 0 185.061 92.803">
+  <defs>
+    <clipPath id="clip-path">
+      <path id="Path_13931" data-name="Path 13931" d="M0-.011s38.271-3.968,65.271,15.4,28.79,62.069,28.79,62.069H0Z" transform="translate(1236 1941.543)" fill="#50c25f"/>
+    </clipPath>
+  </defs>
+  <g id="Group_10159" data-name="Group 10159" transform="translate(-1145 -1941.197)">
+    <text id="_98_" data-name="98%" transform="translate(1236 2025)" fill="#f4c043" font-size="32" font-family="OpenSans-SemiBold, Open Sans" font-weight="600"><tspan x="-32" y="0">98%</tspan></text>
+    <path id="Path_13925" data-name="Path 13925" d="M152.386,152.5A90.888,90.888,0,0,0,61.5,243.386h9.843a81.043,81.043,0,1,1,162.086,0h9.843A90.888,90.888,0,0,0,152.386,152.5" transform="translate(1083.5 1790.5)" fill="#f2f2f2"/>
+    <path id="Path_13927" data-name="Path 13927" d="M0,90.886H9.843A81.038,81.038,0,0,1,90.886,9.843V0A90.888,90.888,0,0,0,0,90.886" transform="translate(1145 1943)" fill="#f4c043"/>
+    <g id="Mask_Group_35" data-name="Mask Group 35" clip-path="url(#clip-path)">
+      <path id="Path_13930" data-name="Path 13930" d="M90.887,90.886H81.043A80.533,80.533,0,0,0,57.308,33.579,80.534,80.534,0,0,0,0,9.843V0A90.888,90.888,0,0,1,90.887,90.886" transform="translate(1235.886 1943.114)" fill="#f4c043"/>
+    </g>
+  </g>
+</svg>

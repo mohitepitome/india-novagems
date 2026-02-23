@@ -1,0 +1,385 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="774" height="506" viewBox="0 0 774 506">
+  <defs>
+    <filter id="Rectangle_5724" x="0" y="0" width="774" height="506" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="13" result="blur"/>
+      <feFlood flood-opacity="0.102"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Rectangle_8" x="498" y="12" width="275" height="158" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="18" result="blur-2"/>
+      <feFlood flood-color="#50c25f" flood-opacity="0.6"/>
+      <feComposite operator="in" in2="blur-2"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Rectangle_5851" x="243" y="282" width="233" height="224" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur-3"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur-3"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Rectangle_5851-2" x="458" y="367" width="234" height="101" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur-4"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur-4"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Group_10020" data-name="Group 10020" transform="translate(-921 -4582)">
+    <g id="Group_10019" data-name="Group 10019" transform="translate(24 4408)">
+      <g transform="matrix(1, 0, 0, 1, 897, 174)" filter="url(#Rectangle_5724)">
+        <rect id="Rectangle_5724-2" data-name="Rectangle 5724" width="696" height="428" rx="16" transform="translate(39 36)" fill="#fff"/>
+      </g>
+      <g id="Group_7953" data-name="Group 7953" transform="translate(-112 -2169)">
+        <g id="Shift_Box" data-name="Shift Box" transform="translate(1516 2542)">
+          <path id="Rectangle_3134" data-name="Rectangle 3134" d="M0,0H208a4,4,0,0,1,4,4V57a4,4,0,0,1-4,4H0Z" fill="#e4f5ff"/>
+          <rect id="Rectangle_3" data-name="Rectangle 3" width="4" height="12" rx="2" transform="translate(0 25)" fill="#00c551"/>
+          <g id="Group_4262" data-name="Group 4262" transform="translate(-343 -224)">
+            <text id="_08:00_-_18:00" data-name="08:00 - 18:00" transform="translate(349 247)" fill="#323a45" font-size="14" font-family="Nunito Sans"><tspan x="0" y="0">08:00 - 18:00</tspan></text>
+            <g id="Group_5619" data-name="Group 5619">
+              <text id="Add_Guard" data-name="Add Guard" transform="translate(371 270)" fill="#323a45" font-size="12" font-family="Nunito Sans"><tspan x="0" y="0">Simon Knight</tspan></text>
+              <g id="Group_13_Copy_3" data-name="Group 13 Copy 3" transform="translate(349.254 256.254)">
+                <g id="Oval_Copy_7" data-name="Oval Copy 7" transform="translate(-0.255 -0.255)" fill="#fff" stroke="#ff7d51" stroke-width="0.5">
+                  <circle cx="10" cy="10" r="10" stroke="none"/>
+                  <circle cx="10" cy="10" r="9.75" fill="none"/>
+                </g>
+                <text id="SK" transform="translate(3.745 12.745)" fill="#ff7d51" font-size="10" font-family="Nunito Sans" font-weight="700"><tspan x="0" y="0">SK</tspan></text>
+              </g>
+            </g>
+            <g id="Group_21" data-name="Group 21" transform="translate(481 234)">
+              <text id="_12_26" data-name="12/26" transform="translate(13 12)" fill="#323a45" font-size="12" font-family="Nunito Sans"><tspan x="0" y="0">12/27</tspan></text>
+            </g>
+            <g id="Group_6_Copy_3" data-name="Group 6 Copy 3" transform="translate(506 256)">
+              <g id="Oval_Copy_8" data-name="Oval Copy 8" fill="#fff" stroke="#8b959e" stroke-width="1" stroke-dasharray="1 1">
+                <circle cx="10" cy="10" r="10" stroke="none"/>
+                <circle cx="10" cy="10" r="9.5" fill="none"/>
+              </g>
+              <text id="_2" data-name="2" transform="translate(6.4 14)" fill="#8b959e" font-size="12" font-family="Nunito Sans"><tspan x="0" y="0">2</tspan></text>
+            </g>
+            <g id="Group_10" data-name="Group 10" transform="translate(494 256)">
+              <g id="Oval_Copy_7-2" data-name="Oval Copy 7" fill="#f4f5f5" stroke="#fff" stroke-width="1">
+                <circle cx="10" cy="10" r="10" stroke="none"/>
+                <circle cx="10" cy="10" r="9.5" fill="none"/>
+              </g>
+              <text id="_23_" data-name="23+" transform="translate(3.4 14)" fill="#8b959e" font-size="11" font-family="Nunito Sans"><tspan x="0" y="0">+3</tspan></text>
+            </g>
+            <path id="person_FILL1_wght300_GRAD0_opsz48" d="M13.974,14.494a2.128,2.128,0,0,1-2.2-2.2,2.117,2.117,0,0,1,.622-1.575,2.16,2.16,0,0,1,1.584-.614,2.16,2.16,0,0,1,1.584.614,2.117,2.117,0,0,1,.622,1.575,2.128,2.128,0,0,1-2.2,2.2ZM9,19.551v-1.26a1.565,1.565,0,0,1,.282-.929,1.875,1.875,0,0,1,.73-.614,12.139,12.139,0,0,1,2.031-.7,8.275,8.275,0,0,1,1.932-.232,8,8,0,0,1,1.932.24,13.181,13.181,0,0,1,2.015.688,1.849,1.849,0,0,1,.746.614,1.565,1.565,0,0,1,.282.929v1.26Z" transform="translate(472.982 226.933)" fill="#8b959e"/>
+          </g>
+        </g>
+        <g id="Shift_Box-2" data-name="Shift Box" transform="translate(1294 2542)">
+          <path id="Rectangle_3134-2" data-name="Rectangle 3134" d="M0,0H208a4,4,0,0,1,4,4V57a4,4,0,0,1-4,4H0Z" fill="#e7ffe7"/>
+          <rect id="Rectangle_3-2" data-name="Rectangle 3" width="4" height="12" rx="2" transform="translate(0 25)" fill="#00c551"/>
+          <g id="Group_4262-2" data-name="Group 4262" transform="translate(-343 -224)">
+            <text id="Add_Guard-2" data-name="Add Guard" transform="translate(371 270)" fill="#323a45" font-size="12" font-family="Nunito Sans"><tspan x="0" y="0">Simon Knight</tspan></text>
+            <text id="_08:00_-_18:00-2" data-name="08:00 - 18:00" transform="translate(349 247)" fill="#323a45" font-size="14" font-family="Nunito Sans"><tspan x="0" y="0">08:00 - 18:00</tspan></text>
+            <g id="Group_13_Copy_3-2" data-name="Group 13 Copy 3" transform="translate(349.255 256.255)">
+              <g id="Oval_Copy_7-3" data-name="Oval Copy 7" transform="translate(-0.255 -0.255)" fill="#fff" stroke="#ff7d51" stroke-width="0.5">
+                <circle cx="10" cy="10" r="10" stroke="none"/>
+                <circle cx="10" cy="10" r="9.75" fill="none"/>
+              </g>
+              <text id="SK-2" data-name="SK" transform="translate(3.745 12.745)" fill="#ff7d51" font-size="10" font-family="Nunito Sans" font-weight="700"><tspan x="0" y="0">SK</tspan></text>
+            </g>
+            <g id="Group_21-2" data-name="Group 21" transform="translate(481 234)">
+              <text id="_12_26-2" data-name="12/26" transform="translate(13 12)" fill="#323a45" font-size="12" font-family="Nunito Sans"><tspan x="0" y="0">12/27</tspan></text>
+            </g>
+            <g id="Group_6_Copy_3-2" data-name="Group 6 Copy 3" transform="translate(506 256)">
+              <g id="Oval_Copy_8-2" data-name="Oval Copy 8" fill="#fff" stroke="#8b959e" stroke-width="1" stroke-dasharray="1 1">
+                <circle cx="10" cy="10" r="10" stroke="none"/>
+                <circle cx="10" cy="10" r="9.5" fill="none"/>
+              </g>
+              <text id="_2-2" data-name="2" transform="translate(6.4 14)" fill="#8b959e" font-size="12" font-family="Nunito Sans"><tspan x="0" y="0">2</tspan></text>
+            </g>
+            <g id="Group_10-2" data-name="Group 10" transform="translate(494 256)">
+              <g id="Oval_Copy_7-4" data-name="Oval Copy 7" fill="#f4f5f5" stroke="#fff" stroke-width="1">
+                <circle cx="10" cy="10" r="10" stroke="none"/>
+                <circle cx="10" cy="10" r="9.5" fill="none"/>
+              </g>
+              <text id="_23_2" data-name="23+" transform="translate(3.4 14)" fill="#8b959e" font-size="11" font-family="Nunito Sans"><tspan x="0" y="0">+3</tspan></text>
+            </g>
+            <path id="person_FILL1_wght300_GRAD0_opsz48-2" data-name="person_FILL1_wght300_GRAD0_opsz48" d="M13.974,14.494a2.128,2.128,0,0,1-2.2-2.2,2.117,2.117,0,0,1,.622-1.575,2.16,2.16,0,0,1,1.584-.614,2.16,2.16,0,0,1,1.584.614,2.117,2.117,0,0,1,.622,1.575,2.128,2.128,0,0,1-2.2,2.2ZM9,19.551v-1.26a1.565,1.565,0,0,1,.282-.929,1.875,1.875,0,0,1,.73-.614,12.139,12.139,0,0,1,2.031-.7,8.275,8.275,0,0,1,1.932-.232,8,8,0,0,1,1.932.24,13.181,13.181,0,0,1,2.015.688,1.849,1.849,0,0,1,.746.614,1.565,1.565,0,0,1,.282.929v1.26Z" transform="translate(472.982 226.933)" fill="#8b959e"/>
+          </g>
+        </g>
+        <g id="Shift_Box-3" data-name="Shift Box" transform="translate(1294 2613)">
+          <path id="Rectangle_3134-3" data-name="Rectangle 3134" d="M0,0H208a4,4,0,0,1,4,4V57a4,4,0,0,1-4,4H0Z" fill="#fff9e6"/>
+          <rect id="Rectangle_3-3" data-name="Rectangle 3" width="4" height="12" rx="2" transform="translate(0 25)" fill="#00c551"/>
+          <g id="Group_4262-3" data-name="Group 4262" transform="translate(-343 -224)">
+            <text id="Add_Guard-3" data-name="Add Guard" transform="translate(371 270)" fill="#323a45" font-size="12" font-family="Nunito Sans"><tspan x="0" y="0">Simon Knight</tspan></text>
+            <text id="_08:00_-_18:00-3" data-name="08:00 - 18:00" transform="translate(349 247)" fill="#323a45" font-size="14" font-family="Nunito Sans"><tspan x="0" y="0">08:00 - 18:00</tspan></text>
+            <g id="Group_13_Copy_3-3" data-name="Group 13 Copy 3" transform="translate(349.255 256.255)">
+              <g id="Oval_Copy_7-5" data-name="Oval Copy 7" transform="translate(-0.255 -0.255)" fill="#fff" stroke="#ff7d51" stroke-width="0.5">
+                <circle cx="10" cy="10" r="10" stroke="none"/>
+                <circle cx="10" cy="10" r="9.75" fill="none"/>
+              </g>
+              <text id="SK-3" data-name="SK" transform="translate(3.745 12.745)" fill="#ff7d51" font-size="10" font-family="Nunito Sans" font-weight="700"><tspan x="0" y="0">SK</tspan></text>
+            </g>
+            <g id="Group_21-3" data-name="Group 21" transform="translate(481 234)">
+              <text id="_12_26-3" data-name="12/26" transform="translate(13 12)" fill="#323a45" font-size="12" font-family="Nunito Sans"><tspan x="0" y="0">12/27</tspan></text>
+            </g>
+            <g id="Group_6_Copy_3-3" data-name="Group 6 Copy 3" transform="translate(506 256)">
+              <g id="Oval_Copy_8-3" data-name="Oval Copy 8" fill="#fff" stroke="#8b959e" stroke-width="1" stroke-dasharray="1 1">
+                <circle cx="10" cy="10" r="10" stroke="none"/>
+                <circle cx="10" cy="10" r="9.5" fill="none"/>
+              </g>
+              <text id="_2-3" data-name="2" transform="translate(6.4 14)" fill="#8b959e" font-size="12" font-family="Nunito Sans"><tspan x="0" y="0">2</tspan></text>
+            </g>
+            <g id="Group_10-3" data-name="Group 10" transform="translate(494 256)">
+              <g id="Oval_Copy_7-6" data-name="Oval Copy 7" fill="#f4f5f5" stroke="#fff" stroke-width="1">
+                <circle cx="10" cy="10" r="10" stroke="none"/>
+                <circle cx="10" cy="10" r="9.5" fill="none"/>
+              </g>
+              <text id="_23_3" data-name="23+" transform="translate(3.4 14)" fill="#8b959e" font-size="11" font-family="Nunito Sans"><tspan x="0" y="0">+3</tspan></text>
+            </g>
+            <path id="person_FILL1_wght300_GRAD0_opsz48-3" data-name="person_FILL1_wght300_GRAD0_opsz48" d="M13.974,14.494a2.128,2.128,0,0,1-2.2-2.2,2.117,2.117,0,0,1,.622-1.575,2.16,2.16,0,0,1,1.584-.614,2.16,2.16,0,0,1,1.584.614,2.117,2.117,0,0,1,.622,1.575,2.128,2.128,0,0,1-2.2,2.2ZM9,19.551v-1.26a1.565,1.565,0,0,1,.282-.929,1.875,1.875,0,0,1,.73-.614,12.139,12.139,0,0,1,2.031-.7,8.275,8.275,0,0,1,1.932-.232,8,8,0,0,1,1.932.24,13.181,13.181,0,0,1,2.015.688,1.849,1.849,0,0,1,.746.614,1.565,1.565,0,0,1,.282.929v1.26Z" transform="translate(472.982 226.933)" fill="#8b959e"/>
+          </g>
+        </g>
+        <g id="Shift_Box-4" data-name="Shift Box" transform="translate(1294 2684)">
+          <path id="Rectangle_3134-4" data-name="Rectangle 3134" d="M0,0H208a4,4,0,0,1,4,4V57a4,4,0,0,1-4,4H0Z" fill="#f7f8fa"/>
+          <rect id="Rectangle_3-4" data-name="Rectangle 3" width="4" height="12" rx="2" transform="translate(0 25)" fill="#8b959e"/>
+          <g id="Group_4262-4" data-name="Group 4262" transform="translate(-343 -224)">
+            <text id="Add_Guard-4" data-name="Add Guard" transform="translate(371 270)" fill="#8b959e" font-size="12" font-family="Nunito Sans"><tspan x="0" y="0">Simon Knight</tspan></text>
+            <text id="_08:00_-_18:00-4" data-name="08:00 - 18:00" transform="translate(349 247)" fill="#8b959e" font-size="14" font-family="Nunito Sans"><tspan x="0" y="0">08:00 - 18:00</tspan></text>
+            <g id="Group_13_Copy_3-4" data-name="Group 13 Copy 3" transform="translate(349.255 256.255)">
+              <g id="Oval_Copy_7-7" data-name="Oval Copy 7" transform="translate(-0.255 -0.255)" fill="#fff" stroke="#8b959e" stroke-width="0.5">
+                <circle cx="10" cy="10" r="10" stroke="none"/>
+                <circle cx="10" cy="10" r="9.75" fill="none"/>
+              </g>
+              <text id="SK-4" data-name="SK" transform="translate(3.745 12.745)" fill="#8b959e" font-size="10" font-family="Nunito Sans" font-weight="700"><tspan x="0" y="0">SK</tspan></text>
+            </g>
+            <g id="Group_21-4" data-name="Group 21" transform="translate(481 234)">
+              <text id="_12_26-4" data-name="12/26" transform="translate(13 12)" fill="#8b959e" font-size="12" font-family="Nunito Sans"><tspan x="0" y="0">12/27</tspan></text>
+            </g>
+            <g id="Group_6_Copy_3-4" data-name="Group 6 Copy 3" transform="translate(506 256)">
+              <g id="Oval_Copy_8-4" data-name="Oval Copy 8" fill="#fff" stroke="#8b959e" stroke-width="1" stroke-dasharray="1 1">
+                <circle cx="10" cy="10" r="10" stroke="none"/>
+                <circle cx="10" cy="10" r="9.5" fill="none"/>
+              </g>
+              <text id="_2-4" data-name="2" transform="translate(6.4 14)" fill="#8b959e" font-size="12" font-family="Nunito Sans"><tspan x="0" y="0">2</tspan></text>
+            </g>
+            <g id="Group_10-4" data-name="Group 10" transform="translate(494 256)">
+              <g id="Oval_Copy_7-8" data-name="Oval Copy 7" fill="#f4f5f5" stroke="#fff" stroke-width="1">
+                <circle cx="10" cy="10" r="10" stroke="none"/>
+                <circle cx="10" cy="10" r="9.5" fill="none"/>
+              </g>
+              <text id="_23_4" data-name="23+" transform="translate(3.4 14)" fill="#8b959e" font-size="11" font-family="Nunito Sans"><tspan x="0" y="0">+3</tspan></text>
+            </g>
+            <path id="person_FILL1_wght300_GRAD0_opsz48-4" data-name="person_FILL1_wght300_GRAD0_opsz48" d="M13.974,14.494a2.128,2.128,0,0,1-2.2-2.2,2.117,2.117,0,0,1,.622-1.575,2.16,2.16,0,0,1,1.584-.614,2.16,2.16,0,0,1,1.584.614,2.117,2.117,0,0,1,.622,1.575,2.128,2.128,0,0,1-2.2,2.2ZM9,19.551v-1.26a1.565,1.565,0,0,1,.282-.929,1.875,1.875,0,0,1,.73-.614,12.139,12.139,0,0,1,2.031-.7,8.275,8.275,0,0,1,1.932-.232,8,8,0,0,1,1.932.24,13.181,13.181,0,0,1,2.015.688,1.849,1.849,0,0,1,.746.614,1.565,1.565,0,0,1,.282.929v1.26Z" transform="translate(472.982 226.933)" fill="#8b959e"/>
+          </g>
+          <path id="unpublished_FILL0_wght200_GRAD0_opsz24" d="M88.832-842.364l-2.44-2.44a6.323,6.323,0,0,1-1.793,1.013,6.043,6.043,0,0,1-2.1.362,6.1,6.1,0,0,1-2.441-.493,6.322,6.322,0,0,1-1.988-1.338,6.322,6.322,0,0,1-1.338-1.988,6.1,6.1,0,0,1-.493-2.441,6.043,6.043,0,0,1,.362-2.1,6.323,6.323,0,0,1,1.013-1.793l-2.15-2.15.5-.5L89.328-842.86Zm-6.336-1.76a5.252,5.252,0,0,0,1.828-.316,5.738,5.738,0,0,0,1.564-.868l-3.03-3.03L81.5-846.971l-2.475-2.475.492-.492,1.982,1.982.871-.875-4.251-4.251a5.737,5.737,0,0,0-.868,1.564,5.252,5.252,0,0,0-.316,1.828,5.364,5.364,0,0,0,1.626,3.939,5.364,5.364,0,0,0,3.944,1.627Zm5.3-2.22-.518-.518a5.333,5.333,0,0,0,.579-1.331,5.483,5.483,0,0,0,.2-1.5,5.364,5.364,0,0,0-1.626-3.939,5.364,5.364,0,0,0-3.939-1.626,5.489,5.489,0,0,0-1.493.2,5.326,5.326,0,0,0-1.333.578l-.518-.52a6.37,6.37,0,0,1,1.573-.706,6.2,6.2,0,0,1,1.771-.25,6.1,6.1,0,0,1,2.441.493,6.322,6.322,0,0,1,1.988,1.338,6.322,6.322,0,0,1,1.338,1.988,6.1,6.1,0,0,1,.493,2.441,6.2,6.2,0,0,1-.25,1.771,6.365,6.365,0,0,1-.7,1.578Zm-3.463-3.467-.492-.492,1.608-1.608.492.492ZM83.477-850.671ZM82-849.2Z" transform="translate(115.875 867.23)" fill="#8b959e"/>
+        </g>
+        <g id="Shift_Box-5" data-name="Shift Box" transform="translate(1516 2684)">
+          <path id="Rectangle_3134-5" data-name="Rectangle 3134" d="M0,0H208a4,4,0,0,1,4,4V57a4,4,0,0,1-4,4H0Z" fill="#f7f8fa"/>
+          <rect id="Rectangle_3-5" data-name="Rectangle 3" width="4" height="12" rx="2" transform="translate(0 25)" fill="#8b959e"/>
+          <g id="Group_4262-5" data-name="Group 4262" transform="translate(-343 -224)">
+            <text id="Add_Guard-5" data-name="Add Guard" transform="translate(371 270)" fill="#8b959e" font-size="12" font-family="Nunito Sans"><tspan x="0" y="0">Simon Knight</tspan></text>
+            <text id="_08:00_-_18:00-5" data-name="08:00 - 18:00" transform="translate(349 247)" fill="#8b959e" font-size="14" font-family="Nunito Sans"><tspan x="0" y="0">08:00 - 18:00</tspan></text>
+            <g id="Group_13_Copy_3-5" data-name="Group 13 Copy 3" transform="translate(349.255 256.255)">
+              <g id="Oval_Copy_7-9" data-name="Oval Copy 7" transform="translate(-0.255 -0.255)" fill="#fff" stroke="#8b959e" stroke-width="0.5">
+                <circle cx="10" cy="10" r="10" stroke="none"/>
+                <circle cx="10" cy="10" r="9.75" fill="none"/>
+              </g>
+              <text id="SK-5" data-name="SK" transform="translate(3.745 12.745)" fill="#8b959e" font-size="10" font-family="Nunito Sans" font-weight="700"><tspan x="0" y="0">SK</tspan></text>
+            </g>
+            <g id="Group_21-5" data-name="Group 21" transform="translate(481 234)">
+              <text id="_12_26-5" data-name="12/26" transform="translate(13 12)" fill="#8b959e" font-size="12" font-family="Nunito Sans"><tspan x="0" y="0">12/27</tspan></text>
+            </g>
+            <g id="Group_6_Copy_3-5" data-name="Group 6 Copy 3" transform="translate(506 256)">
+              <g id="Oval_Copy_8-5" data-name="Oval Copy 8" fill="#fff" stroke="#8b959e" stroke-width="1" stroke-dasharray="1 1">
+                <circle cx="10" cy="10" r="10" stroke="none"/>
+                <circle cx="10" cy="10" r="9.5" fill="none"/>
+              </g>
+              <text id="_2-5" data-name="2" transform="translate(6.4 14)" fill="#8b959e" font-size="12" font-family="Nunito Sans"><tspan x="0" y="0">2</tspan></text>
+            </g>
+            <g id="Group_10-5" data-name="Group 10" transform="translate(494 256)">
+              <g id="Oval_Copy_7-10" data-name="Oval Copy 7" fill="#f4f5f5" stroke="#fff" stroke-width="1">
+                <circle cx="10" cy="10" r="10" stroke="none"/>
+                <circle cx="10" cy="10" r="9.5" fill="none"/>
+              </g>
+              <text id="_23_5" data-name="23+" transform="translate(3.4 14)" fill="#8b959e" font-size="11" font-family="Nunito Sans"><tspan x="0" y="0">+3</tspan></text>
+            </g>
+            <path id="person_FILL1_wght300_GRAD0_opsz48-5" data-name="person_FILL1_wght300_GRAD0_opsz48" d="M13.974,14.494a2.128,2.128,0,0,1-2.2-2.2,2.117,2.117,0,0,1,.622-1.575,2.16,2.16,0,0,1,1.584-.614,2.16,2.16,0,0,1,1.584.614,2.117,2.117,0,0,1,.622,1.575,2.128,2.128,0,0,1-2.2,2.2ZM9,19.551v-1.26a1.565,1.565,0,0,1,.282-.929,1.875,1.875,0,0,1,.73-.614,12.139,12.139,0,0,1,2.031-.7,8.275,8.275,0,0,1,1.932-.232,8,8,0,0,1,1.932.24,13.181,13.181,0,0,1,2.015.688,1.849,1.849,0,0,1,.746.614,1.565,1.565,0,0,1,.282.929v1.26Z" transform="translate(472.982 226.933)" fill="#8b959e"/>
+          </g>
+          <path id="unpublished_FILL0_wght200_GRAD0_opsz24-2" data-name="unpublished_FILL0_wght200_GRAD0_opsz24" d="M88.832-842.364l-2.44-2.44a6.323,6.323,0,0,1-1.793,1.013,6.043,6.043,0,0,1-2.1.362,6.1,6.1,0,0,1-2.441-.493,6.322,6.322,0,0,1-1.988-1.338,6.322,6.322,0,0,1-1.338-1.988,6.1,6.1,0,0,1-.493-2.441,6.043,6.043,0,0,1,.362-2.1,6.323,6.323,0,0,1,1.013-1.793l-2.15-2.15.5-.5L89.328-842.86Zm-6.336-1.76a5.252,5.252,0,0,0,1.828-.316,5.738,5.738,0,0,0,1.564-.868l-3.03-3.03L81.5-846.971l-2.475-2.475.492-.492,1.982,1.982.871-.875-4.251-4.251a5.737,5.737,0,0,0-.868,1.564,5.252,5.252,0,0,0-.316,1.828,5.364,5.364,0,0,0,1.626,3.939,5.364,5.364,0,0,0,3.944,1.627Zm5.3-2.22-.518-.518a5.333,5.333,0,0,0,.579-1.331,5.483,5.483,0,0,0,.2-1.5,5.364,5.364,0,0,0-1.626-3.939,5.364,5.364,0,0,0-3.939-1.626,5.489,5.489,0,0,0-1.493.2,5.326,5.326,0,0,0-1.333.578l-.518-.52a6.37,6.37,0,0,1,1.573-.706,6.2,6.2,0,0,1,1.771-.25,6.1,6.1,0,0,1,2.441.493,6.322,6.322,0,0,1,1.988,1.338,6.322,6.322,0,0,1,1.338,1.988,6.1,6.1,0,0,1,.493,2.441,6.2,6.2,0,0,1-.25,1.771,6.365,6.365,0,0,1-.7,1.578Zm-3.463-3.467-.492-.492,1.608-1.608.492.492ZM83.477-850.671ZM82-849.2Z" transform="translate(115.875 867.23)" fill="#8b959e"/>
+        </g>
+      </g>
+      <g id="Group_6018" data-name="Group 6018" transform="translate(615 178)">
+        <rect id="Rectangle_12" data-name="Rectangle 12" width="65" height="22" rx="4" transform="translate(641 141)" fill="#786ce6"/>
+        <text id="Tue_15" data-name="Tue 15" transform="translate(649.948 157)" fill="#fff" font-size="14" font-family="Nunito Sans"><tspan x="0" y="0">Mon 15</tspan></text>
+      </g>
+      <g id="Group_4249" data-name="Group 4249" transform="translate(842.8 170.033)">
+        <g id="Group_4247" data-name="Group 4247" transform="translate(-14)">
+          <text id="_0_1" data-name="0/1" transform="translate(484.082 189.967)" fill="#8b959e" font-size="14" font-family="Nunito Sans"><tspan x="0" y="0">32</tspan></text>
+          <path id="calendar_month_FILL0_wght300_GRAD0_opsz20" d="M4.584,15.678a1.115,1.115,0,0,1-.83-.346,1.138,1.138,0,0,1-.337-.821V5.321a1.135,1.135,0,0,1,.337-.82,1.114,1.114,0,0,1,.83-.347h1.6V2.312h.967V4.154h4.065V2.312h.949V4.154h1.6a1.114,1.114,0,0,1,.83.347,1.135,1.135,0,0,1,.337.82v9.19a1.138,1.138,0,0,1-.337.821,1.115,1.115,0,0,1-.83.346Zm0-.948h9.19a.256.256,0,0,0,.219-.219V8.384H4.365v6.127a.256.256,0,0,0,.219.219ZM4.365,7.437h9.628V5.321a.256.256,0,0,0-.219-.219H4.584a.256.256,0,0,0-.219.219ZM4.365,7.437Zm4.814,3.409a.56.56,0,0,1-.565-.565.576.576,0,0,1,.165-.41.565.565,0,0,1,.965.392.576.576,0,0,1-.165.41.531.531,0,0,1-.4.172Zm-2.845,0a.56.56,0,0,1-.565-.565.576.576,0,0,1,.165-.41.565.565,0,0,1,.965.392.576.576,0,0,1-.165.41.531.531,0,0,1-.4.172Zm5.689,0a.56.56,0,0,1-.565-.565.576.576,0,0,1,.165-.41.565.565,0,0,1,.965.392.576.576,0,0,1-.165.41.531.531,0,0,1-.4.172ZM9.179,13.417a.562.562,0,0,1-.565-.565.576.576,0,0,1,.165-.41.565.565,0,0,1,.965.392.576.576,0,0,1-.165.41.53.53,0,0,1-.4.173Zm-2.845,0a.562.562,0,0,1-.565-.565.576.576,0,0,1,.165-.41.565.565,0,0,1,.965.392.576.576,0,0,1-.165.41.53.53,0,0,1-.4.173Zm5.689,0a.562.562,0,0,1-.565-.565.576.576,0,0,1,.165-.41.565.565,0,0,1,.965.392.576.576,0,0,1-.165.41.53.53,0,0,1-.4.173Z" transform="translate(465.583 175.688)" fill="#8b959e"/>
+        </g>
+        <g id="Group_4246" data-name="Group 4246">
+          <text id="_0_1-2" data-name="0/1" transform="translate(421.124 189.967)" fill="#8b959e" font-size="14" font-family="Nunito Sans"><tspan x="0" y="0">29</tspan></text>
+          <path id="schedule_FILL0_wght300_GRAD0_opsz48" d="M14.321,14.936l.6-.6-2.8-2.814V7.99H11.33v3.851Zm-2.638,3.429a6.475,6.475,0,0,1-2.594-.528,6.678,6.678,0,1,1,5.188,0,6.475,6.475,0,0,1-2.594.528ZM11.683,11.683Zm0,5.892a5.672,5.672,0,0,0,4.159-1.732,5.672,5.672,0,0,0,1.732-4.159,5.672,5.672,0,0,0-1.732-4.159,5.672,5.672,0,0,0-4.159-1.732A5.672,5.672,0,0,0,7.524,7.524a5.672,5.672,0,0,0-1.732,4.159,5.672,5.672,0,0,0,1.732,4.159,5.672,5.672,0,0,0,4.159,1.732Z" transform="translate(399.2 173)" fill="#8b959e"/>
+        </g>
+      </g>
+      <text id="Wed_16" data-name="Wed 16" transform="translate(1488.44 335)" fill="#323a45" font-size="14" font-family="Nunito Sans"><tspan x="0" y="0">Tue 16</tspan></text>
+      <g id="Group_4250" data-name="Group 4250" transform="translate(1064.8 170.033)">
+        <g id="Group_4247-2" data-name="Group 4247" transform="translate(-14)">
+          <text id="_0_1-3" data-name="0/1" transform="translate(484.082 189.967)" fill="#8b959e" font-size="14" font-family="Nunito Sans"><tspan x="0" y="0">32</tspan></text>
+          <path id="calendar_month_FILL0_wght300_GRAD0_opsz20-2" data-name="calendar_month_FILL0_wght300_GRAD0_opsz20" d="M4.584,15.678a1.115,1.115,0,0,1-.83-.346,1.138,1.138,0,0,1-.337-.821V5.321a1.135,1.135,0,0,1,.337-.82,1.114,1.114,0,0,1,.83-.347h1.6V2.312h.967V4.154h4.065V2.312h.949V4.154h1.6a1.114,1.114,0,0,1,.83.347,1.135,1.135,0,0,1,.337.82v9.19a1.138,1.138,0,0,1-.337.821,1.115,1.115,0,0,1-.83.346Zm0-.948h9.19a.256.256,0,0,0,.219-.219V8.384H4.365v6.127a.256.256,0,0,0,.219.219ZM4.365,7.437h9.628V5.321a.256.256,0,0,0-.219-.219H4.584a.256.256,0,0,0-.219.219ZM4.365,7.437Zm4.814,3.409a.56.56,0,0,1-.565-.565.576.576,0,0,1,.165-.41.565.565,0,0,1,.965.392.576.576,0,0,1-.165.41.531.531,0,0,1-.4.172Zm-2.845,0a.56.56,0,0,1-.565-.565.576.576,0,0,1,.165-.41.565.565,0,0,1,.965.392.576.576,0,0,1-.165.41.531.531,0,0,1-.4.172Zm5.689,0a.56.56,0,0,1-.565-.565.576.576,0,0,1,.165-.41.565.565,0,0,1,.965.392.576.576,0,0,1-.165.41.531.531,0,0,1-.4.172ZM9.179,13.417a.562.562,0,0,1-.565-.565.576.576,0,0,1,.165-.41.565.565,0,0,1,.965.392.576.576,0,0,1-.165.41.53.53,0,0,1-.4.173Zm-2.845,0a.562.562,0,0,1-.565-.565.576.576,0,0,1,.165-.41.565.565,0,0,1,.965.392.576.576,0,0,1-.165.41.53.53,0,0,1-.4.173Zm5.689,0a.562.562,0,0,1-.565-.565.576.576,0,0,1,.165-.41.565.565,0,0,1,.965.392.576.576,0,0,1-.165.41.53.53,0,0,1-.4.173Z" transform="translate(465.583 175.688)" fill="#8b959e"/>
+        </g>
+        <g id="Group_4246-2" data-name="Group 4246">
+          <text id="_0_1-4" data-name="0/1" transform="translate(421.124 189.967)" fill="#8b959e" font-size="14" font-family="Nunito Sans"><tspan x="0" y="0">29</tspan></text>
+          <path id="schedule_FILL0_wght300_GRAD0_opsz48-2" data-name="schedule_FILL0_wght300_GRAD0_opsz48" d="M14.321,14.936l.6-.6-2.8-2.814V7.99H11.33v3.851Zm-2.638,3.429a6.475,6.475,0,0,1-2.594-.528,6.678,6.678,0,1,1,5.188,0,6.475,6.475,0,0,1-2.594.528ZM11.683,11.683Zm0,5.892a5.672,5.672,0,0,0,4.159-1.732,5.672,5.672,0,0,0,1.732-4.159,5.672,5.672,0,0,0-1.732-4.159,5.672,5.672,0,0,0-4.159-1.732A5.672,5.672,0,0,0,7.524,7.524a5.672,5.672,0,0,0-1.732,4.159,5.672,5.672,0,0,0,1.732,4.159,5.672,5.672,0,0,0,4.159,1.732Z" transform="translate(399.2 173)" fill="#8b959e"/>
+        </g>
+      </g>
+      <g id="Group_4258" data-name="Group 4258" transform="translate(863 145)">
+        <text id="The_Walt_Disney_Comp" data-name="The Walt Disney Comp" transform="translate(122 242)" fill="#323a45" font-size="14" font-family="Nunito Sans"><tspan x="0" y="0">A One Professional</tspan></text>
+        <text id="_972_Sylvan_Street_So" data-name="972 Sylvan Street So" transform="translate(122 262)" fill="#8b959e" font-size="13" font-family="Nunito Sans"><tspan x="0" y="0">Sylvan Street South Angelina..</tspan></text>
+        <g id="Site_Icon_Dynamic" data-name="Site Icon Dynamic" transform="translate(89 228)">
+          <g id="Oval_Copy" data-name="Oval Copy">
+            <circle id="Oval_Copy-2" data-name="Oval Copy" cx="12.5" cy="12.5" r="12.5" fill="none"/>
+            <circle id="Oval_Copy-3" data-name="Oval Copy" cx="12.5" cy="12.5" r="12.5" fill="#bd84c8"/>
+          </g>
+          <text id="T" transform="translate(7.831 18)" fill="#fff" font-size="14" font-family="Playfair Display" font-weight="700"><tspan x="0" y="0">A</tspan></text>
+        </g>
+        <g id="Group_4257" data-name="Group 4257" transform="translate(0 -6)">
+          <g id="Group_4247-3" data-name="Group 4247" transform="translate(-244 99.033)">
+            <text id="_0_1-5" data-name="0/1" transform="translate(484.082 189.967)" fill="#8b959e" font-size="14" font-family="Nunito Sans"><tspan x="0" y="0">32</tspan></text>
+            <path id="calendar_month_FILL0_wght300_GRAD0_opsz20-3" data-name="calendar_month_FILL0_wght300_GRAD0_opsz20" d="M4.584,15.678a1.115,1.115,0,0,1-.83-.346,1.138,1.138,0,0,1-.337-.821V5.321a1.135,1.135,0,0,1,.337-.82,1.114,1.114,0,0,1,.83-.347h1.6V2.312h.967V4.154h4.065V2.312h.949V4.154h1.6a1.114,1.114,0,0,1,.83.347,1.135,1.135,0,0,1,.337.82v9.19a1.138,1.138,0,0,1-.337.821,1.115,1.115,0,0,1-.83.346Zm0-.948h9.19a.256.256,0,0,0,.219-.219V8.384H4.365v6.127a.256.256,0,0,0,.219.219ZM4.365,7.437h9.628V5.321a.256.256,0,0,0-.219-.219H4.584a.256.256,0,0,0-.219.219ZM4.365,7.437Zm4.814,3.409a.56.56,0,0,1-.565-.565.576.576,0,0,1,.165-.41.565.565,0,0,1,.965.392.576.576,0,0,1-.165.41.531.531,0,0,1-.4.172Zm-2.845,0a.56.56,0,0,1-.565-.565.576.576,0,0,1,.165-.41.565.565,0,0,1,.965.392.576.576,0,0,1-.165.41.531.531,0,0,1-.4.172Zm5.689,0a.56.56,0,0,1-.565-.565.576.576,0,0,1,.165-.41.565.565,0,0,1,.965.392.576.576,0,0,1-.165.41.531.531,0,0,1-.4.172ZM9.179,13.417a.562.562,0,0,1-.565-.565.576.576,0,0,1,.165-.41.565.565,0,0,1,.965.392.576.576,0,0,1-.165.41.53.53,0,0,1-.4.173Zm-2.845,0a.562.562,0,0,1-.565-.565.576.576,0,0,1,.165-.41.565.565,0,0,1,.965.392.576.576,0,0,1-.165.41.53.53,0,0,1-.4.173Zm5.689,0a.562.562,0,0,1-.565-.565.576.576,0,0,1,.165-.41.565.565,0,0,1,.965.392.576.576,0,0,1-.165.41.53.53,0,0,1-.4.173Z" transform="translate(465.583 175.688)" fill="#8b959e"/>
+          </g>
+          <g id="Group_4246-3" data-name="Group 4246" transform="translate(-230.2 99.033)">
+            <text id="_0_1-6" data-name="0/1" transform="translate(421.124 189.967)" fill="#8b959e" font-size="14" font-family="Nunito Sans"><tspan x="0" y="0">29</tspan></text>
+            <path id="schedule_FILL0_wght300_GRAD0_opsz48-3" data-name="schedule_FILL0_wght300_GRAD0_opsz48" d="M14.321,14.936l.6-.6-2.8-2.814V7.99H11.33v3.851Zm-2.638,3.429a6.475,6.475,0,0,1-2.594-.528,6.678,6.678,0,1,1,5.188,0,6.475,6.475,0,0,1-2.594.528ZM11.683,11.683Zm0,5.892a5.672,5.672,0,0,0,4.159-1.732,5.672,5.672,0,0,0,1.732-4.159,5.672,5.672,0,0,0-1.732-4.159,5.672,5.672,0,0,0-4.159-1.732A5.672,5.672,0,0,0,7.524,7.524a5.672,5.672,0,0,0-1.732,4.159,5.672,5.672,0,0,0,1.732,4.159,5.672,5.672,0,0,0,4.159,1.732Z" transform="translate(399.2 173)" fill="#8b959e"/>
+          </g>
+          <g id="Group_4256" data-name="Group 4256">
+            <text id="_0_1-7" data-name="0/1" transform="translate(139.924 289)" fill="#8b959e" font-size="14" font-family="Nunito Sans"><tspan x="0" y="0">29</tspan></text>
+            <path id="person_FILL0_wght300_GRAD0_opsz48" d="M16.035,16.314A3.009,3.009,0,0,1,12.916,13.2a2.994,2.994,0,0,1,.879-2.228,3.055,3.055,0,0,1,2.239-.868,3.055,3.055,0,0,1,2.239.868,2.994,2.994,0,0,1,.879,2.228,3.009,3.009,0,0,1-3.119,3.119ZM9,23.466V21.684a2.213,2.213,0,0,1,.4-1.313,2.652,2.652,0,0,1,1.03-.871,17.167,17.167,0,0,1,2.872-.985,11.7,11.7,0,0,1,2.732-.328,11.32,11.32,0,0,1,2.732.34,17.27,17.27,0,0,1,2.849,1,2.653,2.653,0,0,1,1.055.856,2.161,2.161,0,0,1,.4,1.3v1.782Zm1.055-1.055H22.014v-.727a1.207,1.207,0,0,0-.234-.692,1.594,1.594,0,0,0-.61-.528,11.607,11.607,0,0,0-2.615-.95,11.746,11.746,0,0,0-2.521-.27,12.072,12.072,0,0,0-2.544.27,11.088,11.088,0,0,0-2.615.95,1.646,1.646,0,0,0-.586.528,1.207,1.207,0,0,0-.234.692Zm5.979-7.152a1.974,1.974,0,0,0,1.454-.586,2,2,0,0,0,.586-1.477,2.04,2.04,0,0,0-4.08,0,2,2,0,0,0,.586,1.477,1.974,1.974,0,0,0,1.455.586ZM16.035,13.2ZM16.035,22.411Z" transform="translate(113 266.9)" fill="#8b959e"/>
+          </g>
+        </g>
+      </g>
+      <g id="Group_7954" data-name="Group 7954" transform="translate(863 216)">
+        <text id="The_Walt_Disney_Comp-2" data-name="The Walt Disney Comp" transform="translate(122 242)" fill="#323a45" font-size="14" font-family="Nunito Sans"><tspan x="0" y="0">Boss Cyber Security</tspan></text>
+        <text id="_972_Sylvan_Street_So-2" data-name="972 Sylvan Street So" transform="translate(122 262)" fill="#8b959e" font-size="13" font-family="Nunito Sans"><tspan x="0" y="0">Sylvan Street South Angelina..</tspan></text>
+        <g id="Site_Icon_Dynamic-2" data-name="Site Icon Dynamic" transform="translate(89 228)">
+          <g id="Oval_Copy-4" data-name="Oval Copy">
+            <circle id="Oval_Copy-5" data-name="Oval Copy" cx="12.5" cy="12.5" r="12.5" fill="none"/>
+            <circle id="Oval_Copy-6" data-name="Oval Copy" cx="12.5" cy="12.5" r="12.5" fill="#6ea9d8"/>
+          </g>
+          <text id="T-2" data-name="T" transform="translate(7.796 18)" fill="#fff" font-size="14" font-family="Playfair Display" font-weight="700"><tspan x="0" y="0">B</tspan></text>
+        </g>
+        <g id="Group_4257-2" data-name="Group 4257" transform="translate(0 -6)">
+          <g id="Group_4247-4" data-name="Group 4247" transform="translate(-244 99.033)">
+            <text id="_0_1-8" data-name="0/1" transform="translate(484.082 189.967)" fill="#8b959e" font-size="14" font-family="Nunito Sans"><tspan x="0" y="0">32</tspan></text>
+            <path id="calendar_month_FILL0_wght300_GRAD0_opsz20-4" data-name="calendar_month_FILL0_wght300_GRAD0_opsz20" d="M4.584,15.678a1.115,1.115,0,0,1-.83-.346,1.138,1.138,0,0,1-.337-.821V5.321a1.135,1.135,0,0,1,.337-.82,1.114,1.114,0,0,1,.83-.347h1.6V2.312h.967V4.154h4.065V2.312h.949V4.154h1.6a1.114,1.114,0,0,1,.83.347,1.135,1.135,0,0,1,.337.82v9.19a1.138,1.138,0,0,1-.337.821,1.115,1.115,0,0,1-.83.346Zm0-.948h9.19a.256.256,0,0,0,.219-.219V8.384H4.365v6.127a.256.256,0,0,0,.219.219ZM4.365,7.437h9.628V5.321a.256.256,0,0,0-.219-.219H4.584a.256.256,0,0,0-.219.219ZM4.365,7.437Zm4.814,3.409a.56.56,0,0,1-.565-.565.576.576,0,0,1,.165-.41.565.565,0,0,1,.965.392.576.576,0,0,1-.165.41.531.531,0,0,1-.4.172Zm-2.845,0a.56.56,0,0,1-.565-.565.576.576,0,0,1,.165-.41.565.565,0,0,1,.965.392.576.576,0,0,1-.165.41.531.531,0,0,1-.4.172Zm5.689,0a.56.56,0,0,1-.565-.565.576.576,0,0,1,.165-.41.565.565,0,0,1,.965.392.576.576,0,0,1-.165.41.531.531,0,0,1-.4.172ZM9.179,13.417a.562.562,0,0,1-.565-.565.576.576,0,0,1,.165-.41.565.565,0,0,1,.965.392.576.576,0,0,1-.165.41.53.53,0,0,1-.4.173Zm-2.845,0a.562.562,0,0,1-.565-.565.576.576,0,0,1,.165-.41.565.565,0,0,1,.965.392.576.576,0,0,1-.165.41.53.53,0,0,1-.4.173Zm5.689,0a.562.562,0,0,1-.565-.565.576.576,0,0,1,.165-.41.565.565,0,0,1,.965.392.576.576,0,0,1-.165.41.53.53,0,0,1-.4.173Z" transform="translate(465.583 175.688)" fill="#8b959e"/>
+          </g>
+          <g id="Group_4246-4" data-name="Group 4246" transform="translate(-230.2 99.033)">
+            <text id="_0_1-9" data-name="0/1" transform="translate(421.124 189.967)" fill="#8b959e" font-size="14" font-family="Nunito Sans"><tspan x="0" y="0">29</tspan></text>
+            <path id="schedule_FILL0_wght300_GRAD0_opsz48-4" data-name="schedule_FILL0_wght300_GRAD0_opsz48" d="M14.321,14.936l.6-.6-2.8-2.814V7.99H11.33v3.851Zm-2.638,3.429a6.475,6.475,0,0,1-2.594-.528,6.678,6.678,0,1,1,5.188,0,6.475,6.475,0,0,1-2.594.528ZM11.683,11.683Zm0,5.892a5.672,5.672,0,0,0,4.159-1.732,5.672,5.672,0,0,0,1.732-4.159,5.672,5.672,0,0,0-1.732-4.159,5.672,5.672,0,0,0-4.159-1.732A5.672,5.672,0,0,0,7.524,7.524a5.672,5.672,0,0,0-1.732,4.159,5.672,5.672,0,0,0,1.732,4.159,5.672,5.672,0,0,0,4.159,1.732Z" transform="translate(399.2 173)" fill="#8b959e"/>
+          </g>
+          <g id="Group_4256-2" data-name="Group 4256">
+            <text id="_0_1-10" data-name="0/1" transform="translate(139.924 289)" fill="#8b959e" font-size="14" font-family="Nunito Sans"><tspan x="0" y="0">29</tspan></text>
+            <path id="person_FILL0_wght300_GRAD0_opsz48-2" data-name="person_FILL0_wght300_GRAD0_opsz48" d="M16.035,16.314A3.009,3.009,0,0,1,12.916,13.2a2.994,2.994,0,0,1,.879-2.228,3.055,3.055,0,0,1,2.239-.868,3.055,3.055,0,0,1,2.239.868,2.994,2.994,0,0,1,.879,2.228,3.009,3.009,0,0,1-3.119,3.119ZM9,23.466V21.684a2.213,2.213,0,0,1,.4-1.313,2.652,2.652,0,0,1,1.03-.871,17.167,17.167,0,0,1,2.872-.985,11.7,11.7,0,0,1,2.732-.328,11.32,11.32,0,0,1,2.732.34,17.27,17.27,0,0,1,2.849,1,2.653,2.653,0,0,1,1.055.856,2.161,2.161,0,0,1,.4,1.3v1.782Zm1.055-1.055H22.014v-.727a1.207,1.207,0,0,0-.234-.692,1.594,1.594,0,0,0-.61-.528,11.607,11.607,0,0,0-2.615-.95,11.746,11.746,0,0,0-2.521-.27,12.072,12.072,0,0,0-2.544.27,11.088,11.088,0,0,0-2.615.95,1.646,1.646,0,0,0-.586.528,1.207,1.207,0,0,0-.234.692Zm5.979-7.152a1.974,1.974,0,0,0,1.454-.586,2,2,0,0,0,.586-1.477,2.04,2.04,0,0,0-4.08,0,2,2,0,0,0,.586,1.477,1.974,1.974,0,0,0,1.455.586ZM16.035,13.2ZM16.035,22.411Z" transform="translate(113 266.9)" fill="#8b959e"/>
+          </g>
+        </g>
+      </g>
+      <g id="Group_7955" data-name="Group 7955" transform="translate(863 287)">
+        <text id="The_Walt_Disney_Comp-3" data-name="The Walt Disney Comp" transform="translate(122 242)" fill="#323a45" font-size="14" font-family="Nunito Sans"><tspan x="0" y="0">Cytel Infotech</tspan></text>
+        <text id="_972_Sylvan_Street_So-3" data-name="972 Sylvan Street So" transform="translate(122 262)" fill="#8b959e" font-size="13" font-family="Nunito Sans"><tspan x="0" y="0">Sylvan Street South Angelina..</tspan></text>
+        <g id="Site_Icon_Dynamic-3" data-name="Site Icon Dynamic" transform="translate(89 228)">
+          <g id="Oval_Copy-7" data-name="Oval Copy">
+            <circle id="Oval_Copy-8" data-name="Oval Copy" cx="12.5" cy="12.5" r="12.5" fill="none"/>
+            <circle id="Oval_Copy-9" data-name="Oval Copy" cx="12.5" cy="12.5" r="12.5" fill="#4fb1de"/>
+          </g>
+          <text id="T-3" data-name="T" transform="translate(7.565 18)" fill="#fff" font-size="14" font-family="Playfair Display" font-weight="700"><tspan x="0" y="0">C</tspan></text>
+        </g>
+        <g id="Group_4257-3" data-name="Group 4257" transform="translate(0 -6)">
+          <g id="Group_4247-5" data-name="Group 4247" transform="translate(-244 99.033)">
+            <text id="_0_1-11" data-name="0/1" transform="translate(484.082 189.967)" fill="#8b959e" font-size="14" font-family="Nunito Sans"><tspan x="0" y="0">32</tspan></text>
+            <path id="calendar_month_FILL0_wght300_GRAD0_opsz20-5" data-name="calendar_month_FILL0_wght300_GRAD0_opsz20" d="M4.584,15.678a1.115,1.115,0,0,1-.83-.346,1.138,1.138,0,0,1-.337-.821V5.321a1.135,1.135,0,0,1,.337-.82,1.114,1.114,0,0,1,.83-.347h1.6V2.312h.967V4.154h4.065V2.312h.949V4.154h1.6a1.114,1.114,0,0,1,.83.347,1.135,1.135,0,0,1,.337.82v9.19a1.138,1.138,0,0,1-.337.821,1.115,1.115,0,0,1-.83.346Zm0-.948h9.19a.256.256,0,0,0,.219-.219V8.384H4.365v6.127a.256.256,0,0,0,.219.219ZM4.365,7.437h9.628V5.321a.256.256,0,0,0-.219-.219H4.584a.256.256,0,0,0-.219.219ZM4.365,7.437Zm4.814,3.409a.56.56,0,0,1-.565-.565.576.576,0,0,1,.165-.41.565.565,0,0,1,.965.392.576.576,0,0,1-.165.41.531.531,0,0,1-.4.172Zm-2.845,0a.56.56,0,0,1-.565-.565.576.576,0,0,1,.165-.41.565.565,0,0,1,.965.392.576.576,0,0,1-.165.41.531.531,0,0,1-.4.172Zm5.689,0a.56.56,0,0,1-.565-.565.576.576,0,0,1,.165-.41.565.565,0,0,1,.965.392.576.576,0,0,1-.165.41.531.531,0,0,1-.4.172ZM9.179,13.417a.562.562,0,0,1-.565-.565.576.576,0,0,1,.165-.41.565.565,0,0,1,.965.392.576.576,0,0,1-.165.41.53.53,0,0,1-.4.173Zm-2.845,0a.562.562,0,0,1-.565-.565.576.576,0,0,1,.165-.41.565.565,0,0,1,.965.392.576.576,0,0,1-.165.41.53.53,0,0,1-.4.173Zm5.689,0a.562.562,0,0,1-.565-.565.576.576,0,0,1,.165-.41.565.565,0,0,1,.965.392.576.576,0,0,1-.165.41.53.53,0,0,1-.4.173Z" transform="translate(465.583 175.688)" fill="#8b959e"/>
+          </g>
+          <g id="Group_4246-5" data-name="Group 4246" transform="translate(-230.2 99.033)">
+            <text id="_0_1-12" data-name="0/1" transform="translate(421.124 189.967)" fill="#8b959e" font-size="14" font-family="Nunito Sans"><tspan x="0" y="0">29</tspan></text>
+            <path id="schedule_FILL0_wght300_GRAD0_opsz48-5" data-name="schedule_FILL0_wght300_GRAD0_opsz48" d="M14.321,14.936l.6-.6-2.8-2.814V7.99H11.33v3.851Zm-2.638,3.429a6.475,6.475,0,0,1-2.594-.528,6.678,6.678,0,1,1,5.188,0,6.475,6.475,0,0,1-2.594.528ZM11.683,11.683Zm0,5.892a5.672,5.672,0,0,0,4.159-1.732,5.672,5.672,0,0,0,1.732-4.159,5.672,5.672,0,0,0-1.732-4.159,5.672,5.672,0,0,0-4.159-1.732A5.672,5.672,0,0,0,7.524,7.524a5.672,5.672,0,0,0-1.732,4.159,5.672,5.672,0,0,0,1.732,4.159,5.672,5.672,0,0,0,4.159,1.732Z" transform="translate(399.2 173)" fill="#8b959e"/>
+          </g>
+          <g id="Group_4256-3" data-name="Group 4256">
+            <text id="_0_1-13" data-name="0/1" transform="translate(139.924 289)" fill="#8b959e" font-size="14" font-family="Nunito Sans"><tspan x="0" y="0">29</tspan></text>
+            <path id="person_FILL0_wght300_GRAD0_opsz48-3" data-name="person_FILL0_wght300_GRAD0_opsz48" d="M16.035,16.314A3.009,3.009,0,0,1,12.916,13.2a2.994,2.994,0,0,1,.879-2.228,3.055,3.055,0,0,1,2.239-.868,3.055,3.055,0,0,1,2.239.868,2.994,2.994,0,0,1,.879,2.228,3.009,3.009,0,0,1-3.119,3.119ZM9,23.466V21.684a2.213,2.213,0,0,1,.4-1.313,2.652,2.652,0,0,1,1.03-.871,17.167,17.167,0,0,1,2.872-.985,11.7,11.7,0,0,1,2.732-.328,11.32,11.32,0,0,1,2.732.34,17.27,17.27,0,0,1,2.849,1,2.653,2.653,0,0,1,1.055.856,2.161,2.161,0,0,1,.4,1.3v1.782Zm1.055-1.055H22.014v-.727a1.207,1.207,0,0,0-.234-.692,1.594,1.594,0,0,0-.61-.528,11.607,11.607,0,0,0-2.615-.95,11.746,11.746,0,0,0-2.521-.27,12.072,12.072,0,0,0-2.544.27,11.088,11.088,0,0,0-2.615.95,1.646,1.646,0,0,0-.586.528,1.207,1.207,0,0,0-.234.692Zm5.979-7.152a1.974,1.974,0,0,0,1.454-.586,2,2,0,0,0,.586-1.477,2.04,2.04,0,0,0-4.08,0,2,2,0,0,0,.586,1.477,1.974,1.974,0,0,0,1.455.586ZM16.035,13.2ZM16.035,22.411Z" transform="translate(113 266.9)" fill="#8b959e"/>
+          </g>
+        </g>
+      </g>
+      <g id="Group_4255" data-name="Group 4255" transform="translate(879 177)">
+        <g id="Rectangle_809" data-name="Rectangle 809" transform="translate(73 142)" fill="#fff" stroke="#e6e6e6" stroke-width="1">
+          <rect width="211" height="40" rx="4" stroke="none"/>
+          <rect x="0.5" y="0.5" width="210" height="39" rx="3.5" fill="none"/>
+        </g>
+        <text id="Guard_name" data-name="Guard name" transform="translate(83 167)" fill="#8b959e" font-size="16" font-family="Nunito Sans" opacity="0.4"><tspan x="0" y="0">Search...</tspan></text>
+        <path id="search_FILL0_wght300_GRAD0_opsz48_2_" data-name="search_FILL0_wght300_GRAD0_opsz48 (2)" d="M18.742,19.275,14,14.553a4.04,4.04,0,0,1-1.267.738,4.33,4.33,0,0,1-1.5.264,4.415,4.415,0,1,1,4.127-2.911,4.281,4.281,0,0,1-.757,1.313l4.74,4.722Zm-7.512-4.54a3.412,3.412,0,0,0,2.516-1.048,3.479,3.479,0,0,0,1.039-2.543,3.578,3.578,0,1,0-3.555,3.592Z" transform="translate(252.067 149.25)" fill="#323a45"/>
+      </g>
+      <g id="Group_7958" data-name="Group 7958" transform="translate(-32 -2361)">
+        <g id="Rectangle_3658" data-name="Rectangle 3658" transform="translate(1141 2598)" fill="#fff" stroke="#dadada" stroke-width="1">
+          <rect width="147" height="50" rx="10" stroke="none"/>
+          <rect x="0.5" y="0.5" width="146" height="49" rx="9.5" fill="none"/>
+        </g>
+        <g id="Group_5191" data-name="Group 5191" transform="translate(1172 2611.48)">
+          <text id="Filter" transform="translate(43.244 17.52)" fill="#939599" font-size="18" font-family="Nunito Sans"><tspan x="0" y="0">Filter</tspan></text>
+          <path id="filter_list_FILL0_wght300_GRAD0_opsz48_1_" data-name="filter_list_FILL0_wght300_GRAD0_opsz48 (1)" d="M151.155-681.9v-1.867H156.8v1.867Zm-6.376-8.116v-1.867h18.4v1.867ZM140-698.132V-700h27.971v1.867Z" transform="translate(-140.001 702.519)" fill="#8b959e"/>
+        </g>
+      </g>
+      <g id="Group_7957" data-name="Group 7957" transform="translate(-24 -2361)">
+        <g id="Rectangle_3658-2" data-name="Rectangle 3658" transform="translate(976 2598)" fill="#fff" stroke="#dadada" stroke-width="1">
+          <rect width="147" height="50" rx="10" stroke="none"/>
+          <rect x="0.5" y="0.5" width="146" height="49" rx="9.5" fill="none"/>
+        </g>
+        <g id="Group_5581" data-name="Group 5581" transform="translate(992.1 2610.063)">
+          <g id="Group_5191-2" data-name="Group 5191" transform="translate(0 1)">
+            <text id="Week" transform="translate(7.9 17.937)" fill="#939599" font-size="18" font-family="Nunito Sans"><tspan x="0" y="0">Week</tspan></text>
+          </g>
+          <path id="expand_more_FILL0_wght300_GRAD0_opsz20" d="M13.7,17.117,5.292,8.667,6.667,7.292,13.7,14.325l7.035-7.033L22.11,8.667Z" transform="translate(85.63 0.645)" fill="#8b959e"/>
+        </g>
+      </g>
+      <g id="Group_7959" data-name="Group 7959" transform="translate(-38 -2361)">
+        <g id="Group_1365" data-name="Group 1365" transform="translate(1303.713 2598)">
+          <g id="Rectangle_801" data-name="Rectangle 801" transform="translate(0.287)" fill="#fff" stroke="#dadada" stroke-width="1">
+            <rect width="153" height="50" rx="10" stroke="none"/>
+            <rect x="0.5" y="0.5" width="152" height="49" rx="9.5" fill="none"/>
+          </g>
+        </g>
+        <g id="Group_4139" data-name="Group 4139" transform="translate(1322.207 2612)">
+          <text id="Site_View" data-name="Site View" transform="translate(38.322 17)" fill="#939599" font-size="18" font-family="Nunito Sans"><tspan x="0" y="0">Site View</tspan></text>
+          <path id="location_on_FILL0_wght300_GRAD0_opsz20" d="M12.869,13.369a2.169,2.169,0,1,0-1.533-.634,2.088,2.088,0,0,0,1.533.634Zm0,9.449a29.718,29.718,0,0,0,5.552-6.244,10.145,10.145,0,0,0,1.85-5.13,7.427,7.427,0,0,0-2.136-5.536A7.206,7.206,0,0,0,12.869,3.8,7.206,7.206,0,0,0,7.6,5.907a7.427,7.427,0,0,0-2.136,5.536,10.145,10.145,0,0,0,1.85,5.13,29.718,29.718,0,0,0,5.555,6.244Zm0,2.588a41.851,41.851,0,0,1-7.011-7.6,11.633,11.633,0,0,1-2.317-6.364,9.044,9.044,0,0,1,2.8-6.98,9.316,9.316,0,0,1,6.53-2.588A9.316,9.316,0,0,1,19.4,4.463a9.044,9.044,0,0,1,2.8,6.98,11.633,11.633,0,0,1-2.317,6.364,41.851,41.851,0,0,1-7.014,7.6ZM12.869,11.444Z" transform="translate(-2.749 -2.875)" fill="#8b959e"/>
+        </g>
+      </g>
+      <g id="Group_7960" data-name="Group 7960" transform="translate(-26 -2361)">
+        <g transform="matrix(1, 0, 0, 1, 923, 2535)" filter="url(#Rectangle_8)">
+          <rect id="Rectangle_8-2" data-name="Rectangle 8" width="167" height="50" rx="10" transform="translate(552 63)" fill="#50c25f"/>
+        </g>
+        <g id="Group_4150" data-name="Group 4150" transform="translate(1507 2611.063)">
+          <text id="Add_site" data-name="Add site" transform="translate(27.598 17.937)" fill="#fff" font-size="18" font-family="Nunito Sans"><tspan x="0" y="0">Add Shift</tspan></text>
+          <path id="add_FILL0_wght300_GRAD0_opsz20" d="M12.8,22.328V14.736H5.208V12.8H12.8V5.208h1.936V12.8h7.592v1.936H14.736v7.592Z" transform="translate(-5.208 -2.271)" fill="#fff"/>
+        </g>
+      </g>
+      <g id="Group_10016" data-name="Group 10016">
+        <rect id="Rectangle_5850" data-name="Rectangle 5850" width="18" height="18" rx="4" transform="translate(1149 445)" fill="#f7f8fa"/>
+        <path id="more_vert_24dp_5F6368_FILL0_wght300_GRAD0_opsz24" d="M421.123-759.89a1.081,1.081,0,0,1-.793-.33,1.081,1.081,0,0,1-.33-.793,1.081,1.081,0,0,1,.33-.793,1.081,1.081,0,0,1,.793-.33,1.081,1.081,0,0,1,.793.33,1.081,1.081,0,0,1,.33.793,1.081,1.081,0,0,1-.33.793A1.081,1.081,0,0,1,421.123-759.89Zm0-4.318a1.081,1.081,0,0,1-.793-.33,1.08,1.08,0,0,1-.33-.793,1.081,1.081,0,0,1,.33-.793,1.08,1.08,0,0,1,.793-.33,1.08,1.08,0,0,1,.793.33,1.081,1.081,0,0,1,.33.793,1.08,1.08,0,0,1-.33.793A1.081,1.081,0,0,1,421.123-764.207Zm0-4.318a1.081,1.081,0,0,1-.793-.33,1.081,1.081,0,0,1-.33-.793,1.081,1.081,0,0,1,.33-.793,1.081,1.081,0,0,1,.793-.33,1.081,1.081,0,0,1,.793.33,1.081,1.081,0,0,1,.33.793,1.081,1.081,0,0,1-.33.793A1.081,1.081,0,0,1,421.123-768.525Z" transform="translate(737 1219.77)" fill="#5f6368"/>
+      </g>
+      <g id="Group_10017" data-name="Group 10017" transform="translate(1149 462)">
+        <g transform="matrix(1, 0, 0, 1, -252, -288)" filter="url(#Rectangle_5851)">
+          <rect id="Rectangle_5851-3" data-name="Rectangle 5851" width="215" height="206" rx="4" transform="translate(252 288)" fill="#fff"/>
+        </g>
+        <path id="expand_more_FILL0_wght300_GRAD0_opsz20-2" data-name="expand_more_FILL0_wght300_GRAD0_opsz20" d="M7.13,8.331,0,1.166,1.166,0,7.13,5.964,13.1,0l1.166,1.166Z" transform="translate(193.389 190.742) rotate(-90)" fill="#ff3838"/>
+        <rect id="Rectangle_5852" data-name="Rectangle 5852" width="215" height="34" transform="translate(0 85)" fill="#786ce6"/>
+        <text id="Publish_This_Week_Unpublish_This_Week_Copy_Previous_Week_Archive_This_Week_Delete_This_Week" data-name="Publish This Week
+Unpublish This Week
+Copy Previous Week
+Archive This Week
+Delete This Week" transform="translate(13 29)" fill="#323a45" font-size="16" font-family="Open Sans"><tspan x="0" y="0">Publish This Week</tspan><tspan x="0" y="40">Unpublish This Week</tspan><tspan fill="#fff"><tspan x="0" y="80">Copy Previous Week</tspan></tspan><tspan x="0" y="120">Archive This Week</tspan><tspan fill="#ff3838"><tspan x="0" y="160">Delete This Week</tspan></tspan></text>
+        <path id="expand_more_FILL0_wght300_GRAD0_opsz20-3" data-name="expand_more_FILL0_wght300_GRAD0_opsz20" d="M7.13,8.331,0,1.166,1.166,0,7.13,5.964,13.1,0l1.166,1.166Z" transform="translate(193.389 108.336) rotate(-90)" fill="#fff"/>
+      </g>
+      <g id="Group_10018" data-name="Group 10018" transform="translate(1364.494 546.679)">
+        <g transform="matrix(1, 0, 0, 1, -467.49, -372.68)" filter="url(#Rectangle_5851-2)">
+          <rect id="Rectangle_5851-4" data-name="Rectangle 5851" width="216" height="83" rx="4" transform="translate(467 373)" fill="#fff"/>
+        </g>
+        <text id="Shift_Shift_User" data-name="Shift
+Shift + User" transform="translate(13.506 30.321)" fill="#323a45" font-size="16" font-family="Open Sans"><tspan x="0" y="0">Shift</tspan><tspan x="0" y="35">Shift + User</tspan></text>
+      </g>
+    </g>
+  </g>
+</svg>

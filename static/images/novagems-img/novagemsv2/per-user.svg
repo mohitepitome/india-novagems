@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="356" height="356" viewBox="0 0 356 356">
+  <g id="Group_8341" data-name="Group 8341" transform="translate(-375 -5500)">
+    <g id="Rectangle_5783" data-name="Rectangle 5783" transform="translate(375 5500)" fill="#fff" stroke="#786ce6" stroke-width="10">
+      <rect width="356" height="356" rx="50" stroke="none"/>
+      <rect x="5" y="5" width="346" height="346" rx="45" fill="none"/>
+    </g>
+    <g id="Rectangle_5784" data-name="Rectangle 5784" transform="translate(400 5525)" fill="#fff" stroke="#786ce6" stroke-width="10" opacity="0.6">
+      <rect width="306" height="306" rx="50" stroke="none"/>
+      <rect x="5" y="5" width="296" height="296" rx="45" fill="none"/>
+    </g>
+    <rect id="Rectangle_5785" data-name="Rectangle 5785" width="246" height="246" rx="50" transform="translate(430 5555)" fill="#e8e6ff"/>
+    <g id="Group_8340" data-name="Group 8340" transform="translate(0 19)">
+      <text id="per_user" data-name="per user" transform="translate(553 5705)" fill="#786ce6" font-size="34" font-family="Montserrat-Medium, Montserrat" font-weight="500"><tspan x="-70" y="0">per user</tspan></text>
+      <text id="_10" data-name="$10" transform="translate(553 5658)" fill="#786ce6" font-size="56" font-family="Montserrat-Bold, Montserrat" font-weight="700"><tspan x="-47" y="0">$10</tspan></text>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,28 @@
+<!-- Why Choose -->
+<div class="pt-4 mb-4" style="background-color: #fff;">
+    <div class="container">
+        <div class="col-md-12">
+            <div class="row">
+                <div class="col-md-12  text-center novagems-ph">
+                    <p class="subheading tex-h" style="color:#4693EA;">WHAT BUSINESSES ARE TALKING ABOUT</p>
+                    <h3 class="Workforce-h2">Stay Up To Date With Our Latest Blogs And Insights.</h3>
+                </div>
+            </div>
+            <div class="row ">
+                {{ range (.Paginator 3).Pages.ByPublishDate.Reverse }}
+                <div class="col-lg-4 col-md-6 col-12 phone-fast mt-4">
+                    <div class="grids purple blog-shadow ">
+                        {{ .Render "li"}}
+                    </div>
+                </div>
+                {{ end }}
+            </div>
+            <div class="row my-5">
+                <div class="col-md-12 text-center  hvr-icon-wobble-horizontal">
+                    <a rel=preload href="/blog" class="btn-arrow transparentbtn">View All </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Why Choose Ends -->

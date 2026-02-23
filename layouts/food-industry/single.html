@@ -1,0 +1,749 @@
+{{ define "main" }}
+<!-- schedule Section -->
+<div>
+    <div class="clock-in-out-bg">
+        <div class="container example">
+            <div class="row header-subwrapper-top ">
+                <div class="col-lg-7 col-md-7 col-12">
+                    <div>
+                        <div>
+                            <p style="color: #50C25F;">Simplify Staff Scheduling, Time Tracking, and Timesheets - All in One Platform</p>
+                            <h1 class="hero-h1">Scheduling Software for Food Services with Time Tracking and Timesheets </h1>
+                            <p>Novagems streamlines your food service operations with smart employee scheduling, GPS-based time tracking, and real-time alerts. From shift planning to payroll, manage your teams and keep your operations running smoothly. Your
+                                team deserves the best staff scheduling app that helps your business grow.</p>
+                        </div>
+                        <div class="row my-5">
+                            <div class="col-lg-9 col-md-11 col-12">
+                                <div class="footer-newsletter">
+                                    <form id="get-started-for-free">
+                                        <input type="email" id="email" name="email" placeholder="Enter your email address">
+                                        <input class="home-btn" type="submit" value="Get Started for Free">
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-1 col-12"></div>
+                        </div>
+                        <div id="load">
+                            <div class="container p-md-0" id="clientscroll">
+                                <section class="customer-logos slider" aria-live="polite" aria-label="Client Logos Carousel">
+                                    {{ range .Site.Data.CleaningCompanyClients.items }}
+                                    <div class="slide" role="option" aria-roledescription="client logo">
+                                        <div class="client-slide"><img style="width: 100%;" src="{{ .image | absURL }}" alt="{{.brand}}"></div>
+                                    </div>
+                                    {{end}}
+                                </section>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-5 col-md-5 col-12 p-0 img-iped-head all-img-left">
+                    <img src="/images/novagems-img/Food-Services.png" alt="Food-Services">
+                </div>
+            </div>
+
+        </div>
+
+
+
+
+
+        <div class="mt-5" style="background-color: #F7F8FA;">
+            <div class="container py-5">
+                <div class="col-md-12 text-center ">
+                    <h2 class=" mb-3">Features</h2>
+                </div>
+                <div class="row">
+                    <div class="col-lg-2 col-md-4 col-6 mt-3">
+                        <div class="clients text-center" style="padding: 30px 35px 30px 35px;">
+                            <figure style="margin-bottom: 20px;"><img class="key-img" src='{{"/images/novagems-img/healthcare/Scheduling-Healthcare.png" | absURL}}' alt="Scheduling"></figure>
+                            <p class="clients-p">Scheduling <br><br></p>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-4 col-6 mt-3">
+                        <div class="clients text-center ">
+                            <figure style="margin-bottom: 20px;"><img class="key-img" src='{{"/images/novagems-img/healthcare/Clock In-Out & Attendance.png" | absURL}}' alt="task&Post"></figure>
+                            <p class="clients-p">Attendance <br> management</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-4 col-6 mt-3">
+                        <div class="clients text-center">
+                            <figure style="margin-bottom: 20px;"><img class="key-img" src='{{"/images/novagems-img/healthcare/Timesheet & Payroll.png" | absURL}}' alt="Timesheet"></figure>
+                            <p class="clients-p">Timesheet & <br> Payroll</p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-2 col-md-4 col-6 mt-3">
+                        <div class="clients text-center">
+                            <figure style="margin-bottom: 20px;"><img class="key-img" src='{{"/images/novagems-img/cleaning-company/Shifts.png" | absURL}}' alt="Clock"></figure>
+                            <p class="clients-p">Time <br> tracking</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-4 col-6 mt-3">
+                        <div class="clients text-center">
+                            <figure style="margin-bottom: 20px;"><img class="key-img" src='{{"/images/novagems-img/healthcare/Location Tracking.png" | absURL}}' alt="gps-geofence"></figure>
+                            <p class="clients-p">GPS Location <br> Tracking</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-4 col-6 mt-3">
+                        <div class="clients text-center">
+                            <figure style="margin-bottom: 20px;"><img class="key-img" src='{{"/images/novagems-img/healthcare/EVV & Compliance.png" | absURL}}' alt="Chat"></figure>
+                            <p class="clients-p">Real-Time <br> Reporting</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ------------------------- -->
+
+    <div class="mt-5">
+        <div class="mt-5">
+            <div class="container example">
+                <div class="text-center mb-4">
+                    <h2 class="mb-1">Team Scheduling Software & Shift Management</h2>
+                    <p>Easily create, assign, and manage shifts without the hassle</p>
+                </div>
+                <div id="tabs" class="row align-items-center">
+                    <div class="col-lg-6 col-md-6 col-12 ">
+                        <div>
+                            <ul class="tab-slaider" id="accordion">
+                                <li>
+                                    <a class="step circle active" href="#tabs-Shift-Planing">
+                                        <div class="tag">
+                                            <div class="icon">
+                                                <div class="block">
+                                                    <div class="circle"></div>
+                                                </div>
+                                            </div>
+                                            <img class="active-img" src="/images/novagems-img/dot.svg" alt="dot">
+                                            <span class="title headimg-color">Plan And Create Cleaning Schedules</span>
+                                        </div>
+                                    </a>
+                                    <div class="addon fadein addon-h">
+                                        <span>Use drag-and-drop tools to assign shifts across roles like kitchen, bar, and floor. Access different views—table, monthly, or custom—to organize schedules how you prefer. Create recurring shifts and save shift templates for faster planning every week or month.</span>
+                                    </div>
+                                </li>
+
+                                <li>
+                                    <a href="#tabs-Open-Shifts">
+                                        <div class="tag">
+                                            <div class="icon">
+                                                <div class="block">
+                                                    <div class="circle"></div>
+                                                </div>
+                                            </div>
+                                            <img class="active-img" src="/images/novagems-img/dot.svg" alt="dot">
+                                            <span class="title headimg-color">Reduce Scheduling Errors</span>
+                                        </div>
+                                    </a>
+                                    <div class="addon addon-h">
+                                        <span>Color-coded scheduling helps you visualize who’s working where. You’ll also receive instant alerts if any shift overlaps or conflicts appear. Employees can confirm, accept, or decline their assigned shifts, helping you avoid no-shows or miscommunication.</span>
+                                    </div>
+                                </li>
+
+                                <li>
+                                    <a href="#tabs-Shift-Time&Cost-Analysis">
+                                        <div class="tag">
+                                            <img class="active-img " src="/images/novagems-img/dot.svg" alt="dot">
+                                            <span class="title headimg-color">Custom Views & Shift Templates</span>
+                                        </div>
+                                    </a>
+                                    <div class="addon addon-h">
+                                        <span>Use easy-to-read templates and real-time insights to view shift status, upcoming tasks, and employee responses - all from one place. This helps you stay on top of staff scheduling without constantly checking in.</span>
+                                    </div>
+                                </li>
+
+                            </ul>
+
+                            <div class="my-4" style="margin-left: 0px;">
+                                <div class="footer-newsletter features-newsletter">
+                                    <form id="tasks_Post_orders">
+                                        <input type="email" id="tasks-Post-orders" name="tasks-Post-orders" placeholder="Enter your email address">
+                                        <input type="submit" value="Get Started for Free" class="background4" id="btnsunscribe">
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6 col-md-6 col-12 employee-scheduling-phone ">
+                        <div class="text-center">
+                            <figure><img src="/images/novagems-img/cleaning-company/Simplify staff scheduling.png" alt="Generate-Multiple-and-Recurring-Schedules"></figure>
+                        </div>
+                        <div class="img-iped tab-image">
+                            <div id="tabs-Shift-Planing">
+                                <figure><img src="/images/novagems-img/healthcare/Healthcare-Staff-Scheduling.png" alt="Generate-Multiple-and-Recurring-Schedules"></figure>
+                            </div>
+                            <div id="tabs-Open-Shifts">
+                                <figure><img src="/images/novagems-img/healthcare/Healthcare-Staff-Scheduling.png" alt="AnalysisTheData"></figure>
+                            </div>
+                            <div id="tabs-Shift-Time&Cost-Analysis">
+                                <figure><img src="/images/novagems-img/healthcare/Healthcare-Staff-Scheduling.png" alt="Export-Scheduling"></figure>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Tasks & Post orders -->
+    <div class="dedicated-features-sec">
+        <div class="container example">
+            <div id="tabses" class="row align-items-center">
+                <div class="col-lg-6 col-md-6 col-12">
+                    <div class="text-center">
+                        <figure><img src="/images/novagems-img/food-Time.png" alt="Have-control-over-time-sheet"></figure>
+                    </div>
+                    <div class="img-iped tab-image">
+                        <div id="tabs-Timed-Tasks&checklist">
+                            <figure><img src="/images/novagems-img/healthcare/Healthcare-Staff-Time-Location-Tracking.png" alt="Have-control-over-time-sheet"></figure>
+                        </div>
+                        <div id="tabs-Automatic-Task-Confirmation">
+                            <figure><img src="/images/novagems-img/healthcare/Healthcare-Staff-Time-Location-Tracking.png" alt="Effortless-converted-worker"></figure>
+                        </div>
+                        <div id="tabs-Picture&Video-Proofs">
+                            <figure><img src="/images/novagems-img/healthcare/Healthcare-Staff-Time-Location-Tracking.png" alt="Real-time-data-analysis"></figure>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="col-lg-6 col-md-6 col-12">
+                    <div>
+                        <div>
+                            <h5>Employee Time Tracking & GPS Geofencing</h5>
+                            <p>Track shift hours, breaks, and overtime easily to prevent time theft</p>
+                        </div>
+                        <ul class="tab-slaider" id="accordiones">
+                            <li>
+                                <a class="step circle active" href="#tabs-Timed-Tasks&checklist">
+                                    <div class="tag">
+                                        <img class="active-img" src="/images/novagems-img/dot.svg" alt="dot">
+                                        <span class="title headimg-color">Mobile Clock-In/Out</span>
+                                    </div>
+                                </a>
+                                <div class="addon fadein addon-h">
+                                    <span>Allow staff to clock in and out through their mobile devices only when they are physically at the restaurant using geofencing. This prevents off-site clock-ins and ensures accurate tracking of attendance. </span>
+                                </div>
+                            </li>
+
+                            <li>
+                                <a href="#tabs-Automatic-Task-Confirmation">
+                                    <div class="tag">
+                                        <img class="active-img" src="/images/novagems-img/dot.svg" alt="dot">
+                                        <span class="title headimg-color">Track Working Hours and Breaks</span>
+                                    </div>
+                                </a>
+                                <div class="addon  addon-h">
+                                    <span>Track regular hours, breaks, and overtime automatically. Managers receive real-time alerts whenever someone checks in, takes a break, or logs unexpected overtime.
+                                    </span>
+                                </div>
+                            </li>
+
+                            <li>
+                                <a href="#tabs-Picture&Video-Proofs">
+                                    <div class="tag">
+                                        <img class="active-img" src="/images/novagems-img/dot.svg" alt="dot">
+                                        <span class="title headimg-color">GPS-Based Tracking with Task Management</span>
+                                    </div>
+                                </a>
+                                <div class="addon  addon-h">
+                                    <span>Monitor employee locations during work hours and restrict task completion to designated locations. GPS tracking allows us to know who’s where and ensure tasks are done only at the desired time and location.</span>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="my-4" style="margin-left: 0px;">
+                            <div class="footer-newsletter features-newsletter">
+                                <form id="schedule_services">
+                                    <input type="email" id="schedule-services" name="schedule-services" placeholder="Enter your email address">
+                                    <input type="submit" value="Get Started for Free" class="background2">
+                                </form>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+    <!-- GPS Tracking -->
+    <div class="Managing-sec-rock">
+        <div class="container ">
+            <div class="testimonial-wrapper">
+                <div class="quote-left"><img src="/images/novagems-img/novagemsv2/customer-stories/quote-left.png" alt="Clock-In-Out"></div>
+                <div class="testimonial-container">
+                    <div class="testimonial-text">
+                        <p class="testimonial-message">
+                            “Novagems completely changed how we handle staff scheduling. We can now schedule efficiently across multiple locations without the usual stress.” <br> <span style="color: #786CE6;">- Umesh Sirohi, Owner of Multi-Brand Restaurant Group</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="quote-right"><img src="/images/novagems-img/novagemsv2/customer-stories/quote-right.png" alt="Clock-In-Out"></div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="mt-5">
+        <div>
+            <div class="container example">
+                <div id="tabs2" class="row align-items-center">
+                    <div class="col-lg-6 col-md-6 col-12">
+                        <div>
+                            <div>
+                                <h5>Payroll, Pay Rate & Timesheet Management</h5>
+                                <p>Automate payroll processing with detailed timesheets and time clock app
+                                </p>
+                            </div>
+                            <ul class="tab-slaider" id="accordion2">
+                                <li>
+                                    <a class="step circle active" href="#tabs-1">
+                                        <div class="tag">
+                                            <div class="icon">
+                                                <div class="block">
+                                                    <div class="circle"></div>
+                                                </div>
+                                            </div>
+                                            <img class="active-img" src="/images/novagems-img/dot.svg" alt="dot">
+                                            <span class="title headimg-color">Smart Payroll Calculations for Every Situation</span>
+                                        </div>
+                                    </a>
+                                    <div class="addon fadein addon-h">
+                                        <span>Automatically calculate wages for regular hours, overtime, double-time, and holidays - no manual adjustments needed. This reduces errors and helps you maintain accurate records.</span>
+                                    </div>
+                                </li>
+
+                                <li>
+                                    <a href="#tabs-2">
+                                        <div class="tag">
+                                            <div class="icon">
+                                                <div class="block">
+                                                    <div class="circle"></div>
+                                                </div>
+                                            </div>
+                                            <img class="active-img" src="/images/novagems-img/dot.svg" alt="dot">
+                                            <span class="title headimg-color">Custom Pay Structures Based on Roles</span>
+                                        </div>
+                                    </a>
+                                    <div class="addon  addon-h">
+                                        <span>Set up flexible pay and bill rates depending on the employee’s role, site, or type of shift. Whether it’s a cloud kitchen, catering events, or a line cook on overtime, your system handles it all.</span>
+                                    </div>
+                                </li>
+
+                                <li>
+                                    <a href="#tabs-3">
+                                        <div class="tag">
+                                            <div class="icon">
+                                                <div class="block">
+                                                    <div class="circle"></div>
+                                                </div>
+                                            </div>
+                                            <img class="active-img" src="/images/novagems-img/dot.svg" alt="dot">
+                                            <span class="title headimg-color">Payroll Ready Timesheets</span>
+                                        </div>
+                                    </a>
+                                    <div class="addon  addon-h">
+                                        <span>Generate detailed timesheets and export them for easy payroll processing. Analyze labor costs and spot payroll issues before they happen. Maintain an organized database with a centralized system.</span>
+                                    </div>
+                                </li>
+
+
+                            </ul>
+
+                            <div class="my-3" style="margin-left: 0px;">
+                                <div class="footer-newsletter features-newsletter">
+                                    <form id="GPS_Tracking">
+                                        <input type="email" id="GPS-Tracking" name="GPS-Tracking" placeholder="Enter your email address">
+                                        <input type="submit" value="Get Started for Free" class="background3" id="btnsunscribe">
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6 col-md-6 col-12 employee-scheduling-phone">
+                        <div class="text-center">
+                            <figure><img src="/images/novagems-img/cleaning-company/Timesheet Management.png" alt="BreakInBreakOut"></figure>
+                        </div>
+                        <div class="img-iped tab-image">
+                            <div id="tabs-1">
+                                <figure><img src="/images/novagems-img/healthcare/Seamless-Timesheet-Payroll.png" alt="BreakInBreakOut"></figure>
+                            </div>
+                            <div id="tabs-2">
+                                <figure><img src="/images/novagems-img/healthcare/Seamless-Timesheet-Payroll.png" alt="LeaveRequest"></figure>
+                            </div>
+                            <div id="tabs-3">
+                                <figure><img src="/images/novagems-img/healthcare/Seamless-Timesheet-Payroll.png" alt="LeaveRequest"></figure>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Clock In / Out -->
+    <div class="dedicated-features-sec">
+        <div class="container example">
+            <div id="tabs3" class="row align-items-center">
+                <div class="col-lg-6 col-md-6 col-12">
+                    <div class="text-center">
+                        <figure><img src="/images/novagems-img/cleaning-company/Alerts & Notifications.png" alt="24Hours"></figure>
+                    </div>
+                    <div class="img-iped tab-image">
+                        <div id="tabs-11">
+                            <figure><img src="/images/novagems-img/healthcare/Task-Shift-Management.png" alt="24Hours"></figure>
+                        </div>
+                        <div id="tabs-22">
+                            <figure><img src="/images/novagems-img/healthcare/Task-Shift-Management.png" alt="FreeTraining"></figure>
+                        </div>
+                        <div id="Selfie-Verification">
+                            <figure><img src="/images/novagems-img/healthcare/Task-Shift-Management.png" alt="FreeTraining"></figure>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-12">
+                    <div>
+                        <div>
+                            <h5> Alerts & Notifications</h5>
+                            <p>Always stay informed and keep your team on the same page</p>
+                        </div>
+                        <ul class="tab-slaider" id="accordion3">
+                            <li>
+                                <a class="step circle active" href="#tabs-11">
+                                    <div class="tag">
+                                        <img class="active-img" src="/images/novagems-img/dot.svg" alt="dot">
+                                        <span class="title headimg-color">Instant Alerts for Shifts and Tasks</span>
+                                    </div>
+                                </a>
+                                <div class="addon fadein addon-h">
+                                    <span>Send reminders to employees before their shifts start or when a specific task is due. This helps reduce no-shows and ensures that nothing important is missed during the shift.
+                                    </span>
+                                </div>
+                            </li>
+
+                            <li>
+                                <a href="#tabs-22">
+                                    <div class="tag">
+                                        <img class="active-img" src="/images/novagems-img/dot.svg" alt="dot">
+                                        <span class="title headimg-color">Real-Time Notifications for Attendance</span>
+                                    </div>
+                                </a>
+                                <div class="addon  addon-h">
+                                    <span>Get notified immediately if an employee misses a shift, clocks in from the wrong location, or checks in late. These alerts allow managers to quickly respond without going through schedules.</span>
+                                </div>
+                            </li>
+
+                            <li>
+                                <a href="#Selfie-Verification">
+                                    <div class="tag">
+                                        <img class="active-img" src="/images/novagems-img/dot.svg" alt="dot">
+                                        <span class="title headimg-color">Compliance and Conflict Notifications</span>
+                                    </div>
+                                </a>
+                                <div class="addon  addon-h">
+                                    <span>Our staff scheduling software for the food service industry sends alerts for expired licenses or overlapping shifts. System-generated alerts keep everything running smoothly and ensure compliance across the board.</span>
+                                </div>
+                            </li>
+
+                        </ul>
+                        <div class="my-3" style="margin-left: 0px;">
+                            <div class="footer-newsletter features-newsletter">
+                                <form id="clock_in_out">
+                                    <input type="email" id="clock-in_out" name="clock-in-out" placeholder="Enter your email address">
+                                    <input type="submit" value="Get Started for Free" class="background7">
+                                </form>
+                            </div>
+                        </div>
+                        <!-- <div style="margin-left: 15px;" class=" learn-More-btn hvr-underline-reveal">
+                            <a href="/clock-in-out" class="btn-arrow learn-More ">Learn More </a>
+                        </div> -->
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+    <!-- ----------------------------------------- -->
+    <div class="mt-5">
+        <div class="container py-5">
+            <div class="col-md-12 text-center ">
+                <h2 class=" mb-3">Other Features</h2>
+            </div>
+            <div class="row">
+                <div class="col-lg-2 col-md-4 col-6 mt-3">
+                    <div class="clients text-center" style="padding: 30px 35px 30px 35px;">
+                        <figure style="margin-bottom: 20px;"><img class="key-img" src='{{"/images/novagems-img/healthcare/Location Tracking.png" | absURL}}' alt="Scheduling"></figure>
+                        <p class="clients-p">Multi-location Management <br><br></p>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-6 mt-3">
+                    <div class="clients text-center ">
+                        <figure style="margin-bottom: 20px;"><img class="key-img" src='{{"/images/novagems-img/cleaning-company/Shift-tasks Checklists & Insights.png" | absURL}}' alt="task&Post"></figure>
+                        <p class="clients-p">Shift-tasks Checklists Insights </p>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-6 mt-3">
+                    <div class="clients text-center">
+                        <figure style="margin-bottom: 20px;"><img class="key-img" src='{{"/images/novagems-img/healthcare/Timesheet & Payroll.png" | absURL}}' alt="gps-geofence"></figure>
+                        <p class="clients-p">Task Management <br><br></p>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-6 mt-3">
+                    <div class="clients text-center">
+                        <figure style="margin-bottom: 20px;"><img class="key-img" src='{{"/images/novagems-img/cleaning-company/Digital Checklists.png" | absURL}}' alt="Clock"></figure>
+                        <p class="clients-p">Compliance Management <br><br></p>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-6 mt-3">
+                    <div class="clients text-center">
+                        <figure style="margin-bottom: 20px;"><img class="key-img" src='{{"/images/novagems-img/cleaning-company/Performance Insights.png" | absURL}}' alt="Timesheet"></figure>
+                        <p class="clients-p">Centralized Data Management <br><br></p>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-6 mt-3">
+                    <div class="clients text-center">
+                        <figure style="margin-bottom: 20px;"><img class="key-img" src='{{"/images/novagems-img/healthcare/EVV & Compliance.png" | absURL}}' alt="Chat"></figure>
+                        <p class="clients-p">Client & Role Management <br><br></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ----------------------------------------- -->
+
+    <div class="container-fluid nothours nothours2">
+        <div class="col-md-7 mx-auto ">
+            <div class="text-center ">
+                <h2 class="text-white pt-5 mb-4">Start managing your operations team like a pro - No setup fees. No contracts.</h2>
+                <div class="col-md-10 mx-auto ">
+                    <div class="footer-newsletter">
+                        <form id="get-started-for-free">
+                            <input type="email" id="email" name="email" placeholder="Enter your email address">
+                            <input class="home-btn" type="submit" value="Get Started for Free">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ---------------------------------------------------- -->
+    <div class="container py-5">
+        <div class="col-md-12 text-center ">
+            <h2 class=" mb-3">Built for Every Type of Food Business</h2>
+        </div>
+        <div class="row mt-5">
+            <div class="col-md-4 col-6 ">
+                <div class="text-center healthcare-industries-card">
+                    <h5 class="healthcare-h6"> Restaurants & Bars </h5>
+                </div>
+            </div>
+            <div class="col-md-4 col-6 ">
+                <div class="text-center healthcare-industries-card">
+                    <h5 class="healthcare-h6"> Fast-Food Chains & Franchises </h5>
+
+                </div>
+            </div>
+            <div class="col-md-4 col-6 ">
+                <div class="text-center healthcare-industries-card">
+                    <h5 class="healthcare-h6"> Coffee Shops & Cafés </h5>
+
+                </div>
+            </div>
+        </div>
+        <div class="col-12 px-0 px-md-3 col-md-10 mx-md-auto">
+            <div class="row mt-2">
+                <div class="col-md-6 col-6 ">
+                    <div class="text-center healthcare-industries-card">
+                        <h5 class="healthcare-h6"> Hotel Dining & Event Catering </h5>
+
+                    </div>
+                </div>
+                <div class="col-md-6 col-6 ">
+                    <div class="text-center healthcare-industries-card">
+                        <h5 class="healthcare-h6"> Cloud Kitchens & Delivery-Only Models </h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <div class=" pb-4">
+        <div class="container-fluid  example">
+            <div class="row">
+                <div class="col-md-12 mt-5 mb-2 text-center ">
+                    <p class="subheading tex-h color4">Our customer reviews</p>
+                    <h3 class="hero-h1">Join 100,000+ highly productive team members</h3>
+                </div>
+            </div>
+
+            <div>
+                {{- partial "customerReviews.html" . -}}
+            </div>
+        </div>
+        <div class="d-flex justify-content-center  gap-3 text-center">
+            <div>
+                <img class="reviewsimg" src="/images/novagems-img/novagemsv2/google.png" alt="google">
+            </div>
+            <div>
+                <img class="reviewsimg" src="/images/novagems-img/novagemsv2/getapp.png" alt="getapp">
+            </div>
+            <div>
+                <img class="reviewsimg" src="/images/novagems-img/novagemsv2/capterra.png" alt="capterra">
+            </div>
+            <div>
+                <img class="reviewsimg" src="/images/novagems-img/novagemsv2/g2.png" alt="g2">
+            </div>
+            <div>
+                <img class="reviewsimg" src="/images/novagems-img/novagemsv2/software.png" alt="software">
+            </div>
+        </div>
+
+    </div>
+
+
+
+</div>
+
+<style>
+    .healthcare-industries-card {
+        background: #FFFFFF 0% 0% no-repeat padding-box;
+        box-shadow: 0px 6px 10px #0000001A;
+        border: 1px solid #F2F2F2;
+        border-radius: 10px;
+        padding-top: 17px;
+        padding-bottom: 17px;
+        margin-bottom: 20px;
+    }
+</style>
+
+
+<div class="modal fade refe-earn-pop refer-earn-form" id="schedulingmanagementpop" tabindex="-1" role="dialog" aria-labelledby="refer-earnformTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="py-5">
+                <button type="button" class="close-blog" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                <div class="container phonemodal">
+                    <div class="row align-items-center text-center">
+                        <div class="col-lg-12 col-md-12 col-12 ">
+                            <h2 class="hero-h1 mb-1">Today’s Special: Flawless Schedules</h2>
+                            <h4 class="mt-1">See how your schedule will look like!</h4>
+                            <img style="width: 80%;" src="/images/novagems-img/Food-Services-Popup.png" alt="super-heroes">
+                            <div class="mt-4">
+                                <a href="/free-trial" style="color: #fff !important;font-size: 15px !important;" class="securitybtn">BOOK A DEMO</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script>
+    window.onscroll = function() {
+        myFunction();
+    };
+
+    function myFunction() {
+        var winScroll =
+            document.body.scrollTop || document.documentElement.scrollTop;
+        var height =
+            document.documentElement.scrollHeight -
+            document.documentElement.clientHeight;
+        var scrolled = (winScroll / height) * 100;
+        var countScrollRatio = scrolled.toFixed(0);
+        var checkEnterVisitUser = true;
+
+        var checkAgainVisitUserScheduling = localStorage.getItem("againVisitUserScheduling");
+
+        if (checkAgainVisitUserScheduling) {
+            checkEnterVisitUser = false;
+        } else {
+            checkEnterVisitUser = true;
+        }
+        if (countScrollRatio == "15") {
+            if (checkEnterVisitUser) {
+                localStorage.setItem("againVisitUserScheduling", true);
+                $("#schedulingmanagementpop").modal("show");
+            }
+        }
+    }
+
+    window.onbeforeunload = function(e) {
+        window.onunload = function() {
+            window.localStorage.againVisitUserScheduling = "false";
+        }
+        return undefined;
+    };
+
+    window.onload = function() {
+        window.localStorage.againVisitUserScheduling = "true";
+    };
+</script>
+
+<style>
+    .blog-pop-cus .close-blog {
+        border-radius: 50%;
+        display: block;
+        z-index: 999;
+        opacity: 1;
+        border: none;
+        font-size: 27px;
+        clear: both;
+        line-height: 30px;
+        background-color: #fff;
+        box-shadow: 0 0px 5px rgb(0 0 0 / 20%);
+        height: 30px;
+        width: 30px;
+        text-align: center;
+        padding: 0;
+        position: absolute;
+        right: -15px;
+        font-weight: 700;
+        top: -15px;
+        color: red !important;
+    }
+    
+    .securitytex {
+        padding-left: 75px;
+    }
+    
+    @media screen and (max-width:767px) {
+        .blog-pop-cus .close-blog {
+            right: -6px;
+            top: -19px;
+        }
+        .phonemodal {
+            padding-top: 50px;
+        }
+        .securitytex {
+            padding-left: 15px;
+        }
+    }
+    
+    @media only screen and (min-width:768px) and (max-width:1023px) {
+        .modal-top-for {
+            margin: 0px 0px 0px -41px;
+        }
+        .phonemodal {
+            padding-top: 25px;
+        }
+    }
+</style>
+
+
+{{end}}

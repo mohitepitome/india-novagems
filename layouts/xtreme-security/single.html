@@ -1,0 +1,154 @@
+{{ define "main" }}
+<div style="background-color: #fff;">
+    <div class="RockStone-section">
+        <div class="bg-pattern-stories"></div>
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-7">
+                    <div class="hero-content">
+                        <p class="stories-details-p" style="color: #F4C043;">SECURITY</p>
+                        <h1 class="heading-stories">Managing 150 Employees Made Easy with Novagems</h1>
+                    </div>
+                </div>
+                <div class="col-lg-5">
+                    <img src="/images/novagems-img/novagemsv2/customer-stories/Xtreme Security.png" alt="People">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="col-md-7 mx-auto">
+        <section>
+            <div class="container cardstories-top">
+                <div class="row ">
+                    <div class="col-md-12 col-12 ">
+                        <div class="clients-stories ">
+                            <h2 class="mb-3">Company Summary:</h2>
+                            <p>Xtreme Watch is a leading security company with 150 security professionals deployed across multiple client locations. Managing a workforce of this size requires precise scheduling, real-time coordination, and streamlined payroll
+                                management. However, their previous system, TrackTik, lacked the flexibility and control needed to handle their growing operational demands effectively.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="mt-5">
+            <div class="container">
+                <div class="row ">
+                    <div class="col-md-6 col-12 ">
+                        <div class="clients-stories-bg">
+                            <h3 class="clients-stories-h3">Challenges</h3>
+                            <p class="mt-2 stories-details-p">Shift Management Issues </p>
+                            <p class="mt-2 stories-details-p">Lack of Clear Workforce Oversight </p>
+                            <p class="mt-2 stories-details-p">Payroll Inconsistencies </p>
+                            <p class="mt-2 stories-details-p">Time-Consuming Scheduling</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-12 cardstories-top-phone">
+                        <div class="clients-stories-bg">
+                            <h3 class="clients-stories-h3" style="color: #786CE6;">Solution</h3>
+                            <p class="mt-2 stories-details-p" style="color: #786CE6;">More Organized Scheduling Process </p>
+                            <p class="mt-2 stories-details-p" style="color: #786CE6;">Stronger Shift Management Tools </p>
+                            <p class="mt-2 stories-details-p" style="color: #786CE6;">Improved Communication Between Teams</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="Managing-sec-rock">
+            <div class="container ">
+                <div class="testimonial-wrapper">
+                    <div class="quote-left"><img src="/images/novagems-img/novagemsv2/customer-stories/quote-left.png" alt="Clock-In-Out"></div>
+                    <div class="testimonial-container">
+                        <div class="testimonial-text">
+                            <p class="testimonial-message">
+                                "With Novagems, We’ve Been Able To Handle Shift Management And Payroll Much More Efficiently—No More Schedule Changes The Last Minute.” <br> - Manny, Owner
+                            </p>
+                        </div>
+                    </div>
+                    <div class="quote-right"><img src="/images/novagems-img/novagemsv2/customer-stories/quote-right.png" alt="Clock-In-Out"></div>
+                </div>
+            </div>
+        </div>
+
+        <section class="mt-5">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="mb-3">The Shining Results</h2>
+                    <p>By implementing Novagems, Xtreme Security transformed its scheduling, payroll, and shift coordination processes, leading to more structured scheduling and shift planning, reduced payroll errors, improved reporting, and faster resolution
+                        of last-minute staffing changes.</p>
+                </div>
+
+                <div class="d-flex flex-wrap justify-content-center mt-4" style="gap: 10px;">
+                    <div class="KeyScheduling text-center p-3">
+                        <img src="/images/novagems-img/novagemsv2/customer-stories/KeyScheduling.png" alt="People">
+                        <p class="mt-2">Scheduling Time reduction</p>
+                    </div>
+                    <div class="KeyWorkforce text-center p-3">
+                        <img src="/images/novagems-img/novagemsv2/customer-stories/Faster Project Turnaround.png" alt="People">
+                        <p class="mt-2">Payroll error reduction</p>
+                    </div>
+                    <div class="KeyPayroll text-center p-3">
+                        <img src="/images/novagems-img/novagemsv2/customer-stories/Payroll & Report Efficiency Increased by60.png" alt="People">
+                        <p class="mt-2">Payroll & Report Efficiency Increased by</p>
+                    </div>
+                    <div class="KeyShift text-center p-3">
+
+                        <img src="/images/novagems-img/novagemsv2/customer-stories/Payroll & Report Efficiency Increased by55.png" alt="People">
+                        <p class="mt-2">Better Shift Coverage Improved by</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <div>
+            {{- partial "for-free-stories.html" . -}}
+        </div>
+
+    </div>
+
+
+</div>
+
+<style>
+    @media (max-width: 768px) {
+        .cardstories-top-phone .d-flex {
+            flex-direction: column;
+            align-items: center;
+        }
+        .cardstories-top-phone>div {
+            width: 100%;
+        }
+        .KeyScheduling,
+        .KeyWorkforce,
+        .KeyPayroll,
+        .KeyShift {
+            width: 100%;
+            border-radius: 25px;
+            padding: 20px;
+            text-align: center;
+            border: 1px solid;
+            margin-top: 10px;
+        }
+        .clients-stories-bg {
+            display: flex;
+            flex-direction: column;
+            justify-content: top;
+            height: 100%;
+            border-left: 0;
+            border-top: 0;
+            padding: 20px 20px 20px 20px;
+            transition: .3s;
+            /* box-shadow: 0 20px 54px rgb(0 0 0 / 6%); */
+            border: none;
+            border-radius: 10px;
+            background-color: #F6F6F6;
+        }
+    }
+</style>
+
+
+{{end}}

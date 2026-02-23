@@ -1,0 +1,99 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="798" height="479" viewBox="0 0 798 479">
+  <defs>
+    <filter id="Rectangle_5724" x="0" y="0" width="798" height="479" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="13" result="blur"/>
+      <feFlood flood-opacity="0.102"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Rectangle_3658" x="463" y="6" width="333" height="149" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="18" result="blur-2"/>
+      <feFlood flood-color="#50c25f" flood-opacity="0.6"/>
+      <feComposite operator="in" in2="blur-2"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Group_10100" data-name="Group 10100" transform="translate(-913 -6322)">
+    <g transform="matrix(1, 0, 0, 1, 913, 6322)" filter="url(#Rectangle_5724)">
+      <rect id="Rectangle_5724-2" data-name="Rectangle 5724" width="720" height="401" rx="16" transform="translate(39 36)" fill="#fff"/>
+    </g>
+    <g id="Group_10090" data-name="Group 10090" transform="translate(1429.765 6378.683)">
+      <g transform="matrix(1, 0, 0, 1, -516.77, -56.68)" filter="url(#Rectangle_3658)">
+        <rect id="Rectangle_3658-2" data-name="Rectangle 3658" width="225" height="41" rx="10" transform="translate(517 57)" fill="#50c25f"/>
+      </g>
+      <text id="Add_site" data-name="Add site" transform="translate(16.234 25.316)" fill="#fff" font-size="16" font-family="NunitoSans-Regular, Nunito Sans"><tspan x="0" y="0">+ Add New Manager Role</tspan></text>
+    </g>
+    <text id="Name" transform="translate(969 6405)" fill="#323a45" font-size="16" font-family="Nunito Sans"><tspan x="0" y="0">Role Management</tspan></text>
+    <g id="Group_10097" data-name="Group 10097" transform="translate(968.546 6429.354)">
+      <g id="Group_7664" data-name="Group 7664" transform="translate(0 29.99)">
+        <rect id="Rectangle_3532" data-name="Rectangle 3532" width="209" height="42" rx="4" transform="translate(0.454 -0.344)" fill="#fff"/>
+        <g id="Group_4426" data-name="Group 4426" transform="translate(10.341 12.409)">
+          <text id="Staff" transform="translate(0.113 12.246)" fill="#323a45" stroke="rgba(0,0,0,0)" stroke-width="1" font-size="12" font-family="NunitoSans-Regular, Nunito Sans"><tspan x="0" y="0">Staff</tspan></text>
+        </g>
+      </g>
+      <text id="Dashboard_Watch_Sche" data-name="Dashboard Watch Sche" transform="translate(0.454 13.645)" fill="#323a45" font-size="14" font-family="NunitoSans-SemiBold, Nunito Sans" font-weight="600"><tspan x="0" y="0">Staff&apos;s Role Management</tspan></text>
+      <g id="Group_4427" data-name="Group 4427" transform="translate(0 111.685)">
+        <rect id="Rectangle_3532-2" data-name="Rectangle 3532" width="209" height="41" rx="4" transform="translate(0.454 -0.04)" fill="#fff"/>
+        <g id="Group_4426-2" data-name="Group 4426" transform="translate(10.341 12.409)">
+          <text id="Admin" transform="translate(0.113 11.551)" fill="#323a45" stroke="rgba(0,0,0,0)" stroke-width="1" font-size="12" font-family="NunitoSans-Regular, Nunito Sans"><tspan x="0" y="0">Admin</tspan></text>
+        </g>
+      </g>
+      <rect id="Rectangle_3532-3" data-name="Rectangle 3532" width="209" height="42" rx="4" transform="translate(0.454 152.646)" fill="#fff"/>
+      <rect id="Rectangle_3597" data-name="Rectangle 3597" width="209" height="41" rx="4" transform="translate(0.454 194.646)" fill="#f0efff"/>
+      <g id="Group_4426-3" data-name="Group 4426" transform="translate(10.341 165.46)">
+        <text id="Schedule_Manager" data-name="Schedule Manager" transform="translate(0.113 12.186)" fill="#323a45" stroke="rgba(0,0,0,0)" stroke-width="1" font-size="12" font-family="NunitoSans-Regular, Nunito Sans"><tspan x="0" y="0">Schedule Manager</tspan></text>
+      </g>
+      <g id="Group_5920" data-name="Group 5920" transform="translate(10.341 206.825)">
+        <text id="Field_Staff" data-name="Field Staff" transform="translate(0.113 11.82)" fill="#786ce6" font-size="12" font-family="NunitoSans-Regular, Nunito Sans"><tspan x="0" y="0">Field Staff</tspan></text>
+      </g>
+      <path id="crown" d="M13,46.614a.379.379,0,0,1-.01.113l-.835,3.34a.38.38,0,0,1-.366.287l-5.01.025H1.771a.38.38,0,0,1-.368-.288L.568,46.739a.379.379,0,0,1-.01-.116.8.8,0,1,1,.745-.145l1.045,1.053a1.419,1.419,0,0,0,2.139-.145L6.205,45.11A.8.8,0,1,1,7.344,45.1v0l1.706,2.283a1.424,1.424,0,0,0,1.135.569,1.408,1.408,0,0,0,1-.415l1.052-1.052a.8.8,0,1,1,.764.131Zm-.926,4.955a.38.38,0,0,0-.38-.38H1.881a.38.38,0,0,0-.38.38v.911a.38.38,0,0,0,.38.38H11.7a.38.38,0,0,0,.38-.38Z" transform="translate(49.993 83.447)" fill="#323a45"/>
+      <text id="Dashboard_Watch_Sche-2" data-name="Dashboard Watch Sche" transform="translate(0.454 95.645)" fill="#323a45" font-size="14" font-family="NunitoSans-SemiBold, Nunito Sans" font-weight="600"><tspan x="0" y="0">Manager&apos;s Role Management</tspan></text>
+    </g>
+    <text id="Field_Staff-2" data-name="Field Staff" transform="translate(1189 6445)" fill="#323a45" font-size="16" font-family="NunitoSans-Regular, Nunito Sans"><tspan x="0" y="0">Field Staff</tspan></text>
+    <g id="Group_10092" data-name="Group 10092" transform="translate(1188.814 6462.446)">
+      <text id="Name-2" data-name="Name" transform="translate(0.186 11.555)" fill="#8b959e" font-size="12" font-family="NunitoSans-Regular, Nunito Sans"><tspan x="0" y="0">Name</tspan></text>
+      <g id="Rectangle_5856" data-name="Rectangle 5856" transform="translate(0.186 20.554)" fill="#fff" stroke="#dadada" stroke-width="0.5">
+        <rect width="466" height="41" rx="4" stroke="none"/>
+        <rect x="0.25" y="0.25" width="465.5" height="40.5" rx="3.75" fill="none"/>
+      </g>
+      <text id="The_Walt_Disney_Comp" data-name="The Walt Disney Comp" transform="translate(10.186 45.555)" fill="#8b959e" font-size="12" font-family="NunitoSans-Regular, Nunito Sans"><tspan x="0" y="0">Field Staff</tspan></text>
+    </g>
+    <g id="Group_10094" data-name="Group 10094" transform="translate(1188.814 6529.665)">
+      <path id="Rectangle_3744" data-name="Rectangle 3744" d="M4,0H462a4,4,0,0,1,4,4V42a0,0,0,0,1,0,0H0a0,0,0,0,1,0,0V4A4,4,0,0,1,4,0Z" transform="translate(0.186 0.336)" fill="#f7f8fa"/>
+      <g id="Rectangle_3741" data-name="Rectangle 3741" transform="translate(0.186 43.336)" fill="#fff" stroke="#dadada" stroke-width="0.5">
+        <rect width="466" height="61" stroke="none"/>
+        <rect x="0.25" y="0.25" width="465.5" height="60.5" fill="none"/>
+      </g>
+      <text id="The_Walt_Disney_Comp-2" data-name="The Walt Disney Comp" transform="translate(10.186 91.336)" fill="#8b959e" font-size="12" font-family="NunitoSans-Regular, Nunito Sans"><tspan x="0" y="0">Full Module</tspan></text>
+      <text id="The_Walt_Disney_Comp-3" data-name="The Walt Disney Comp" transform="translate(10.186 25.336)" fill="#323a45" font-size="10" font-family="NunitoSans-SemiBold, Nunito Sans" font-weight="600"><tspan x="0" y="0">Schedule</tspan></text>
+      <path id="check_box_FILL1_wght300_GRAD0_opsz20" d="M170.505-785.049l5.521-5.5-.912-.912-4.609,4.584-2.086-2.062-.912.912Zm-4.926,4.561a1.524,1.524,0,0,1-1.121-.458,1.524,1.524,0,0,1-.458-1.121v-12.355a1.524,1.524,0,0,1,.458-1.121,1.524,1.524,0,0,1,1.121-.458h12.355a1.524,1.524,0,0,1,1.121.458,1.524,1.524,0,0,1,.458,1.121v12.355a1.524,1.524,0,0,1-.458,1.121,1.524,1.524,0,0,1-1.121.458Z" transform="translate(-20.258 876.661)" fill="#786ce6"/>
+      <path id="check_box_FILL1_wght300_GRAD0_opsz20-2" data-name="check_box_FILL1_wght300_GRAD0_opsz20" d="M170.505-785.049l5.521-5.5-.912-.912-4.609,4.584-2.086-2.062-.912.912Zm-4.926,4.561a1.524,1.524,0,0,1-1.121-.458,1.524,1.524,0,0,1-.458-1.121v-12.355a1.524,1.524,0,0,1,.458-1.121,1.524,1.524,0,0,1,1.121-.458h12.355a1.524,1.524,0,0,1,1.121.458,1.524,1.524,0,0,1,.458,1.121v12.355a1.524,1.524,0,0,1-.458,1.121,1.524,1.524,0,0,1-1.121.458Z" transform="translate(-153.66 851.842)" fill="#786ce6"/>
+      <path id="check_box_FILL1_wght300_GRAD0_opsz20-3" data-name="check_box_FILL1_wght300_GRAD0_opsz20" d="M170.505-785.049l5.521-5.5-.912-.912-4.609,4.584-2.086-2.062-.912.912Zm-4.926,4.561a1.524,1.524,0,0,1-1.121-.458,1.524,1.524,0,0,1-.458-1.121v-12.355a1.524,1.524,0,0,1,.458-1.121,1.524,1.524,0,0,1,1.121-.458h12.355a1.524,1.524,0,0,1,1.121.458,1.524,1.524,0,0,1,.458,1.121v12.355a1.524,1.524,0,0,1-.458,1.121,1.524,1.524,0,0,1-1.121.458Z" transform="translate(104.871 876.661)" fill="#786ce6"/>
+      <path id="check_box_FILL1_wght300_GRAD0_opsz20-4" data-name="check_box_FILL1_wght300_GRAD0_opsz20" d="M170.505-785.049l5.521-5.5-.912-.912-4.609,4.584-2.086-2.062-.912.912Zm-4.926,4.561a1.524,1.524,0,0,1-1.121-.458,1.524,1.524,0,0,1-.458-1.121v-12.355a1.524,1.524,0,0,1,.458-1.121,1.524,1.524,0,0,1,1.121-.458h12.355a1.524,1.524,0,0,1,1.121.458,1.524,1.524,0,0,1,.458,1.121v12.355a1.524,1.524,0,0,1-.458,1.121,1.524,1.524,0,0,1-1.121.458Z" transform="translate(271.365 876.661)" fill="#786ce6"/>
+      <text id="The_Walt_Disney_Comp-4" data-name="The Walt Disney Comp" transform="translate(129.186 25.336)" fill="#323a45" font-size="10" font-family="NunitoSans-SemiBold, Nunito Sans" font-weight="600"><tspan x="-28" y="0">View Access</tspan></text>
+      <text id="The_Walt_Disney_Comp-5" data-name="The Walt Disney Comp" transform="translate(226.186 25.336)" fill="#323a45" font-size="10" font-family="NunitoSans-SemiBold, Nunito Sans" font-weight="600"><tspan x="-45" y="0">Create / Edit Access</tspan></text>
+      <text id="The_Walt_Disney_Comp-6" data-name="The Walt Disney Comp" transform="translate(359.186 25.336)" fill="#323a45" font-size="10" font-family="NunitoSans-SemiBold, Nunito Sans" font-weight="600"><tspan x="-64" y="0">Create / Edit / Delete Access</tspan></text>
+      <path id="expand_more_FILL0_wght300_GRAD0_opsz20" d="M5.388,6.294,0,.881.881,0,5.388,4.505,9.894,0l.881.881Z" transform="translate(456.483 23.875) rotate(180)" fill="#323a45"/>
+      <text id="The_Walt_Disney_Comp-7" data-name="The Walt Disney Comp" transform="translate(32.186 68.336)" fill="#323a45" font-size="12" font-family="NunitoSans-SemiBold, Nunito Sans" font-weight="600"><tspan x="0" y="0">Schedule</tspan></text>
+      <path id="info_FILL0_wght200_GRAD0_opsz24" d="M125.677-830.983h.668v-3.674h-.668Zm.334-4.624a.4.4,0,0,0,.293-.118.4.4,0,0,0,.118-.293.4.4,0,0,0-.118-.293.4.4,0,0,0-.293-.118.4.4,0,0,0-.293.118.4.4,0,0,0-.118.293.4.4,0,0,0,.118.293A.4.4,0,0,0,126.011-835.607Zm0,7.63a5.861,5.861,0,0,1-2.345-.473,6.076,6.076,0,0,1-1.91-1.284,6.068,6.068,0,0,1-1.286-1.908,5.847,5.847,0,0,1-.474-2.344,5.859,5.859,0,0,1,.473-2.345,6.076,6.076,0,0,1,1.284-1.91,6.069,6.069,0,0,1,1.908-1.286,5.846,5.846,0,0,1,2.344-.474,5.859,5.859,0,0,1,2.345.473,6.074,6.074,0,0,1,1.91,1.284,6.068,6.068,0,0,1,1.286,1.908,5.847,5.847,0,0,1,.474,2.344,5.859,5.859,0,0,1-.473,2.345,6.075,6.075,0,0,1-1.284,1.91,6.066,6.066,0,0,1-1.908,1.286A5.845,5.845,0,0,1,126.014-827.977Zm0-.668a5.157,5.157,0,0,0,3.79-1.553,5.157,5.157,0,0,0,1.553-3.79,5.157,5.157,0,0,0-1.553-3.791,5.157,5.157,0,0,0-3.79-1.553,5.157,5.157,0,0,0-3.79,1.553,5.157,5.157,0,0,0-1.553,3.791,5.157,5.157,0,0,0,1.553,3.79A5.157,5.157,0,0,0,126.011-828.645ZM126.011-833.989Z" transform="translate(-57.953 857.063)" fill="#8b959e" stroke="#8b959e" stroke-width="0.2"/>
+    </g>
+    <g id="Group_10098" data-name="Group 10098" transform="translate(1188.814 6640.316)">
+      <path id="Rectangle_3744-2" data-name="Rectangle 3744" d="M4,0H462a4,4,0,0,1,4,4V43a0,0,0,0,1,0,0H0a0,0,0,0,1,0,0V4A4,4,0,0,1,4,0Z" transform="translate(0.186 -0.316)" fill="#f7f8fa"/>
+      <text id="The_Walt_Disney_Comp-8" data-name="The Walt Disney Comp" transform="translate(10.186 17.684)" fill="#323a45" font-size="10" font-family="NunitoSans-SemiBold, Nunito Sans" font-weight="600"><tspan x="0" y="0">Request </tspan><tspan x="0" y="14">Management</tspan></text>
+      <text id="The_Walt_Disney_Comp-9" data-name="The Walt Disney Comp" transform="translate(129.186 24.684)" fill="#323a45" font-size="10" font-family="NunitoSans-SemiBold, Nunito Sans" font-weight="600"><tspan x="-28" y="0">View Access</tspan></text>
+      <text id="The_Walt_Disney_Comp-10" data-name="The Walt Disney Comp" transform="translate(226.186 24.684)" fill="#323a45" font-size="10" font-family="NunitoSans-SemiBold, Nunito Sans" font-weight="600"><tspan x="-45" y="0">Create / Edit Access</tspan></text>
+      <text id="The_Walt_Disney_Comp-11" data-name="The Walt Disney Comp" transform="translate(359.186 24.684)" fill="#323a45" font-size="10" font-family="NunitoSans-SemiBold, Nunito Sans" font-weight="600"><tspan x="-64" y="0">Create / Edit / Delete Access</tspan></text>
+      <path id="expand_more_FILL0_wght300_GRAD0_opsz20-2" data-name="expand_more_FILL0_wght300_GRAD0_opsz20" d="M5.388,0,0,5.413l.881.881L5.388,1.789,9.894,6.295l.881-.881Z" transform="translate(456.483 23.875) rotate(180)" fill="#323a45"/>
+    </g>
+    <g id="Group_10099" data-name="Group 10099" transform="translate(1188.814 6688.919)">
+      <path id="Rectangle_3744-3" data-name="Rectangle 3744" d="M4,0H462a4,4,0,0,1,4,4V42a0,0,0,0,1,0,0H0a0,0,0,0,1,0,0V4A4,4,0,0,1,4,0Z" transform="translate(0.186 0.08)" fill="#f7f8fa"/>
+      <text id="The_Walt_Disney_Comp-12" data-name="The Walt Disney Comp" transform="translate(10.186 24.08)" fill="#323a45" font-size="10" font-family="NunitoSans-SemiBold, Nunito Sans" font-weight="600"><tspan x="0" y="0">Timesheet</tspan></text>
+      <text id="The_Walt_Disney_Comp-13" data-name="The Walt Disney Comp" transform="translate(129.186 24.08)" fill="#323a45" font-size="10" font-family="NunitoSans-SemiBold, Nunito Sans" font-weight="600"><tspan x="-28" y="0">View Access</tspan></text>
+      <text id="The_Walt_Disney_Comp-14" data-name="The Walt Disney Comp" transform="translate(226.186 24.08)" fill="#323a45" font-size="10" font-family="NunitoSans-SemiBold, Nunito Sans" font-weight="600"><tspan x="-45" y="0">Create / Edit Access</tspan></text>
+      <text id="The_Walt_Disney_Comp-15" data-name="The Walt Disney Comp" transform="translate(359.186 24.08)" fill="#323a45" font-size="10" font-family="NunitoSans-SemiBold, Nunito Sans" font-weight="600"><tspan x="-64" y="0">Create / Edit / Delete Access</tspan></text>
+      <path id="expand_more_FILL0_wght300_GRAD0_opsz20-3" data-name="expand_more_FILL0_wght300_GRAD0_opsz20" d="M5.388,0,0,5.413l.881.881L5.388,1.789,9.894,6.295l.881-.881Z" transform="translate(456.483 23.875) rotate(180)" fill="#323a45"/>
+    </g>
+  </g>
+</svg>

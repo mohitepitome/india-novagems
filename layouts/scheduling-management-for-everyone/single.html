@@ -1,0 +1,272 @@
+{{ define "main" }}
+<div>
+    <div class="cus-bg cus-dg-phone">
+        <div class="container example">
+            <div class="row header-subwrapper-top">
+                <div class="col-lg-6 col-md-7 col-12 ">
+                    <div>
+                        <div>
+                            <h1 class="hero-h1">Schedule Your Employees &<br> <span class="color5">Track + Validate </span>their Work<br> Instantly</h1>
+                            <p>Smart Automation Software for Employee Scheduling, Time & Attendance, Team Chat, GPS Tracking, Tasks & Post Orders, Dashboard Analytics, and more</p>
+                        </div>
+                        <div class="my-5">
+                            <div class="footer-newsletter">
+                                <form id="get-started-for-free">
+                                    <input type="email" id="email" name="email" placeholder="Enter your email address">
+                                    <input class="home-btn" type="submit" value="Get Started for Free">
+                                </form>
+                            </div>
+                        </div>
+                        <div class="mt-5 mb-2">
+                            {{- partial "clients.html" . -}}
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 col-md-5 col-12 p-md-0 img-iped-head all-img-left">
+                    <div class="scheduling-management-for-everyone">
+                        <img src='{{"/images/novagems-img/Schedule-main.svg" | absURL}}' alt="Schedule-main">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container pt-5">
+            <div class="col-md-12 text-center key-schedule">
+                <p class="subheading color3">Key Features</p>
+                <h2 class="hero-h1">Workforce Management Solutions </h2>
+            </div>
+            <div class="row">
+                <div class="col-lg-2 col-md-4 col-6 mt-3">
+                    <div class="clients text-center">
+                        <a href="/scheduling">
+                            <figure style="margin-bottom: 20px;"><img class="key-img" src='{{"/images/novagems-img/Scheduling-e.svg" | absURL}}' alt="Scheduling"></figure>
+                            <p class="clients-p">Scheduling</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-6 mt-3">
+                    <div class="clients text-center ">
+                        <a href="/task-mangement">
+                            <figure style="margin-bottom: 20px;"><img class="key-img" src='{{"/images/novagems-img/task&Post.svg" | absURL}}' alt="task&Post"></figure>
+                            <p class="clients-p">Task & Post </p>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-6 mt-3">
+                    <div class="clients text-center">
+                        <a href="/gps-geofence">
+                            <figure style="margin-bottom: 20px;"><img class="key-img" src='{{"/images/novagems-img/gps-geofence.svg" | absURL}}' alt="gps-geofence"></figure>
+                            <p class="clients-p">GPS Geofence</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-6 mt-3">
+                    <div class="clients text-center">
+                        <a href="/clock-in-out">
+                            <figure style="margin-bottom: 20px;"><img class="key-img" src='{{"/images/novagems-img/Clock.svg" | absURL}}' alt="Clock"></figure>
+                            <p class="clients-p">Clock In/Out</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-6 mt-3">
+                    <div class="clients text-center">
+                        <a href="/time-cost-analysis">
+                            <figure style="margin-bottom: 20px;"><img class="key-img" src='{{"/images/novagems-img/Timesheet.svg" | absURL}}' alt="Timesheet"></figure>
+                            <p class="clients-p">Timesheet</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-6 mt-3">
+                    <div class="clients text-center">
+                        <a href="/chat">
+                            <figure style="margin-bottom: 20px;"><img class="key-img" src='{{"/images/novagems-img/Chat.svg" | absURL}}' alt="Chat"></figure>
+                            <p class="clients-p">Chat</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div>
+    {{- partial "access.html" . -}}
+</div>
+<div>
+    {{- partial "howitswork.html" . -}}
+</div>
+
+<div class="bottombg">
+    <div class="container-fluid my-5 example">
+        <div class="row">
+            <div class="col-md-12 mt-5 mb-5 text-center ">
+                <p class="subheading tex-h color4">Our customer reviews</p>
+                <h3 class="hero-h1">Join 100,000+ highly productive team members</h3>
+            </div>
+        </div>
+
+        <div>
+            {{- partial "customerReviews.html" . -}}
+        </div>
+    </div>
+
+
+    <div class="whychoose mt-5 mb-5">
+        <div class="container">
+            <div class="col-md-10 mx-auto">
+                <div class="row">
+                    <div class="col-md-12 text-center mt-5 mb-2">
+                        <p class="subheading tex-h color2">Knowledge</p>
+                        <h3>Interesting Topics</h3>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <div>
+                            <div class="owl-carousel owl-theme">
+                                {{ if .Params.schedulingManagementForEveryone }} {{ range .Params.schedulingManagementForEveryone }}
+                                <div class="item">
+                                    <div class="grids">
+                                        <div class="choosecontent text-center mb-5">
+                                            <h5>{{.title}}</h5>
+                                            <p>{{.text}}</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                {{ end }} {{ else }} {{ range .Site.Data.schedulingManagementForEveryone.items }}
+
+                                <div class="item">
+                                    <div class="grids">
+                                        <div class="choosecontent text-center mb-5">
+                                            <h5>{{.title}}</h5>
+                                            <p>{{.text}}</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                {{end}} {{end}}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div>
+    {{- partial "resources.html" . -}}
+</div>
+<div>
+    <div class="modal fade bd-example-modal-sm blog-pop-cus phonemodal " id="schedulingmanagementpop" tabindex="-1" role="dialog" style="margin-top: 30px;" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-sm">
+            <div class="modal-content" style="border-radius: 13px;">
+                <div class="pop-content-cus text-center">
+
+                    <div class="container">
+                        <a type="button" class="close-blog" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </a>
+                        <div class="row modal-top-for">
+
+                            <div class="col-lg-6 col-md-6 col-12 p-0">
+                                <img src="/images/novagems-img/pop-img.png" alt="pop-img" style="width: 100%;">
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-12">
+
+                                <h3 class="book-a-demo-h3 book-a-demo-tab mb-2" style="text-align: left; font-size: 25px;"><b>Schedule Your Team in Just A Few Clicks</b></h3>
+                                <form id="Scheduling-management-Form"></form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script>
+    window.onscroll = function() {
+        myFunction();
+    };
+
+    function myFunction() {
+        var winScroll =
+            document.body.scrollTop || document.documentElement.scrollTop;
+        var height =
+            document.documentElement.scrollHeight -
+            document.documentElement.clientHeight;
+        var scrolled = (winScroll / height) * 100;
+        var countScrollRatio = scrolled.toFixed(0);
+        var checkEnterVisitUser = true;
+
+        var checkAgainVisitUserScheduling = localStorage.getItem("againVisitUserScheduling");
+
+        if (checkAgainVisitUserScheduling) {
+            checkEnterVisitUser = false;
+        } else {
+            checkEnterVisitUser = true;
+        }
+        if (countScrollRatio == "25") {
+            if (checkEnterVisitUser) {
+                localStorage.setItem("againVisitUserScheduling", true);
+                $("#schedulingmanagementpop").modal("show");
+            }
+        }
+    }
+
+    window.onbeforeunload = function(e) {
+        window.onunload = function() {
+            window.localStorage.againVisitUserScheduling = "false";
+        }
+        return undefined;
+    };
+
+    window.onload = function() {
+        window.localStorage.againVisitUserScheduling = "true";
+    };
+</script>
+
+<style>
+    .blog-pop-cus .close-blog {
+        border-radius: 50%;
+        display: block;
+        z-index: 999;
+        opacity: 1;
+        border: none;
+        font-size: 27px;
+        clear: both;
+        line-height: 30px;
+        background-color: #fff;
+        box-shadow: 0 0px 5px rgb(0 0 0 / 20%);
+        height: 30px;
+        width: 30px;
+        text-align: center;
+        padding: 0;
+        position: absolute;
+        right: -15px;
+        font-weight: 700;
+        top: -15px;
+        color: red !important;
+    }
+    
+    @media screen and (max-width:767px) {
+        .blog-pop-cus .close-blog {
+            right: -6px;
+            top: -19px;
+        }
+        .phonemodal {
+            padding-top: 25px;
+        }
+    }
+    
+    @media only screen and (min-width:768px) and (max-width:1023px) {
+        .modal-top-for {
+            margin: 0px 0px 0px -41px;
+        }
+        .phonemodal {
+            padding-top: 25px;
+        }
+    }
+</style>
+{{end}}

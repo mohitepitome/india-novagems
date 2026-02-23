@@ -1,0 +1,88 @@
+ {{- partial "head.html" . -}}
+
+<div class="mt-3">
+    <div class=" container  ">
+        <div class="col-lg-8 col-md-12 col-12 mx-auto">
+            <div class="col-md-12 text-center my-3">
+                <a href="/"><img src='{{ .Site.Params.logo | relURL}}' alt="logo "></a>
+            </div>
+            <div class="row book-a-demo1 p-0">
+                <div class="form-group">
+                    <form id="referEarn">
+                        <div class="mt-3">
+                            <h1 class="text-center" id="refer-earnTitle">Refer a friend</h1>
+                        </div>
+                        <div class="text-center my-4">
+                            <img src='{{"/images/novagems-img/refer.svg" | absURL }}' alt="refer">
+                        </div>
+
+                        <div class="row refer-form-fields">
+                            <div class="col-sm-12">
+                                <h4>Referral's information</h4>
+                            </div>
+                            <div class="col-sm-6">
+                                <p>Referral's Name<span>*</span></p>
+                                <input id="referralName" type="text" name="referralName" class="form-control" required />
+                            </div>
+                            <div class="col-sm-6">
+                                <p>Referral's Email Address<span>*</span></p>
+                                <input id="referralEmail" type="email" name="referralEmail" class="form-control" required />
+                            </div>
+                            <div class="col-sm-6">
+                                <p>Referral's Phone Number<span>*</span></p>
+                                <input id="referralPhoneNo" type="tel" name="referralPhoneNo" class="form-control" required />
+                            </div>
+                            <div class="col-sm-6">
+                                <!-- <p>Referral's Company<span>*</span></p>
+                                    <input id="referralCompanyName" type="text" name="referralCompanyName" class="form-control" required /> -->
+                            </div>
+                        </div>
+                        <hr/>
+                        <div class="row refer-form-fields">
+                            <div class="col-sm-12">
+                                <h4>Your information</h4>
+                            </div>
+                            <div class="col-sm-6">
+                                <p>Your Name<span>*</span></p>
+                                <input id="refereeName" type="text" name="refereeName" class="form-control" required />
+                            </div>
+                            <div class="col-sm-6">
+                                <p>Your Email Address<span>*</span></p>
+                                <input id="refereeEmail" type="email" name="refereeEmail" class="form-control " required />
+                            </div>
+                            <div class="col-sm-6">
+                                <p>Your Phone Number<span>*</span></p>
+                                <input id="refereePhoneNo" type="tel" name="refereePhoneNo" class="form-control" required />
+                            </div>
+                            <div class="col-sm-6"></div>
+                            <div class="col-sm-6 mt-3">
+                                <a href="/refer-earn-terms-and-conditions/" target="blank" style="color: #786ce6;">Terms and Conditions</a>
+                            </div>
+                        </div>
+
+                        <div class="refer-btn text-center" style="margin-top: 2em;">
+                            <input class="finish-btn" type="submit" value="Finish">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade refe-earn-pop refer-earn-form" id="refer-earn-thankyou" tabindex="-1" role="dialog" aria-labelledby="refer-earnformTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="amazon">
+                <div class="mt-3">
+                    <h1 class="text-center" id="refer-earnTitle">Thank you for submitting the form!</h1>
+                    <p class="text-center">We've sent you an email with further information at the email address you provided.</p>
+                </div>
+                <div class="refer-btn text-center">
+                    <a id="thankyouButton" type="button" class=" btn btn-default filter-button active" data-dismiss="modal" aria-label="Close">Okay</a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+{{- partial "script.html" . -}}

@@ -1,0 +1,26 @@
+<!-- test
+<div id="load">
+    <div class=" container p-md-0" id="clientscroll">
+        <section class="customer-logos slider">
+            {{ range .Site.Data.clients.items }}
+            <div class="slide">
+                <div class="client-slide"><img src="{{ .image | absURL }}" alt="{{.brand}}"></div>
+            </div>
+            {{end}}
+        </section>
+    </div>
+</div> -->
+
+<!-- test -->
+<!-- test -->
+<div id="load">
+    <div class="container p-md-0" id="clientscroll">
+        <section class="customer-logos slider" aria-live="polite" aria-label="Client Logos Carousel">
+            {{ range .Site.Data.clients.items }}
+            <div class="slide" role="option" aria-roledescription="client logo">
+                <div class="client-slide"><img style="width: 100%;" src="{{ .image | absURL }}" alt="{{.brand}}"></div>
+            </div>
+            {{end}}
+        </section>
+    </div>
+</div>

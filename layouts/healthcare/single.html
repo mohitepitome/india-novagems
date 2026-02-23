@@ -1,0 +1,856 @@
+{{ define "main" }}
+<!-- schedule Section -->
+<div>
+    <div class=" cus-dg-phone">
+        <div class="container example">
+            <div class="row header-subwrapper-top">
+                <div class="col-lg-6 col-md-6 col-12 ">
+                    <div>
+                        <div>
+                            <p class="mb-2" style="color: #48D0C8;">The Best Healthcare Scheduling Software </p>
+                            <h1 class="hero-h1">Simplify Scheduling, Enhance Patient Care, and Optimize Operations</h1>
+                            <p class="mb-2">Novagems’ healthcare workforce management solution helps you:</p>
+                            <p class="mb-2"><span><img src="/images/novagems-img/healthcare/check.png" alt="check"></span> Streamline Healthcare Scheduling (Open Shift Management - Included) </p>
+                            <p class="mb-2"><span><img src="/images/novagems-img/healthcare/check.png" alt="check"></span> Track Timesheets & Locations with Accuracy </p>
+                            <p class="mb-2"><span><img src="/images/novagems-img/healthcare/check.png" alt="check"></span> Get Real-Time Alerts & Notifications </p>
+                            <p class="mb-2"><span><img src="/images/novagems-img/healthcare/check.png" alt="check"></span> Seamless Payroll, Task & Compliance Management</p>
+                        </div>
+                        <div class=" my-5">
+                            <div class="footer-newsletter">
+                                <form id="get-started-for-free">
+                                    <input type="email" id="email" name="email" placeholder="Enter your email address">
+                                    <input class="home-btn" type="submit" value="Get Started for Free">
+                                </form>
+                            </div>
+                        </div>
+                        <div class="mt-5 mb-2">
+                            {{- partial "clients.html" . -}}
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="col-lg-6 col-md-6 col-12 p-md-0 img-iped-head all-img-left ">
+                    <div class="scheduling-management-for-everyone">
+                        <img src='{{"/images/novagems-img/healthcare/healthcar.png" | absURL}}' alt="Schedule-main">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div style="background-color: #F7F8FA;">
+            <div class="container py-5">
+                <div class="col-md-12 text-center ">
+                    <h2 class=" mb-3">Features</h2>
+                </div>
+                <div class="row">
+                    <div class="col-lg-2 col-md-4 col-6 mt-3">
+                        <div class="clients text-center">
+                            <figure style="margin-bottom: 20px;"><img class="key-img" src='{{"/images/novagems-img/healthcare/Scheduling-Healthcare.png" | absURL}}' alt="Scheduling"></figure>
+                            <p class="clients-p">Healthcare Scheduling </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-4 col-6 mt-3">
+                        <div class="clients text-center ">
+                            <figure style="margin-bottom: 20px;"><img class="key-img" src='{{"/images/novagems-img/healthcare/Clock In-Out & Attendance.png" | absURL}}' alt="task&Post"></figure>
+                            <p class="clients-p">Clock In/Out & Attendance</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-4 col-6 mt-3">
+                        <div class="clients text-center">
+                            <figure style="margin-bottom: 20px;"><img class="key-img" src='{{"/images/novagems-img/healthcare/Timesheet & Payroll.png" | absURL}}' alt="gps-geofence"></figure>
+                            <p class="clients-p">Timesheet & Payroll</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-4 col-6 mt-3">
+                        <div class="clients text-center">
+                            <figure style="margin-bottom: 20px;"><img class="key-img" src='{{"/images/novagems-img/healthcare/Location Tracking.png" | absURL}}' alt="Clock"></figure>
+                            <p class="clients-p">Location Tracking</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-4 col-6 mt-3">
+                        <div class="clients text-center">
+                            <figure style="margin-bottom: 20px;"><img class="key-img" src='{{"/images/novagems-img/healthcare/EVV & Compliance.png" | absURL}}' alt="Timesheet"></figure>
+                            <p class="clients-p">EVV & Compliance</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-4 col-6 mt-3">
+                        <div class="clients text-center">
+                            <figure style="margin-bottom: 20px;"><img class="key-img" src='{{"/images/novagems-img/healthcare/Real-Time Alerts.png" | absURL}}' alt="Chat"></figure>
+                            <p class="clients-p">Real - Time Alerts </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ------------------------- -->
+
+    <div class="mt-5">
+        <div class="mt-5">
+            <div class="container example">
+                <div class="col-md-12 text-center key-schedule">
+                    <h2 class="hero-h1">Healthcare Staff Scheduling</h2>
+                </div>
+                <div id="tabs" class="row align-items-center">
+                    <div class="col-lg-6 col-md-6 col-12 ">
+                        <div>
+                            <div>
+                                <h5>Fast & Easy Scheduling, Zero Hassle</h5>
+                                <p>Effortlessly Create, Edit, And Share Conflict-Free Schedules In Minutes.</p>
+                            </div>
+                            <ul class="tab-slaider" id="accordion">
+                                <li>
+                                    <a class="step circle active" href="#tabs-Shift-Planing">
+                                        <div class="tag">
+                                            <div class="icon">
+                                                <div class="block">
+                                                    <div class="circle"></div>
+                                                </div>
+                                            </div>
+                                            <img class="active-img" src="/images/novagems-img/dot.svg" alt="dot">
+                                            <span class="title headimg-color">Drag, Drop & Copy Scheduling</span>
+                                        </div>
+                                    </a>
+                                    <div class="addon fadein addon-h">
+                                        <span>Quickly assign and modify shifts with drag-and-drop and copy-and-paste options. With the multi-view option on dashboards, medical staff can quickly shift to weekly and monthly views for better visibility.</span>
+                                    </div>
+                                </li>
+
+                                <li>
+                                    <a href="#tabs-Open-Shifts">
+                                        <div class="tag">
+                                            <div class="icon">
+                                                <div class="block">
+                                                    <div class="circle"></div>
+                                                </div>
+                                            </div>
+                                            <img class="active-img" src="/images/novagems-img/dot.svg" alt="dot">
+                                            <span class="title headimg-color">Easy Shift Adjustments & Open shifts</span>
+                                        </div>
+                                    </a>
+                                    <div class="addon addon-h">
+                                        <span>Create and use custom shift templates for common medical staff schedules, saving time across different medical teams. Quickly reassign shifts with open shifts and avoid last minute no shows or scheduling conflicts</span>
+                                    </div>
+                                </li>
+
+                                <li>
+                                    <a href="#tabs-Shift-Time&Cost-Analysis">
+                                        <div class="tag">
+                                            <img class="active-img " src="/images/novagems-img/dot.svg" alt="dot">
+                                            <span class="title headimg-color">Optimized Overtime & Role-Based Matching</span>
+                                        </div>
+                                    </a>
+                                    <div class="addon addon-h">
+                                        <span>Record shift hours for all healthcare employees to prevent burnout and excess overtime. Easily manage multiple medical departments and clients from one platform, assigning roles and permissions to control access to sensitive data.</span>
+                                    </div>
+                                </li>
+
+                                <li>
+                                    <a href="#Instant-Shift-Alerts">
+                                        <div class="tag">
+                                            <img class="active-img " src="/images/novagems-img/dot.svg" alt="dot">
+                                            <span class="title headimg-color">Instant Shift Alerts & Reminders</span>
+                                        </div>
+                                    </a>
+                                    <div class="addon addon-h">
+                                        <span>Get automatic alerts to avoid scheduling conflicts and send automated reminders to staff to confirm shifts and minimize the chance of missed shifts, ensuring that all team members are prepared and on time for their scheduled duties.</span>
+                                    </div>
+                                </li>
+                            </ul>
+
+                            <div class="my-4" style="margin-left: 0px;">
+                                <div class="footer-newsletter features-newsletter">
+                                    <form id="tasks_Post_orders">
+                                        <input type="email" id="tasks-Post-orders" name="tasks-Post-orders" placeholder="Enter your email address">
+                                        <input type="submit" value="Get Started for Free" class="background4" id="btnsunscribe">
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6 col-md-6 col-12 employee-scheduling-phone ">
+                        <div class="text-center">
+                            <figure><img src="/images/novagems-img/healthcare/Healthcare-Staff-Scheduling.png" alt="Generate-Multiple-and-Recurring-Schedules"></figure>
+                        </div>
+                        <div class="img-iped tab-image">
+                            <div id="tabs-Shift-Planing">
+                                <figure><img src="/images/novagems-img/healthcare/Healthcare-Staff-Scheduling.png" alt="Generate-Multiple-and-Recurring-Schedules"></figure>
+                            </div>
+                            <div id="tabs-Open-Shifts">
+                                <figure><img src="/images/novagems-img/healthcare/Healthcare-Staff-Scheduling.png" alt="AnalysisTheData"></figure>
+                            </div>
+                            <div id="tabs-Shift-Time&Cost-Analysis">
+                                <figure><img src="/images/novagems-img/healthcare/Healthcare-Staff-Scheduling.png" alt="Export-Scheduling"></figure>
+                            </div>
+
+                            <div id="Instant-Shift-Alerts">
+                                <figure><img src="/images/novagems-img/healthcare/Healthcare-Staff-Scheduling.png" alt="Export-Scheduling"></figure>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Tasks & Post orders -->
+    <div class="dedicated-features-sec">
+        <div class="container example">
+            <div class="col-md-12 text-center key-schedule">
+                <h2 class="hero-h1">Healthcare Staff Time & Location Tracking</h2>
+            </div>
+            <div id="tabses" class="row align-items-center">
+                <div class="col-lg-6 col-md-6 col-12">
+                    <div class="text-center">
+                        <figure><img src="/images/novagems-img/healthcare/Healthcare-Staff-Time-Location-Tracking.png" alt="Have-control-over-time-sheet"></figure>
+                    </div>
+                    <div class="img-iped tab-image">
+                        <div id="tabs-Timed-Tasks&checklist">
+                            <figure><img src="/images/novagems-img/healthcare/Healthcare-Staff-Time-Location-Tracking.png" alt="Have-control-over-time-sheet"></figure>
+                        </div>
+                        <div id="tabs-Automatic-Task-Confirmation">
+                            <figure><img src="/images/novagems-img/healthcare/Healthcare-Staff-Time-Location-Tracking.png" alt="Effortless-converted-worker"></figure>
+                        </div>
+                        <div id="tabs-Picture&Video-Proofs">
+                            <figure><img src="/images/novagems-img/healthcare/Healthcare-Staff-Time-Location-Tracking.png" alt="Real-time-data-analysis"></figure>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="col-lg-6 col-md-6 col-12">
+                    <div>
+                        <div>
+                            <h5>Track Time and Locations for Healthcare Staff</h5>
+                            <p>Manage Clock-Ins, Locations, And Breaks Easily For Accurate Payroll.</p>
+                        </div>
+                        <ul class="tab-slaider" id="accordiones">
+                            <li>
+                                <a class="step circle active" href="#tabs-Timed-Tasks&checklist">
+                                    <div class="tag">
+                                        <img class="active-img" src="/images/novagems-img/dot.svg" alt="dot">
+                                        <span class="title headimg-color">Clock-In/Clock-Out & Mobile App Time Tracking</span>
+                                    </div>
+                                </a>
+                                <div class="addon fadein addon-h">
+                                    <span>Track Working Hours For All Healthcare Staff With Digital Clock-In/Out Functionality Available Via Mobile Or Desktop. Enable Staff To Clock In And Out Seamlessly Using The Mobile App, Whether They Are On-Site Or Working Remotely, Ensuring Accurate Time Records For Payroll Processing.</span>
+                                </div>
+                            </li>
+
+                            <li>
+                                <a href="#tabs-Automatic-Task-Confirmation">
+                                    <div class="tag">
+                                        <img class="active-img" src="/images/novagems-img/dot.svg" alt="dot">
+                                        <span class="title headimg-color">GPS & Geofencing For Field Staff</span>
+                                    </div>
+                                </a>
+                                <div class="addon  addon-h">
+                                    <span> <b>Real-Time GPS Tracking:</b>  Monitor the exact location of mobile healthcare staff, ensuring timely and appropriate responses.​ <br><b>Geofenced Clock-In Zones:</b>  Allow Healthcare staff to clock in only within the set geographic areas, enhancing accountability. Get the exact location of the medical staff, ensuring timely and appropriate responses.</span>
+                                </div>
+                            </li>
+
+                            <li>
+                                <a href="#tabs-Picture&Video-Proofs">
+                                    <div class="tag">
+                                        <img class="active-img" src="/images/novagems-img/dot.svg" alt="dot">
+                                        <span class="title headimg-color">Shift Breaks & Time Off</span>
+                                    </div>
+                                </a>
+                                <div class="addon  addon-h">
+                                    <span>Manage healthcare employees’ breaks with just a click, healthcare Employees can also easily record unpaid breaks. The staff can easily apply for time off and the system keeps track of it while scheduling. Avoid understaffing and have the right number of people with the right skills.</span>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="my-4" style="margin-left: 0px;">
+                            <div class="footer-newsletter features-newsletter">
+                                <form id="schedule_services">
+                                    <input type="email" id="schedule-services" name="schedule-services" placeholder="Enter your email address">
+                                    <input type="submit" value="Get Started for Free" class="background2">
+                                </form>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+    <!-- GPS Tracking -->
+    <div class="Managing-sec-rock">
+            <div class="container ">
+                <div class="testimonial-wrapper">
+                    <div class="quote-left"><img src="/images/novagems-img/novagemsv2/customer-stories/quote-left.png" alt="Clock-In-Out"></div>
+                    <div class="testimonial-container">
+                        <div class="testimonial-text">
+                            <p class="testimonial-message">
+                                “Novagems Has Given Us Better Control Over Our Schedules, Which Directly Improves The Care We Provide To Our Patients. It’s Been A Game-Changer For Our Clinic.” <br> - Charles Hill
+                            </p>
+                        </div>
+                    </div>
+                    <div class="quote-right"><img src="/images/novagems-img/novagemsv2/customer-stories/quote-right.png" alt="Clock-In-Out"></div>
+                </div>
+            </div>
+        </div>
+
+
+    <div class="mt-5">
+        <div>
+            <div class="container example">
+                <div class="col-md-12 text-center key-schedule">
+                    <h2 class="hero-h1 mb-0">Seamless Timesheet & Payroll</h2>
+                </div>
+                <div id="tabs2" class="row align-items-center">
+                    <div class="col-lg-6 col-md-6 col-12">
+                        <div>
+                            <div>
+                                <h5>Work-Hour Tracking & Shift-Based Payment Calculation</h5>
+                            </div>
+                            <ul class="tab-slaider" id="accordion2">
+                                <li>
+                                    <a class="step circle active" href="#tabs-1">
+                                        <div class="tag">
+                                            <div class="icon">
+                                                <div class="block">
+                                                    <div class="circle"></div>
+                                                </div>
+                                            </div>
+                                            <img class="active-img" src="/images/novagems-img/dot.svg" alt="dot">
+                                            <span class="title headimg-color">Compliance & Payroll Management</span>
+                                        </div>
+                                    </a>
+                                    <div class="addon fadein addon-h">
+                                        <span>Accurately record shift hours for all employees to ensure correct payroll processing. Track different pay rates based on the type of shift worked, including regular hours, overtime, double-time, and holiday rates. Avoid extra labor costs with accurate compliance management.</span>
+                                    </div>
+                                </li>
+
+                                <li>
+                                    <a href="#tabs-2">
+                                        <div class="tag">
+                                            <div class="icon">
+                                                <div class="block">
+                                                    <div class="circle"></div>
+                                                </div>
+                                            </div>
+                                            <img class="active-img" src="/images/novagems-img/dot.svg" alt="dot">
+                                            <span class="title headimg-color">Payroll-Ready Timesheets</span>
+                                        </div>
+                                    </a>
+                                    <div class="addon  addon-h">
+                                        <span>Automate the calculation of wages for all shift types to reduce errors and save time. Easily export timesheet data for accounting and billing purposes, streamlining administrative tasks and maintaining financial accuracy.</span>
+                                    </div>
+                                </li>
+
+
+                            </ul>
+
+                            <div class="my-3" style="margin-left: 0px;">
+                                <div class="footer-newsletter features-newsletter">
+                                    <form id="GPS_Tracking">
+                                        <input type="email" id="GPS-Tracking" name="GPS-Tracking" placeholder="Enter your email address">
+                                        <input type="submit" value="Get Started for Free" class="background3" id="btnsunscribe">
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6 col-md-6 col-12 employee-scheduling-phone">
+                        <div class="text-center">
+                            <figure><img src="/images/novagems-img/healthcare/Seamless-Timesheet-Payroll.png" alt="BreakInBreakOut"></figure>
+                        </div>
+                        <div class="img-iped tab-image">
+                            <div id="tabs-1">
+                                <figure><img src="/images/novagems-img/healthcare/Seamless-Timesheet-Payroll.png" alt="BreakInBreakOut"></figure>
+                            </div>
+                            <div id="tabs-2">
+                                <figure><img src="/images/novagems-img/healthcare/Seamless-Timesheet-Payroll.png" alt="LeaveRequest"></figure>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Clock In / Out -->
+    <div class="dedicated-features-sec">
+        <div class="container example">
+            <div class="col-md-12 text-center key-schedule">
+                <h2 class="hero-h1 mb-0">Task & Shift Management</h2>
+            </div>
+            <div id="tabs3" class="row align-items-center">
+                <div class="col-lg-6 col-md-6 col-12">
+                    <div class="text-center">
+                        <figure><img src="/images/novagems-img/healthcare/Task-Shift-Management.png" alt="24Hours"></figure>
+                    </div>
+                    <div class="img-iped tab-image">
+                        <div id="tabs-11">
+                            <figure><img src="/images/novagems-img/healthcare/Task-Shift-Management.png" alt="24Hours"></figure>
+                        </div>
+                        <div id="tabs-22">
+                            <figure><img src="/images/novagems-img/healthcare/Task-Shift-Management.png" alt="FreeTraining"></figure>
+                        </div>
+                        <div id="Selfie-Verification">
+                            <figure><img src="/images/novagems-img/healthcare/Task-Shift-Management.png" alt="FreeTraining"></figure>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-12">
+                    <div>
+                        <div>
+                            <h5>Streamline Daily Operations</h5>
+                            <p>Allocate Tasks To Nurses, Technicians, Support Staff, Or Any Team Member Efficiently</p>
+                        </div>
+                        <ul class="tab-slaider" id="accordion3">
+                            <li>
+                                <a class="step circle active" href="#tabs-11">
+                                    <div class="tag">
+                                        <img class="active-img" src="/images/novagems-img/dot.svg" alt="dot">
+                                        <span class="title headimg-color">Task Assignment & Status Tracking</span>
+                                    </div>
+                                </a>
+                                <div class="addon fadein addon-h">
+                                    <span>Easily Assign Tasks To Nurses, Technicians, Support Staff, Or Any Team Member, Ensuring Clear Responsibility For Each Task. Track The Progress And Completion Of Tasks In Real-Time, Keeping Everyone Informed About Their Duties.</span>
+                                </div>
+                            </li>
+
+                            <li>
+                                <a href="#tabs-22">
+                                    <div class="tag">
+                                        <img class="active-img" src="/images/novagems-img/dot.svg" alt="dot">
+                                        <span class="title headimg-color">Reminders, Notifications & Task Completion Alerts</span>
+                                    </div>
+                                </a>
+                                <div class="addon  addon-h">
+                                    <span>Automated reminders and notifications ensure that no task is overlooked, while alerts notify medical staff when tasks are completed or missed with medical time-tracking software</span>
+                                </div>
+                            </li>
+
+                            <li>
+                                <a href="#Selfie-Verification">
+                                    <div class="tag">
+                                        <img class="active-img" src="/images/novagems-img/dot.svg" alt="dot">
+                                        <span class="title headimg-color">Selfie Verification & Permanent Log Storage</span>
+                                    </div>
+                                </a>
+                                <div class="addon  addon-h">
+                                    <span>Require real-time proof of presence with selfie verification to confirm task completion and ensure accountability. Additionally, record all actions, edits, and deletions for permanent history tracking, providing a clear log of all tasks.</span>
+                                </div>
+                            </li>
+
+                        </ul>
+                        <div class="my-3" style="margin-left: 0px;">
+                            <div class="footer-newsletter features-newsletter">
+                                <form id="clock_in_out">
+                                    <input type="email" id="clock-in_out" name="clock-in-out" placeholder="Enter your email address">
+                                    <input type="submit" value="Get Started for Free" class="background7">
+                                </form>
+                            </div>
+                        </div>
+                        <div style="margin-left: 15px;" class=" learn-More-btn hvr-underline-reveal">
+                            <a href="/clock-in-out" class="btn-arrow learn-More ">Learn More </a>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+    <div>
+        <div class="container py-5">
+            <div class="col-md-12 text-center ">
+                <h2 class=" mb-3">Others Features</h2>
+            </div>
+            <div class="row">
+                <div class="col-lg-2 col-md-4 col-6 mt-3">
+                    <div class="clientstwo text-center">
+                        <figure style="margin-bottom: 20px;"><img class="key-img" src='{{"/images/novagems-img/healthcare/Real-Time Care Reports to Families.png" | absURL}}' alt="Scheduling"></figure>
+                        <p class="clients-p">Real-Time Care Reports to Families</p>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-6 mt-3">
+                    <div class="clients text-center ">
+                        <figure style="margin-bottom: 20px;"><img class="key-img" src='{{"/images/novagems-img/healthcare/Clock In-Out & Attendance.png" | absURL}}' alt="task&Post"></figure>
+                        <p class="clients-p">Task and <br> Post</p>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-6 mt-3">
+                    <div class="clients text-center">
+                        <figure style="margin-bottom: 20px;"><img class="key-img" src='{{"/images/novagems-img/healthcare/Timesheet & Payroll.png" | absURL}}' alt="gps-geofence"></figure>
+                        <p class="clients-p">Reports & Insights</p>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-6 mt-3">
+                    <div class="clients text-center">
+                        <figure style="margin-bottom: 20px;"><img class="key-img" src='{{"/images/novagems-img/healthcare/Data Management.png" | absURL}}' alt="Clock"></figure>
+                        <p class="clients-p">Data Management</p>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-6 mt-3">
+                    <div class="clients text-center">
+                        <figure style="margin-bottom: 20px;"><img class="key-img" src='{{"/images/novagems-img/healthcare/EVV & Compliance.png" | absURL}}' alt="Timesheet"></figure>
+                        <p class="clients-p">Breaks, Vacation & Overtime</p>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-6 mt-3">
+                    <div class="clients text-center">
+                        <figure style="margin-bottom: 20px;"><img class="key-img" src='{{"/images/novagems-img/healthcare/Real-Time Alerts.png" | absURL}}' alt="Chat"></figure>
+                        <p class="clients-p">Shift & Team Management</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div>
+        {{- partial "newsletterpage2.html" . -}}
+    </div>
+
+    <div style="background-color: #F7F8FA;">
+        <div class="container py-5">
+            <div class="col-md-12 text-center ">
+                <h2 class=" mb-3">Overall Result Using Our Software</h2>
+            </div>
+            <div class="row mt-5">
+                <div class="col-md-3 col-6 ">
+                    <div class="text-center">
+                        <img class="mb-2" src='{{"/images/novagems-img/healthcare/Stay Compliant (EVV & More).png" | absURL}}' alt="Chat">
+                        <h5 class="healthcare-h5">Stay Compliant <br> (EVV & More)</h5>
+                        <p>Ensure Regulatory Compliance With Built-In Tracking.</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6 ">
+                    <div class="text-center">
+                        <img class="mb-2" src='{{"/images/novagems-img/healthcare/Reduce No-Shows.png" | absURL}}' alt="Chat">
+                        <h5 class="healthcare-h5">Reduce <br> No-Shows</h5>
+                        <p>Automated Reminders Keep Patients And Staff On Schedule.</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6 ">
+                    <div class="text-center">
+                        <img class="mb-2" src='{{"/images/novagems-img/healthcare/Pay Employees Easily & Error-Free.png" | absURL}}' alt="Chat">
+                        <h5 class="healthcare-h5">Pay Employees Easily & Error-Free</h5>
+                        <p>Simplify Payroll With Accurate Tracking.</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6 ">
+                    <div class="text-center">
+                        <img class="mb-2" src='{{"/images/novagems-img/healthcare/Web & Mobile Accessibility.png" | absURL}}' alt="Chat">
+                        <h5 class="healthcare-h5">Web & Mobile Accessibility</h5>
+                        <p>Keep Patient And Staff Records Organized.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mt-5">
+                <div class="col-md-3 col-12"></div>
+                <div class="col-md-3 col-6 ">
+                    <div class="text-center">
+                        <img class="mb-2" src='{{"/images/novagems-img/healthcare/Save Time.png" | absURL}}' alt="Chat">
+                        <h5 class="healthcare-h5">Save Time</h5>
+                        <p>Automate Scheduling And Reduce Manual Work.</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6 ">
+                    <div class="text-center">
+                        <img class="mb-2" src='{{"/images/novagems-img/healthcare/Reduce Costs.png" | absURL}}' alt="Chat">
+                        <h5 class="healthcare-h5">Reduce Costs</h5>
+                        <p>Optimize Staff Usage And Cut Unnecessary Expenses.</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-12"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container py-5">
+        <div class="col-md-12 text-center ">
+            <h2 class=" mb-3">Other healthcare industries we cater</h2>
+        </div>
+        <div class="row mt-5">
+            <div class="col-md-3 col-6 ">
+                <div class="text-center healthcare-industries-card">
+                    <h5 class="healthcare-h6"> In-Home Healthcare </h5>
+                </div>
+            </div>
+            <div class="col-md-3 col-6 ">
+                <div class="text-center healthcare-industries-card">
+                    <h5 class="healthcare-h6"> Clinic </h5>
+
+                </div>
+            </div>
+            <div class="col-md-3 col-6 ">
+                <div class="text-center healthcare-industries-card">
+                    <h5 class="healthcare-h6"> Assisted Living </h5>
+
+                </div>
+            </div>
+            <div class="col-md-3 col-6 ">
+                <div class="text-center healthcare-industries-card">
+                    <h5 class="healthcare-h6"> Hospital </h5>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mt-2">
+            <div class="col-md-3 col-6 ">
+                <div class="text-center healthcare-industries-card">
+                    <h5 class="healthcare-h6"> Care Center </h5>
+                </div>
+            </div>
+            <div class="col-md-3 col-6 ">
+                <div class="text-center healthcare-industries-card">
+                    <h5 class="healthcare-h6"> Pharmacy </h5>
+
+                </div>
+            </div>
+            <div class="col-md-3 col-6 ">
+                <div class="text-center healthcare-industries-card">
+                    <h5 class="healthcare-h6"> Rehab Center </h5>
+
+                </div>
+            </div>
+            <div class="col-md-3 col-6 ">
+                <div class="text-center healthcare-industries-card">
+                    <h5 class="healthcare-h6"> Veterinary </h5>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 px-0 px-md-3 col-md-10 mx-md-auto">
+            <div class="row mt-2">
+                <div class="col-md-4 col-6 ">
+                    <div class="text-center healthcare-industries-card">
+                        <h5 class="healthcare-h6"> Nursing </h5>
+
+                    </div>
+                </div>
+                <div class="col-md-4 col-6 ">
+                    <div class="text-center healthcare-industries-card">
+                        <h5 class="healthcare-h6"> Animal Care </h5>
+
+                    </div>
+                </div>
+                <div class="col-md-4 col-6 ">
+                    <div class="text-center healthcare-industries-card">
+                        <h5 class="healthcare-h6"> Dental Practice </h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+
+<div class="modal fade refe-earn-pop refer-earn-form" id="schedulingmanagementpop" tabindex="-1" role="dialog" aria-labelledby="refer-earnformTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div>
+                <button type="button" class="close-blog" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+
+
+                <div class="container ">
+                    <div class="row align-items-center ">
+                        <div class="col-lg-7 col-md-7 col-12 my-5 text-center">
+                            <h2 class="mb-2">Save 1<span><img src="/images/novagems-img/healthcare/time.png" alt=""></span> + hrs in a week</h2>
+                            <p class="mb-4" style="font-size: 27px;">with only 5 min set up</p>
+                            <p class="mb-4">Join 550+ healthcare professionals who made their lives easier</p>
+                            <a class="popbtn " href="">GET ME STARTED</a>
+                            <br>
+                            <br>
+                            <a class="hard" href=""> I’ll do it the hard way</a>
+                            <br>
+                            <br>
+                            <div class="d-flex justify-content-center  gap-3 text-center">
+                                <div>
+                                    <img class="reviewsimg" src="/images/novagems-img/novagemsv2/google.png" alt="google">
+                                </div>
+                                <div>
+                                    <img class="reviewsimg" src="/images/novagems-img/novagemsv2/getapp.png" alt="getapp">
+                                </div>
+                                <div>
+                                    <img class="reviewsimg" src="/images/novagems-img/novagemsv2/capterra.png" alt="capterra">
+                                </div>
+                                <div>
+                                    <img class="reviewsimg" src="/images/novagems-img/novagemsv2/g2.png" alt="g2">
+                                </div>
+                                <div>
+                                    <img class="reviewsimg" src="/images/novagems-img/novagemsv2/software.png" alt="software">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-5 col-md-5 col-12">
+                            <img src="/images/novagems-img/healthcare/pop.png" alt="super-heroes">
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script>
+    window.onscroll = function() {
+        myFunction();
+    };
+
+    function myFunction() {
+        var winScroll =
+            document.body.scrollTop || document.documentElement.scrollTop;
+        var height =
+            document.documentElement.scrollHeight -
+            document.documentElement.clientHeight;
+        var scrolled = (winScroll / height) * 100;
+        var countScrollRatio = scrolled.toFixed(0);
+        var checkEnterVisitUser = true;
+
+        var checkAgainVisitUserScheduling = localStorage.getItem("againVisitUserScheduling");
+
+        if (checkAgainVisitUserScheduling) {
+            checkEnterVisitUser = false;
+        } else {
+            checkEnterVisitUser = true;
+        }
+        if (countScrollRatio == "15") {
+            if (checkEnterVisitUser) {
+                localStorage.setItem("againVisitUserScheduling", true);
+                $("#schedulingmanagementpop").modal("show");
+            }
+        }
+    }
+
+    window.onbeforeunload = function(e) {
+        window.onunload = function() {
+            window.localStorage.againVisitUserScheduling = "false";
+        }
+        return undefined;
+    };
+
+    window.onload = function() {
+        window.localStorage.againVisitUserScheduling = "true";
+    };
+</script>
+
+<style>
+    .healthcare-industries-card {
+        background: #FFFFFF 0% 0% no-repeat padding-box;
+        box-shadow: 0px 6px 10px #0000001A;
+        border: 1px solid #F2F2F2;
+        border-radius: 10px;
+        padding-top: 17px;
+        padding-bottom: 17px;
+        margin-bottom: 20px;
+    }
+    
+    .blog-pop-cus .close-blog {
+        border-radius: 50%;
+        display: block;
+        z-index: 999;
+        opacity: 1;
+        border: none;
+        font-size: 27px;
+        clear: both;
+        line-height: 30px;
+        background-color: #fff;
+        box-shadow: 0 0px 5px rgb(0 0 0 / 20%);
+        height: 30px;
+        width: 30px;
+        text-align: center;
+        padding: 0;
+        position: absolute;
+        right: -15px;
+        font-weight: 700;
+        top: -15px;
+        color: red !important;
+    }
+    
+    .securitytex {
+        padding-left: 75px;
+    }
+    
+    .modal-dialog {
+        max-width: 800px;
+        margin: 30px auto;
+    }
+    
+    .close-blog {
+        position: absolute;
+        right: 10px;
+        top: 0px;
+        z-index: 999;
+        font-size: 2rem;
+        font-weight: 700;
+        opacity: 1;
+        color: #FF3366;
+        border: none;
+        background: none;
+    }
+    
+    .popbtn {
+        text-align: center;
+        font: normal normal 600 20px / 18px Open Sans;
+        letter-spacing: 1.4px;
+        color: #FFFFFF !important;
+        opacity: 1;
+        background: #FF3366 0% 0% no-repeat padding-box;
+        border-radius: 10px;
+        opacity: 1;
+        padding: 10px 20px;
+    }
+    
+    .hard {
+        text-align: center;
+        text-decoration: underline;
+        font: normal normal normal 18px/27px Open Sans;
+        letter-spacing: -0.2px;
+        color: #786CE6;
+        opacity: 1;
+    }
+    
+    @media screen and (max-width:767px) {
+        .blog-pop-cus .close-blog {
+            right: -6px;
+            top: -19px;
+        }
+        .phonemodal {
+            padding-top: 50px;
+        }
+        .securitytex {
+            padding-left: 15px;
+        }
+        .healthcare-industries-card {
+            background: #FFFFFF 0% 0% no-repeat padding-box;
+            box-shadow: 0px 6px 10px #0000001A;
+            border: 1px solid #F2F2F2;
+            border-radius: 10px;
+            padding-top: 17px;
+            padding-bottom: 17px;
+            margin-bottom: 30px;
+        }
+    }
+    
+    @media only screen and (min-width:768px) and (max-width:1023px) {
+        .modal-top-for {
+            margin: 0px 0px 0px -41px;
+        }
+        .phonemodal {
+            padding-top: 25px;
+        }
+    }
+</style>
+
+
+
+
+{{end}}

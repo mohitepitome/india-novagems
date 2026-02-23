@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <title>{{ .Title }}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ with .Site.Params.description }}{{ . }}{{ end }}{{ end }}">
+    <meta name="keywords" content="{{range .Params.keywords}}{{.}}{{end}}"> {{ with .Site.Params.author }}
+    <meta name="author" content="{{ . }}">{{ end }} {{ hugo.Generator }}
+    <link rel="stylesheet" rel="preload" href="/css/others.css">
+    <link rel="stylesheet" rel="preload" href="/css/custom.css">
+    <!-- fav.png -->
+    <link rel="shortcut icon" href='{{"/images/novagems-img/fav.png" | absURL}}' type="image/x-icon">
+    <!-- Google Tag Manager -->
+    <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=UA-142048781-1"></script> -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-717143903"></script>
+    <script async src="https://tag.clearbitscripts.com/v1/pk_e6b0160af51f8a9fdc8136ee0bb71eb5/tags.js" referrerpolicy="strict-origin-when-cross-origin"></script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-FSPH1B4L20"></script>
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+</head>
+
+<body>
+    <div class="container text-center mt-5">
+        <img src="/images/novagems-img/404.svg" alt="super-heroes">
+        <div class=" mt-5">
+            <h1 class="color4">Page Not Found</h1>
+            <p>You are lost in the world of Novagems</p>
+        </div>
+        <div class="mt-2">
+            <a href="/" class="securitybtn pl-5 pr-5">Go Home</a>
+        </div>
+    </div>
+</body>
+
+</html>

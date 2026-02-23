@@ -1,0 +1,154 @@
+{{ define "main" }}
+<div style="background-color: #fff;">
+    <div class="RockStone-section">
+        <div class="bg-pattern-stories"></div>
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-7">
+                    <div class="hero-content">
+                        <p class="stories-details-p" style="color: #F4C043;">RETAIL</p>
+                        <h1 class="heading-stories">Old Metrotown’s Journey to Easier and More Accurate Shift Scheduling</h1>
+                    </div>
+                </div>
+                <div class="col-lg-5">
+                    <img src="/images/novagems-img/novagemsv2/customer-stories/oldmetrotown-img.png" alt="People">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="col-md-7 mx-auto">
+        <section>
+            <div class="container cardstories-top">
+                <div class="row ">
+                    <div class="col-md-12 col-12 ">
+                        <div class="clients-stories ">
+                            <h2 class="mb-3">Company Summary:</h2>
+                            <p>Old Metrotown is a retail store with around 75 employees that previously managed shifts manually. This led to scheduling errors and inefficient staff use. After switching to Novagems, they found a simpler way to organize shifts,
+                                improve communication, and better match staffing with busy times.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="mt-5">
+            <div class="container">
+                <div class="row ">
+                    <div class="col-md-6 col-12 ">
+                        <div class="clients-stories-bg">
+                            <h3 class="clients-stories-h3">Challenges</h3>
+                            <p class="mt-2 stories-details-p">Time-Consuming Scheduling </p>
+                            <p class="mt-2 stories-details-p">Frequent Scheduling Errors </p>
+                            <p class="mt-2 stories-details-p">Inconsistent Labor Utilization</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-12 cardstories-top-phone">
+                        <div class="clients-stories-bg">
+                            <h3 class="clients-stories-h3" style="color: #786CE6;">Solution</h3>
+                            <p class="mt-2 stories-details-p" style="color: #786CE6;">User-Friendly Scheduling </p>
+                            <p class="mt-2 stories-details-p" style="color: #786CE6;">Real-Time Labor Insights</p>
+                            <p class="mt-2 stories-details-p" style="color: #786CE6;">Dedicated Support</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="Managing-sec-rock">
+            <div class="container ">
+                <div class="testimonial-wrapper">
+                    <div class="quote-left"><img src="/images/novagems-img/novagemsv2/customer-stories/quote-left.png" alt="Clock-In-Out"></div>
+                    <div class="testimonial-container">
+                        <div class="testimonial-text">
+                            <p class="testimonial-message">
+                                “Novagems Has Completely Transformed How We Handle Scheduling. It’s Much Quicker And More Accurate Than Before.” <br> - Jason Smith
+                            </p>
+                        </div>
+                    </div>
+                    <div class="quote-right"><img src="/images/novagems-img/novagemsv2/customer-stories/quote-right.png" alt="Clock-In-Out"></div>
+                </div>
+            </div>
+        </div>
+
+        <section class="mt-5">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="mb-3">The Shining Results</h2>
+                    <p>Old Metrotown has modernized its scheduling system, enabling the company to handle fluctuating customer demand, optimize labor costs, and improve staff communication. The streamlined process has saved valuable time and improved overall
+                        efficiency.
+                    </p>
+                </div>
+
+                <div class="d-flex flex-wrap justify-content-center mt-4" style="gap: 10px;">
+                    <div class="KeyScheduling text-center p-3">
+                        <img src="/images/novagems-img/novagemsv2/customer-stories/Scheduling-oldmetrotown.png" alt="People">
+                        <p class="mt-2">Scheduling Time Reduction</p>
+                    </div>
+                    <div class="KeyWorkforce text-center p-3">
+                        <img src="/images/novagems-img/novagemsv2/customer-stories/Employee-oldmetrotown.png" alt="People">
+                        <p class="mt-2">Employee Accountability</p>
+                    </div>
+                    <div class="KeyShift text-center p-3">
+                        <img src="/images/novagems-img/novagemsv2/customer-stories/Payroll-oldmetrotown.png" alt="People">
+                        <p class="mt-2">Payroll & Reporting Efficiency</p>
+                    </div>
+                    <div class="KeyPayroll text-center p-3">
+                        <img src="/images/novagems-img/novagemsv2/customer-stories/Shift Management-oldmetrotown.png" alt="People">
+                        <p class="mt-2">Shift Management Efficiency</p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+        <div>
+            {{- partial "for-free-stories.html" . -}}
+        </div>
+
+    </div>
+
+
+</div>
+
+<style>
+    @media (max-width: 768px) {
+        .cardstories-top-phone .d-flex {
+            flex-direction: column;
+            align-items: center;
+        }
+        .cardstories-top-phone>div {
+            width: 100%;
+        }
+        .KeyScheduling,
+        .KeyWorkforce,
+        .KeyPayroll,
+        .KeyShift {
+            width: 100%;
+            border-radius: 25px;
+            padding: 20px;
+            text-align: center;
+            border: 1px solid;
+            margin-top: 10px;
+        }
+        .clients-stories-bg {
+            display: flex;
+            flex-direction: column;
+            justify-content: top;
+            height: 100%;
+            border-left: 0;
+            border-top: 0;
+            padding: 20px 20px 20px 20px;
+            transition: .3s;
+            /* box-shadow: 0 20px 54px rgb(0 0 0 / 6%); */
+            border: none;
+            border-radius: 10px;
+            background-color: #F6F6F6;
+        }
+    }
+</style>
+
+
+{{end}}

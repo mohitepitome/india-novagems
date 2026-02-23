@@ -1,0 +1,111 @@
+backend:
+  name: git-gateway
+  branch: main 
+
+local_backend: true
+
+publish_mode: editorial_workflow
+media_folder: "static/images/uploads"
+public_folder: "/images/uploads"
+show_preview_links: false
+
+
+# site_url: https://flamboyant-benz-eb887f.netlify.app/
+
+# display_url: site_url: https://nervous-sinoussi-f2fa04.netlify.app/
+
+
+collections:
+  - name: "blog"
+    label: "Blog"
+    slug: '{{fields.filename}}'
+    folder: "content/blog"
+    create: true
+    editor:
+      preview: true
+    fields:
+      - { label: "File name", name: "filename", widget: "string" }
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Description", name: "description", widget: "string"}
+      - { label: "Date", name: "date", widget: "date" }
+      - {label: "Draft", name: "draft", widget: "boolean", default: true}
+      - { label: "Update", name: "update", widget: "datetime", format: "YYYY-MM-DD", default: "", required: false }
+      - { label: "image", name: "image", widget: "image"}
+      - label: "Categories"
+        name: "categories"
+        widget: "list"
+        allow_add: true
+        default: [""]
+      - label: "Tags"
+        name: "tags"
+        widget: "list"
+        allow_add: true
+        default: [""]
+      - { label: "Body", name: "body", widget: "markdown" }
+  - name: "information-centre"
+    label: "Information Centre"
+    slug: '{{fields.filename}}'
+    folder: "content/information-centre"
+    create: true
+    editor:
+      preview: true
+    fields:
+      - { label: "File name", name: "filename", widget: "string" }
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Description", name: "description", widget: "string"}
+      - { label: "Date", name: "date", widget: "date" }
+      - { label: "Update", name: "update", widget: "datetime", format: "YYYY-MM-DD", default: "", required: false }
+      - {label: "Draft", name: "draft", widget: "boolean", default: true}
+      - { label: "image", name: "image", widget: "image"}
+      - label: "Categories"
+        name: "categories"
+        widget: "list"
+        allow_add: true
+        default: [""]
+      - label: "Tags"
+        name: "tags"
+        widget: "list"
+        allow_add: true
+        default: [""]
+      - { label: "Body", name: "body", widget: "markdown" }
+  - name: "free-templates-library"
+    label: "Free Templates Library"
+    slug: '{{fields.filename}}'
+    folder: "content/free-templates-library"
+    create: true
+    editor:
+      preview: true
+    fields:
+      - { label: "File name", name: "filename", widget: "string" }
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Description", name: "description", widget: "string"}
+      - { label: "Date", name: "date", widget: "date" }
+      - {label: "Draft", name: "draft", widget: "boolean", default: true}
+      - { label: "Update", name: "update", widget: "datetime", format: "YYYY-MM-DD", default: "", required: false }
+      - { label: "image", name: "image", widget: "image"}
+      - label: "Categories"
+        name: "categories"
+        widget: "list"
+        allow_add: true
+        default: [""]
+      - label: "Tags"
+        name: "tags"
+        widget: "list"
+        allow_add: true
+        default: [""]
+      - { label: "Body", name: "body", widget: "markdown" }
+  - name: 'page'
+    label: 'Pages'
+    identifier_field: Page
+    folder: 'content/'
+    create: false
+    fields:
+      - label: Knowledge
+        name: knowledge
+        widget: list
+        collapsed: true
+        create: true
+        fields:
+          - {label: Title, name: 'title', widget: 'string'}  
+          - {label: Text, name: 'text', widget: 'markdown'} 
+

@@ -1,0 +1,643 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <title>{{ .Title }}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
+    <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ with .Site.Params.description }}{{ . }}{{ end }}{{ end }}">
+    <meta name="keywords" content="{{range .Params.keywords}}{{.}}{{end}}"> {{ with .Site.Params.author }}
+    <meta name="author" content="{{ . }}">{{ end }} {{ hugo.Generator }}
+    <link rel="stylesheet" rel="preload" href="/css/others.css">
+    <link rel="stylesheet" rel="preload" href="/css/custom.css">
+    <meta name="robots" content="index, follow">
+    <meta property="og:site_name" content="Novage">
+    <meta property="og:title" content="{{ .Title }}">
+    <meta property="og:locale" content="en-us">
+    <meta property="og:type" content="website">
+    <link rel="shortcut icon" href='{{"/images/novagems-img/fav.png" | absURL}}' type="image/x-icon">
+    <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=UA-142048781-1"></script> -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-717143903"></script>
+    <script async src="https://tag.clearbitscripts.com/v1/pk_e6b0160af51f8a9fdc8136ee0bb71eb5/tags.js" referrerpolicy="strict-origin-when-cross-origin"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-FSPH1B4L20"></script>
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+    <!-- script 1 -->
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'G-FSPH1B4L20');
+    </script>
+    <!-- script 2 -->
+    <!-- <script async>
+                window.dataLayer = window.dataLayer || [];
+        
+                function gtag() {
+                    dataLayer.push(arguments);
+                }
+                gtag('js', new Date());
+        
+                gtag('config', 'UA-142048781-1');
+            </script> -->
+    <!-- script 3 -->
+    <script async>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'AW-717143903');
+    </script>
+    <!-- script 4 -->
+    <img height="1" width="1" style="display:none;" alt="novage" src="https://px.ads.linkedin.com/collect/?pid=3744364&conversionId=8724697&fmt=gif" />
+    <script async>
+        if (window.lintrk) {
+            window.lintrk('track', {
+                conversion_id: 8724697
+            });
+        }
+    </script>
+    <!-- script 5 -->
+    <script>
+        ! function(f, b, e, v, n, t, s) {
+            if (f.fbq) return;
+            n = f.fbq = function() {
+                n.callMethod ?
+                    n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+            };
+            if (!f._fbq) f._fbq = n;
+            n.push = n;
+            n.loaded = !0;
+            n.version = '2.0';
+            n.queue = [];
+            t = b.createElement(e);
+            t.async = !0;
+            t.src = v;
+            s = b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t, s)
+        }(window, document, 'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '294290657020448');
+        fbq('track', 'PageView');
+    </script>
+    <!-- script 6 -->
+    <noscript><img height="1" width="1" style="display:none"
+            src="https://www.facebook.com/tr?id=294290657020448&ev=PageView&noscript=1"
+            /></noscript>
+    <!-- script 7 -->
+    <!-- <script>
+                (function(w, d, s, l, i) {
+                    w[l] = w[l] || [];
+                    w[l].push({
+                        'gtm.start': new Date().getTime(),
+                        event: 'gtm.js'
+                    });
+                    var f = d.getElementsByTagName(s)[0],
+                        j = d.createElement(s),
+                        dl = l != 'dataLayer' ? '&l=' + l : '';
+                    j.async = true;
+                    j.src =
+                        'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+                    f.parentNode.insertBefore(j, f);
+                })(window, document, 'script', 'dataLayer', 'GTM-PQLD8KBF');
+            </script> -->
+    <!-- script 8 -->
+    <script>
+        (function(w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start': new Date().getTime(),
+                event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s),
+                dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src =
+                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-T3MCZNW6');
+    </script>
+    <!-- script 9 -->
+</head>
+
+<body style="background-color: #fff;">
+    <!-- Header Section -->
+    <header class="bsnav bsnav-sticky bsnav-sticky-slide" style="background-color: #786CE6 !important;">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <nav class="navbar navbar-expand-lg navbar-light">
+                        <a class="navbar-brand brand-icon" href="/"><img src="/images/novagems-img/new-year/logo.svg" alt="logo "></a>
+
+                        <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span></button>
+                        <div class="navbar-collapse main-menu-item collapse products-nav" id="navbarSupportedContent">
+                            <ul class="navbar-nav navbar-nav-custom">
+                                {{ range .Site.Menus.main }}
+
+                                <li class="nav-item dropdown product-dropdown ">
+                                    {{ if .HasChildren }}
+                                    <a class="nav-link dropdown-toggle" href="{{ .URL | absURL }}" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <b style="color: #fff !important;">{{ .Name }}</b>
+                                        <span class="vertical-pipe dark-purple"></span>
+                                    </a>
+                                    <div class="dropdown-menu hvr-bubble-top">
+                                        <div class="border-slider dark-purple"></div>
+                                        {{ range .Children }}
+                                        <a class="dropdown-item" href="{{ .URL | absURL }}">{{ .Name }} </a> {{ end }}
+
+                                    </div>
+                                    {{ else }} {{ end }}
+                                </li>
+                                {{ end }}
+                            </ul>
+                            <div class="header-text text-header-ipad-phone">
+                                <p style="color: #fff !important;"><b>{{.Params.pageName}}</b></p>
+                            </div>
+                        </div>
+
+
+                        <div class="navbar-collapse main-menu-item collapse justify-content-end" id="navbarSupportedContent">
+                            <ul class="navbar-nav ">
+
+                                {{ $currentPage := . }} {{ range .Site.Menus.main }} {{ $active := or (eq $currentPage.Title .Name) (or ($currentPage.HasMenuCurrent "main" .) ($currentPage.IsMenuCurrent "main" .)) }} {{ if .HasChildren }} {{ else }} {{if eq .Name "Language" }}
+                                <li class="nav-item {{ if or ($currentPage.IsMenuCurrent " main " .) ($currentPage.HasMenuCurrent "main " .) }}active{{ end }}">
+                                    <img class="canada canada-flg" src='{{ "/images/novagems-img/canada.png" | absURL}}' alt="canada">
+                                </li>
+                                {{else if eq .Identifier "login" }}
+                                <li class="nav-item {{ if or ($currentPage.IsMenuCurrent " main " .) ($currentPage.HasMenuCurrent "main " .) }}active{{ end }}">
+                                    <a class="nav-link  hvr-icon-wobble-horizontal" href="{{ .URL | absURL }}" target="_blank"><b style="color: #fff !important;">{{ .Name }}</b> <img class="fa fa-arrow-right hvr-icon " src='{{"/images/novagems-img/new-year/arrow.svg"| absURL}}' alt="login-arrow"></a>
+                                </li>
+
+
+                                {{else if eq .Identifier "Book a Demo"}}
+                                <li class="nav-item loginlast {{ if or ($currentPage.IsMenuCurrent " main " .) ($currentPage.HasMenuCurrent "main " .) }}active{{ end }} {{ if $active }}active{{ end }}">
+                                    <a class="nav-link d-inline-block" href="{{ .URL | absURL }}" target="_blank"><b>{{ .Name }}</b></a>
+                                </li>
+                                {{else}}
+
+                                <li class="nav-item {{ if or ($currentPage.IsMenuCurrent " main " .) ($currentPage.HasMenuCurrent "main " .) }}active{{ end }} {{ if $active }}active{{ end }}">
+                                    <a class="nav-link " href="{{ .URL | absURL }}">{{ .Name }}</a>
+                                </li>
+                                {{end}} {{ end }} {{ end }}
+
+
+
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="newyearbg">
+        <div class="container newyeartop">
+            <div class="row align-items-center ">
+                <div class="col-lg-6 col-md-6 col-12">
+                    <h1 class="newh1"> This Holiday Season:
+                        <BR> Get Novagems at 50% Off</h1>
+                    <p class="newp mt-3">Enjoy your Christmas and New Year with a bang while we take care of your business</p>
+                    <div class="mt-5 mb-5">
+                        <a class="newbtn" href="#registrationForm">Claim Now</a>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-12">
+                    <img src="/images/novagems-img/new-year/new-year.png" alt="newyear">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ------------------------------- -->
+
+    <div class="mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <p class="subheading color3">Features</p>
+                    <h2>Famous features among 1000+ Clients</h2>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-2 col-md-4 col-6 mt-3">
+                    <div class="clients text-center">
+                        <a href="/scheduling">
+                            <figure style="margin-bottom: 20px;"><img class="key-img" src="/images/novagems-img/Scheduling-e.svg" alt="Scheduling-e"></figure>
+                            <p class="clients-p">Scheduling</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-6 mt-3">
+                    <div class="clients text-center">
+                        <a href="/task-mangement">
+                            <figure style="margin-bottom: 20px;"><img class="key-img" src="/images/novagems-img/task&Post.svg" alt="task&Post"></figure>
+                            <p class="clients-p">Task & Post </p>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-6 mt-3">
+                    <div class="clients text-center">
+                        <a href="/gps-geofence">
+                            <figure style="margin-bottom: 20px;"><img class="key-img" src="/images/novagems-img/gps-geofence.svg" alt="gps-geofence"></figure>
+                            <p class="clients-p">GPS Geofence</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-6 mt-3">
+                    <div class="clients text-center">
+                        <a href="/clock-in-out">
+                            <figure style="margin-bottom: 20px;"><img class="key-img" src="/images/novagems-img/Clock.svg" alt="Clock"></figure>
+                            <p class="clients-p">Clock In/Out</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-6 mt-3">
+                    <div class="clients text-center">
+                        <a href="/time-cost-analysis">
+                            <figure style="margin-bottom: 20px;"><img class="key-img" src="/images/novagems-img/Timesheet.svg" alt="Timesheet"></figure>
+                            <p class="clients-p">Timesheet</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-6 mt-3">
+                    <div class="clients text-center">
+                        <a href="/chat">
+                            <figure style="margin-bottom: 20px;"><img class="key-img" src="/images/novagems-img/Chat.svg" alt="Chat"></figure>
+                            <p class="clients-p">Chat</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="features-among mb-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-2 col-md-4 col-6 mt-3">
+                    <div class="clients text-center">
+                        <a href="/custom-incident-report">
+                            <figure style="margin-bottom: 20px;"><img class="key-img" src="/images/novagems-img/Timesheet.svg" alt="Timesheet"></figure>
+                            <p class="clients-p">Custom Incident
+                                <br>Reports</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-6 mt-3">
+                    <div class="clients text-center">
+                        <a href="/checkpoint-tours">
+                            <figure style="margin-bottom: 20px;"><img class="key-img" src="/images/novagems-img/checkpoint.svg" alt="checkpoint"></figure>
+                            <p class="clients-p">Checkpoint
+                                <br>Tours</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-6 mt-3">
+                    <div class="clients text-center">
+                        <a href="/gps-tracking">
+                            <figure style="margin-bottom: 20px;"><img class="key-img" src="/images/novagems-img/GPS-Tracking.svg" alt="GPS-Tracking"></figure>
+                            <p class="clients-p">GPS
+                                <br>Tracking</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-6 mt-3">
+                    <div class="clients text-center">
+                        <a href="/mobile-patrol">
+                            <figure style="margin-bottom: 20px;"><img class="key-img" src="/images/novagems-img/Mobile-Patrol.svg" alt="Mobile-Patrol"></figure>
+                            <p class="clients-p">Mobile
+                                <br>Patrol</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-6 mt-3">
+                    <div class="clients text-center">
+                        <a href="/smart-response">
+                            <figure style="margin-bottom: 20px;"><img class="key-img" src="/images/novagems-img/Smart-Response.svg" alt="Smart-Response"></figure>
+                            <p class="clients-p">Smart
+                                <br>Response</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-6 mt-3">
+                    <div class="clients text-center">
+                        <a href="/dashboard-analytics">
+                            <figure style="margin-bottom: 20px;"><img class="key-img" src="/images/novagems-img/Dashboard.svg" alt="Dashboard"></figure>
+                            <p class="clients-p">Dashboard
+                                <br> Analytics </p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="col-lg-6 col-md-8 col-12 mx-auto my-5">
+            <div class="footer-newsletter">
+                <form id="get-started-for-free">
+                    <input type="email" id="email" name="email" placeholder="Enter your email address">
+                    <input class="home-btn" type="submit" value="Get Started for Free">
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="clearfix"></div>
+    <div class="claim">
+        <div class="container">
+            <div class="col-lg-9 mx-auto">
+                <div class="row">
+                    <h2 class="text-center">Get your workforce management software - Workforce Wonders, Managed & Empowered!
+                    </h2>
+                    <div class="col-md-6 col-12">
+                        <div class="mt-4">
+                            <h6><img class="newimg1" src="/images/novagems-img/new-year/1.png" alt="1"> <span class="newpspan">Smart scheduling</span></h6>
+                        </div>
+                        <div class="mt-4">
+                            <h6><img class="newimg1" src="/images/novagems-img/new-year/3.png" alt="3"> <span class="newpspan">Terrific time tracking</span></h6>
+                        </div>
+                        <div class="mt-4">
+                            <h6><img class="newimg1" src="/images/novagems-img/new-year/5.png" alt="5"> <span class="newpspan">Highly rated real-time updates</span></h6>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-12">
+                        <div class="mt-4">
+                            <h6><img class="newimg1" src="/images/novagems-img/new-year/2.png" alt="2"> <span class="newpspan">Remarkable reports</span></h6>
+                        </div>
+                        <div class="mt-4">
+                            <h6><img class="newimg1" src="/images/novagems-img/new-year/4.png" alt="4"> <span class="newpspan">Goal-oriented GPS and geofencing</span></h6>
+                        </div>
+                        <div class="mt-4">
+                            <h6><img class="newimg1" src="/images/novagems-img/new-year/6.png" alt="6"> <span class="newpspan">Collaborative communication</span></h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- <div class="mt-5 ">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6 col-12">
+                    <img src="/images/novagems-img/new-year/simple-steps.png" alt="simple-steps">
+                </div>
+                <div class="col-md-1 col-12"></div>
+                <div class="col-md-5 col-12 mt-4">
+                    <h2>How Join the Contest in <br><span class="step4">4 Simple Steps!</span> </h2>
+                    <div class="mt-3">
+                        <h6><img class="newimg2" src="/images/novagems-img/new-year/1.png" alt="1"> <span class="newpspan">Share the post</span></h6>
+                        <p>Share any post from
+                            <a target="_blank" href="https://docs.google.com/document/d/1R3FXRBYphbl62nVhgjeoGG2vOdLI-srCN54M57pYN4I/edit"> <b>the link</b></a> on your social media.</p>
+                    </div>
+                    <div class="mt-3">
+                        <h6><img class="newimg2" src="/images/novagems-img/new-year/2.png" alt="1"> <span class="newpspan">Profile Power-Up</span></h6>
+                        <p>Ensure your profile is set to public, so we can see your entry.</p>
+                    </div>
+                    <div class="mt-3">
+                        <h6><img class="newimg2" src="/images/novagems-img/new-year/3.png" alt="1"> <span class="newpspan">Link Up with Us</span></h6>
+                        <p>Enter your profile URL in the form below and claim your chance to win!</p>
+                    </div>
+                    <div class="mt-3">
+                        <h6><img class="newimg2" src="/images/novagems-img/new-year/4.png" alt="1"> <span class="newpspan">Winners Announcement</span></h6>
+                        <p>Top 5 winners with maximum likes and comments, Wins the Prize. Exciting offers for participants too!</p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="mt-5 text-center mb-5">
+                <p class="winners-color">*Winners are announced on Feb 29, 2024*</p>
+            </div>
+        </div>
+    </div> -->
+
+
+    <!-- <div class="claim">
+        <div class="container ">
+            <div class="contest-details">
+                <div class="col-lg-8 mx-auto cardpd">
+                    <div class="text-center mb-5">
+                        <h3>Contest Details</h3>
+                        <p class="winners-color">Your Guide to Winning!</p>
+                    </div>
+                    <div class="row align-items-center">
+                        <div class="col-md-6 col-12">
+                            <div class="clients ">
+                                <p>WHO CAN PLAY</p>
+                                <p class="mt-3"><img src="/images/novagems-img/new-year/Eligibility.png" alt="1"> <span class="newpspan">Eligibility</span></p>
+                                <p class="mt-3">Open to all companies and organizations seeking to streamline their operations.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-12 phonecontest">
+                            <div class="clients ">
+                                <p>MARK YOUR CALENDARS!</p>
+                                <p class="mt-3"><img src="/images/novagems-img/new-year/Duration.png" alt="1"> <span class="newpspan">Duration</span></p>
+                                <p class="mt-3">The Novagems New Year Contest kicks off on 1st January and runs the whole month.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+
+    <div id="registrationForm" class="my-5">
+        <div class="container formcolor">
+            <div class="row align-items-center">
+                <div class="col-md-6 col-12 ">
+                    <div class="text-center">
+                        <img src="/images/novagems-img/new-year/newyear1.svg" alt="1">
+                    </div>
+                </div>
+                <div class="col-md-6 col-12 formcard-side">
+                    <div class="Formcard">
+                        <h3 class="mb-4">Get 50% Off</h3>
+                        <form id="newyear"></form>
+                        <!-- <p><b><a href="/contest-terms-and-conditions">T&C Apply</a>  </b></p> -->
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="text-center mt-5">
+                <h4> <a style="color: #fff;" href="contest-terms-and-conditions">Terms And conditions</a> </h4>
+                <p class="newp">Visit our website for more details on the Vizitor suite and its features : <a style="color: #fff;" href="https://manager.novagems.com/">Know More</a> </p>
+            </div> -->
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="container">
+            <div class="row ">
+                <div class="col-md-3 col-12">
+                    <img class="footer-bt" src='{{"/images/novagems-img/Logo.svg" | absURL }}' alt="Logo">
+                    <ul>
+                        <li><a class="display-grid" href="tel:+1-844-844-0038"><b>Let’s talk:</b> +1-844-844-0038</a></li>
+                        <li><a class="display-grid" href="mailto:info@novagems.com"><b>Email:</b> info@novagems.com</a></li>
+                        <li><a class="display-grid" href="tel:+1 604-628-7015"><b>Support 24/7:</b> +1 604-628-7015</a></li>
+                        <li><a class="display-grid" href="mailto:support@novagems.com"><b>Support Email:</b> support@novagems.com</a></li>
+                    </ul>
+                    <div>
+                        <div class="social">
+                            <a href="https://twitter.com/NovagemsInc" target="blank" class="twitter"><i class="bx bxl-twitter"></i></a>
+                            <a href="https://www.facebook.com/www.novagems.com" target="blank" class="facebook"><i class="bx bxl-facebook"></i></a>
+                            <a href="https://www.instagram.com/novagems.inc/ " target="blank" class="instagram"><i class="bx bxl-instagram"></i></a>
+                            <a href="https://www.linkedin.com/company/novagems-inc" target="blank" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+                            <!-- <a href="https://www.youtube.com/" class="instagram"><i class="bx bxl-youtube"></i></a> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-12">
+                    <h6 class="footer-bt">Scheduling Software</h6>
+                    <ul>
+                        <li><a href="/scheduling">Employee Scheduling</a></li>
+                        <li><a href="/gps-geofence">GPS & Geofencing</a></li>
+                        <li><a href="/clock-in-out">Clock In/Out</a></li>
+                        <li><a href="/task-mangement">Task Management</a></li>
+                        <li><a href="/time-cost-analysis">Timesheet</a></li>
+                        <!-- <li><a href="/chat">Chat & Communication</a></li> -->
+                    </ul>
+                </div>
+
+                <div class="col-md-3 col-12">
+                    <h6 class="footer-bt"> Security Company Software</h6>
+                    <ul>
+                        <li><a href="/custom-incident-report">Custom Incident Report</a></li>
+                        <li><a href="/checkpoint-tours">Checkpoint Tours</a></li>
+                        <li><a href="/gps-tracking">GPS Tracking</a></li>
+                        <li><a href="/mobile-patrol">Mobile Patrol</a></li>
+                        <!-- <li><a href="/smart-response">Smart Response</a></li> -->
+                        <li><a href="/dashboard-analytics">Dashboard Analytics</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-md-3 col-12">
+                    <h6 class="footer-bt">Cleaning Company</h6>
+                    <ul>
+                        <li><a href="/maintenance-log-sheet">Maintenance Log Sheet</a></li>
+                        <li><a href="/inspection-report">Inspection Report</a></li>
+                        <li><a href="/work-order-management">Work Order Management</a></li>
+                        <li><a href="/instructions-checklist">Instructions & Checklist</a></li>
+                        <li><a href="/client-management">Client Management</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="row footer-2">
+                <div class="col-md-3 col-12 ">
+                    <a type="button" data-toggle="modal" data-target="#refer-earn">
+                        <img class="refer-a-friend" src="/images/novagems-img/refer-earn.svg" alt="refer-earn">
+                    </a>
+                </div>
+                <div class="col-md-3 col-12">
+                    <h6 class="footer-bt">Company</h6>
+                    <ul>
+                        <li><a href="/about">About Us</a></li>
+                        <li><a href="/contact-us">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-md-3 col-12">
+                    <h6 class="footer-bt">Learning</h6>
+                    <ul>
+                        <li><a rel=preload href="/blog">Blog</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-md-3 col-12">
+                    <h6 class="footer-bt">Support</h6>
+                    <ul>
+                        <li><a target="_blank" href="https://meetings.hubspot.com/gurjot/free-trial-demo">Request for a Demo </a></li>
+                        <li><a href="/privacy">Privacy Policy</a></li>
+                        <li><a href="/terms-and-conditions">Terms and Conditions</a></li>
+                        <li><a href="/faq">FAQ</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-2">
+                <hr>
+                <div class="row">
+                    <div class="col-md-8 col-12">
+                        <p>© Copyright {{ now.Format "2006" }} Novagems Inc. All rights reserved.</p>
+
+                    </div>
+                    <div class="col-md-4 col-12">
+                        <div>
+                            {{range .Site.Params.apps}}
+                            <a href="{{.url}}" target="_blank"><img style="width: 45%;" src="{{.image | absURL }}" alt="{{.title}}"></a>
+                            {{end}}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </footer>
+</body>
+
+{{- partial "script.html" . -}}
+
+<script>
+    // Set the date we're counting down to
+    var countDownDate = new Date("Nov 26, 2022 13:29:00").getTime();
+
+    // Update the count down every 1 second
+    var x = setInterval(function() {
+
+        // Get today's date and time
+        var now = new Date().getTime();
+
+        // Find the distance between now and the count down date
+        var distance = countDownDate - now;
+
+        // Time calculations for days, hours, minutes and seconds
+        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+        // Output the result in an element with id="demo"
+        document.getElementById("demo1").innerHTML = days + "<br> day ";
+        document.getElementById("demo2").innerHTML = hours + "<br> hours ";
+        document.getElementById("demo3").innerHTML = minutes + "<br> minute ";
+        document.getElementById("demo4").innerHTML = seconds + "<br> seconds ";
+        // If the count down is over, write some text 
+        if (distance < 0) {
+            clearInterval(x);
+            document.getElementById("demo").innerHTML = "EXPIRED";
+        }
+    }, 1000);
+</script>
+
+<style>
+    .dropdown-toggle::after {
+        display: inline-block;
+        margin-left: 0.255em;
+        vertical-align: 0.255em;
+        content: "";
+        border-top: 0.3em solid;
+        border-right: 0.3em solid transparent;
+        border-bottom: 0;
+        border-left: 0.3em solid transparent;
+        color: #fff;
+    }
+    
+    .bsnav-sticky-slide .navbar-nav .loginlast a.nav-link {
+        color: #fff !important;
+    }
+    
+    .loginlast a {
+        border-radius: 50px;
+        /* text-transform: uppercase; */
+        border: 1px solid #fff;
+    }
+</style>
+
+
+</html>

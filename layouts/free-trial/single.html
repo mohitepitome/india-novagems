@@ -1,0 +1,658 @@
+{{ define "main" }}
+<!-- schedule Section -->
+<div>
+    <!-- <div class="free-trial-top"> -->
+        <div class="mt-4">
+        <div class="container">
+            <div>
+                <a href="/"><img src='{{ .Site.Params.logo | relURL}}' alt="logo "></a>
+                <h1 class="mt-5 Track-and-Manage">Manage Security Guards. Validate their work & send Reports to Clients
+                    instantly</h1>
+                <p class="showcasing ">Smart Automation Software for Employee Scheduling, Time & Attendance, Team Chat,
+                    GPS Tracking, Tasks & Post Orders, Dashboard Analytics, and more...</p>
+            </div>
+
+            <div class="row mt-3">
+                <div class="col-lg-7 col-md-7 col-12">
+                    <div>
+                        {{- partial "security-gms-video.html" . -}}
+                    </div>
+                </div>
+                <div class="col-lg-5 col-md-5 mt-3 col-12 img-iped-head">
+                    <div class="clients-blog Cleaning-company">
+                        <h6 class="Get-Free-Trial-h6">Get a Free Trial</h6>
+                        <form class="mt-3" id="free-trial-cleaning-company"></form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- schedule Section -->
+    <div class="mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <p class="subheading color3">Features</p>
+                    <h2>Famous features among 1000+ Clients</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-2 col-md-4 col-6 mt-3">
+                    <div class="clients text-center">
+                        <a href="/scheduling">
+                            <figure style="margin-bottom: 20px;"><img class="key-img"
+                                    src="/images/novagems-img/Scheduling-e.svg" alt="Scheduling"></figure>
+                            <p class="clients-p">Scheduling</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-6 mt-3">
+                    <div class="clients text-center">
+                        <a href="/task-mangement">
+                            <figure style="margin-bottom: 20px;"><img class="key-img"
+                                    src="/images/novagems-img/task&Post.svg" alt="task&Post"></figure>
+                            <p class="clients-p">Task & Post </p>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-6 mt-3">
+                    <div class="clients text-center">
+                        <a href="/gps-geofence">
+                            <figure style="margin-bottom: 20px;"><img class="key-img"
+                                    src="/images/novagems-img/gps-geofence.svg" alt="gps-geofence"></figure>
+                            <p class="clients-p">GPS Geofence</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-6 mt-3">
+                    <div class="clients text-center">
+                        <a href="/clock-in-out">
+                            <figure style="margin-bottom: 20px;"><img class="key-img"
+                                    src="/images/novagems-img/Clock.svg" alt="Clock"></figure>
+                            <p class="clients-p">Clock In/Out</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-6 mt-3">
+                    <div class="clients text-center">
+                        <a href="/time-cost-analysis">
+                            <figure style="margin-bottom: 20px;"><img class="key-img"
+                                    src="/images/novagems-img/Timesheet.svg" alt="Timesheet"></figure>
+                            <p class="clients-p">Timesheet</p>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-lg-2 col-md-4 col-6 mt-3">
+                    <div class="clients text-center">
+                        <a href="/mobile-patrol">
+                            <figure style="margin-bottom: 20px;"><img class="key-img"
+                                    src="/images/novagems-img/Mobile-Patrol.svg" alt="Mobile-Patrol"></figure>
+                            <p class="clients-p">Mobile Patrol
+                            </p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="features-among">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-2 col-md-4 col-6 mt-3">
+                    <div class="clients text-center">
+                        <a href="/maintenance-log-sheet">
+                            <figure style="margin-bottom: 20px;"><img class="key-img"
+                                    src="/images/novagems-img/cleaning-company/Maintenance-Log-Sheet.svg"
+                                    alt="Maintenance-Log-Sheet image"></figure>
+                            <p class="clients-p">Maintenance
+                                <br>Log Sheet
+                            </p>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-6 mt-3">
+                    <div class="clients text-center">
+                        <a href="/inspection-report">
+                            <figure style="margin-bottom: 20px;"><img class="key-img"
+                                    src="/images/novagems-img/cleaning-company/Inspection-Report.svg"
+                                    alt="Inspection-Report image"></figure>
+                            <p class="clients-p">Inspection
+                                <br>Report
+                            </p>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-6 mt-3">
+                    <div class="clients text-center">
+                        <a href="/work-order-management">
+                            <figure style="margin-bottom: 20px;"><img class="key-img"
+                                    src="/images/novagems-img/cleaning-company/Work-Order-Management.svg"
+                                    alt="Work-Order-Management image"></figure>
+                            <p class="clients-p">Work Order
+                                <br>Management
+                            </p>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-6 mt-3">
+                    <div class="clients text-center">
+                        <a href="/instructions-checklist">
+                            <figure style="margin-bottom: 20px;"><img class="key-img"
+                                    src="/images/novagems-img/cleaning-company/Instructions&amp;Checklist.svg"
+                                    alt="Instructions&amp;Checklist image"></figure>
+                            <p class="clients-p">Instructions
+                                <br>&amp; Checklist
+                            </p>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-6 mt-3">
+                    <div class="clients text-center">
+                        <a href="/client-management">
+                            <figure style="margin-bottom: 20px;"><img class="key-img"
+                                    src="/images/novagems-img/cleaning-company/Client-Management.svg"
+                                    alt="Client-Management image"></figure>
+                            <p class="clients-p">Client
+                                <br>Management
+                            </p>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-6 mt-3">
+                    <div class="clients text-center">
+                        <a href="#Invoices">
+                            <figure style="margin-bottom: 20px;"><img class="key-img"
+                                    src="/images/novagems-img/cleaning-company/Invoice-icon.svg"
+                                    alt="Invoice-icon image"></figure>
+                            <p class="clients-p">Invoices
+                                <br><br>
+                            </p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="col-lg-6 col-md-8 col-12 mx-auto my-5">
+            <div class="footer-newsletter">
+                <form id="get-started-for-free">
+                    <input type="email" id="email" name="email" placeholder="Enter your email address">
+                    <input class="home-btn" type="submit" value="Get Started for Free">
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- ----------------------------------- -->
+    <div class=" pb-4">
+        <div class="container-fluid  example">
+            <div class="row">
+                <div class="col-md-12 mt-5 mb-2 text-center ">
+                    <p class="subheading tex-h color4">Our customer reviews</p>
+                    <h3 class="hero-h1">Join 100,000+ highly productive team members</h3>
+                </div>
+            </div>
+
+            <div>
+                {{- partial "customerReviews.html" . -}}
+            </div>
+        </div>
+        <div class="d-flex justify-content-center  gap-3 text-center">
+            <div>
+                <img class="reviewsimg" src="/images/novagems-img/novagemsv2/google.png" alt="google">
+            </div>
+            <div>
+                <img class="reviewsimg" src="/images/novagems-img/novagemsv2/getapp.png" alt="getapp">
+            </div>
+            <div>
+                <img class="reviewsimg" src="/images/novagems-img/novagemsv2/capterra.png" alt="capterra">
+            </div>
+            <div>
+                <img class="reviewsimg" src="/images/novagems-img/novagemsv2/g2.png" alt="g2">
+            </div>
+            <div>
+                <img class="reviewsimg" src="/images/novagems-img/novagemsv2/software.png" alt="software">
+            </div>
+        </div>
+
+    </div>
+    <!-----------Section-------------->
+
+    <!-- Home Grid Section -->
+    <div class="pb-5">
+        <div class="container mt-5 ">
+            <div class="row">
+                <div class="col-md-12 mb-3 mt-5 text-center">
+                    <p class="subheading tex-h " style="color: #F2845F;">WHY NOVAGEMS?</p>
+                    <h2 class="Workforce-h2">Power, Simplicity & Support</h2>
+                </div>
+            </div>
+
+            <div class="row ">
+                <div class="col-lg-3 col-md-3 col-12 text-center phone-fast">
+                    <div>
+                        <figure style="margin-bottom: 20px;"><img
+                                src='{{"/images/novagems-img/novagemsv2/support-24.png" | absURL}}' alt="support-24">
+                        </figure>
+                        <div>
+                            <h5>24/7 <br> Support</h5>
+                        </div>
+                        <p>Get Round-The-Clock Assistance Whenever You Need It</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-3 col-12 text-center phone-fast">
+                    <div>
+                        <figure style="margin-bottom: 20px;"><img
+                                src='{{"/images/novagems-img/novagemsv2/free-trainings.png" | absURL}}'
+                                alt="free-trainings"></figure>
+                        <div>
+                            <h5>Free Training & Built-In <br> Learning Videos</h5>
+                        </div>
+                        <p>Seamless Onboarding With Step-By-Step Guides And In-App Tutorials.</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-3 col-12 text-center phone-fast">
+                    <div>
+                        <figure style="margin-bottom: 20px;"><img
+                                src='{{"/images/novagems-img/novagemsv2/Fast-implementation.png" | absURL}}'
+                                alt="Fast-implementation"></figure>
+                        <div>
+                            <h5>Fast <br> Implementation</h5>
+                        </div>
+                        <p>Set Up And Start Managing Your Workforce In No Time.</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-3 col-12 text-center phone-fast">
+                    <div>
+                        <figure style="margin-bottom: 20px;"><img
+                                src='{{"/images/novagems-img/novagemsv2/Custom-customization.png" | absURL}}'
+                                alt="Custom-customization"></figure>
+                        <div>
+                            <h5> Web & Mobile <br> Accessibility</h5>
+                        </div>
+                        <p>Manage Your Team Anytime, Anywhere With Our Mobile And Web Apps.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- <div class="container mt-5 mb-5">
+            <div class="row">
+                <div class="col-md-8 ">
+                    <img src='{{"/images/novagems-img/customer-success.png" | absURL}}' alt="customer-success">
+                </div>
+                <div class="col-md-4">
+                    <img class="mb-3 phone-fast" src='{{"/images/novagems-img/Rectangle2.png" | absURL}}' alt="Rectangle2">
+                    <img class="phone-fast" src='{{"/images/novagems-img/Rectangle3.png" | absURL}}' alt="Rectangle3">
+                </div>
+            </div>
+        </div> -->
+    </div>
+    <!-----------Section-------------->
+    <div>
+        {{- partial "newsletterpage.html" . -}}
+    </div>
+    <!-----------Section-------------->
+    <!-- <div>
+        {{- partial "every-Industry.html" . -}}
+    </div> -->
+</div>
+
+<!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#bookAdemopop">
+    Open modal
+  </button> -->
+
+<!-- <div>
+    <div class="modal fade bd-example-modal-sm blog-pop-cus" id="bookAdemopop" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-sm ">
+            <div class="modal-content" style="border-radius: 13px;">
+                <div class="pop-content-cus ">
+
+
+                    <div class="card-pop">
+                        <div class="profile text-center"> <img src="/images/novagems-img/Black-friday-flower.png" alt="bookdemo-poppu"> </div>
+                        <div class="card-content">
+                            <a type="button" class="close-blog" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </a>
+
+                            <div class="card-body-pop ">
+
+                                <div class="card-title text-center">
+                                    <p class="pop-top save-nov-pop" style="color: #fff;">
+                                        SAVE NOW
+                                    </p>
+                                    <p class="pop-top get37-pop" style="color: #fff;">GET 60% OFF <br>
+                                        <span class="text-left" style="color: #fff;">Black Friday Sale</span>
+                                        <span class="text-right" style="color: #fff;">LIMITED TIME</span>
+                                    </p>
+
+                                </div>
+                                <div class="pop-top text-pd">
+                                    <form id="get370fff">
+                                        <div class="form-group">
+                                            <input type="emailpop" class="form-control" id="emailpop" name="emailpop" placeholder="Enter email">
+                                        </div>
+                                        <button style="font-size: 16px; font-weight: 600; width: 100%; color: #000; background-color: #fff; height: 40px;" type="submit" class="btn btn-primary">GET STARTED NOW</button>
+                                    </form>
+                                </div>
+
+                            </div>
+                            <div class="card-footer">
+                                <img src="/images/novagems-img/Popup-img.png" alt="Popup-img">
+                                <p class="py-5"></p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div> -->
+
+
+
+<script>
+    window.onscroll = function () {
+        myFunction();
+    };
+
+    function myFunction() {
+        var winScroll =
+            document.body.scrollTop || document.documentElement.scrollTop;
+        console.log("winScroll---", winScroll);
+        var height =
+            document.documentElement.scrollHeight -
+            document.documentElement.clientHeight;
+        var scrolled = (winScroll / height) * 100;
+        var countScrollRatio = scrolled.toFixed(0);
+        console.log("countScrollRatio---", countScrollRatio);
+
+        var checkEnterVisitUser = true;
+
+        var checkAgainVisitUserBook = localStorage.getItem("againVisitUserBook");
+
+        if (checkAgainVisitUserBook) {
+            checkEnterVisitUser = true;
+        } else {
+            checkEnterVisitUser = true;
+        }
+        if (countScrollRatio == "10") {
+            if (checkEnterVisitUser) {
+                localStorage.setItem("againVisitUserBook", true);
+                $("#bookAdemopop").modal("show");
+            }
+        }
+    }
+
+    window.onbeforeunload = function (e) {
+        window.onunload = function () {
+            window.localStorage.againVisitUserBook = "false";
+        }
+        return undefined;
+    };
+
+    window.onload = function () {
+        window.localStorage.againVisitUserBook = "true";
+    };
+</script>
+
+
+
+<style>
+    .get37-pop>span {
+        font-size: 16px;
+        font-weight: 400;
+        float: left;
+        margin-top: 15px;
+    }
+
+    .get37-pop>span:nth-child(odd) {
+        float: right;
+    }
+
+    .blog-pop-cus .close-blog {
+        border-radius: 50%;
+        display: block;
+        z-index: 999;
+        opacity: 1;
+        border: none;
+        font-size: 27px;
+        clear: both;
+        line-height: 30px;
+        background-color: #fff;
+        box-shadow: 0 0px 5px rgb(0 0 0 / 20%);
+        height: 30px;
+        width: 30px;
+        text-align: center;
+        padding: 0;
+        position: absolute;
+        right: -15px;
+        font-weight: 700;
+        top: -15px;
+        color: red !important;
+    }
+
+    .modal-content {
+        position: relative;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        width: 100%;
+        max-width: 450px;
+        pointer-events: auto;
+        background-color: transparent;
+        background-clip: padding-box;
+        border: 1px solid rgba(0, 0, 0, .2);
+        border-radius: 0.3rem;
+        outline: 0;
+        margin: 0 auto;
+    }
+
+    .form-control {
+        display: block;
+        width: 100%;
+        height: calc(1.5em + 0.75rem + 2px);
+        padding: 0.375rem 0.75rem;
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1.5;
+        color: #fff !important;
+        background-color: transparent !important;
+        background-clip: padding-box;
+        border: 1px solid #fff;
+        border-radius: 0.25rem;
+        transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+        height: 40px;
+    }
+
+    input::placeholder {
+        color: #A5A5A5 !important;
+    }
+
+    .text-pd {
+        padding: 0 77px;
+    }
+
+    .pop-top {
+        padding-top: 30px;
+    }
+
+    .save-nov-pop {
+        font-size: 24px;
+        padding-top: 70px;
+    }
+
+    .get37-pop {
+        font-size: 45px;
+        font-weight: 800;
+        color: #4694EB;
+        display: inline-block;
+        margin: 0 auto;
+    }
+
+    .profile img {
+        width: 170px;
+        height: 170px;
+        position: absolute;
+        top: -100px;
+        left: 50%;
+        transform: translate(-50%, 0px);
+    }
+
+    .card-pop {
+        border-radius: 15px;
+        box-shadow: 0 10px 20px rgb(0 0 0 / 20%);
+        background-color: #fff;
+        max-width: 450px;
+        width: 100%;
+    }
+
+    .card-body-pop {
+        position: relative;
+    }
+
+    .btn {
+        background-color: #DC688E;
+        border: none;
+        color: #fff
+    }
+
+    .btn:hover {
+        background-color: #DC688E;
+        border: none;
+        color: #fff
+    }
+
+    .card-footer {
+        margin-top: 0;
+        padding: 0px;
+        background-color: transparent;
+        border-top: 0px solid rgba(0, 0, 0, .125);
+    }
+
+    div#bookAdemopop .card-content {
+        width: 450px;
+        background: url(../images/novagems-img/Black-friday-bg.png) no-repeat;
+        background-position: center;
+        border-radius: 10px;
+        background-size: cover;
+    }
+
+    div#bookAdemopop .modal-dialog {
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%) !important;
+    }
+
+    .row.sub-text>div {
+        padding: 0;
+    }
+
+    @media screen and (max-width:767px) {
+        .profile img {
+            width: 100px;
+            height: 100px;
+            top: -50px;
+            left: 50%;
+            transform: translate(-50%, 0px);
+        }
+
+        .blog-pop-cus .close-blog {
+            right: -6px;
+            top: -19px;
+        }
+
+        .modal-content {
+            position: relative;
+            display: -ms-flexbox;
+            display: flex;
+            -ms-flex-direction: column;
+            flex-direction: column;
+            width: 100%;
+            max-width: 500px;
+            pointer-events: auto;
+            background-color: transparent;
+            background-clip: padding-box;
+            border: 1px solid rgba(0, 0, 0, .2);
+            border-radius: 0.3rem;
+            outline: 0;
+            margin: 0 auto;
+        }
+
+        .text-pd {
+            padding: 0 30px;
+        }
+
+        .save-nov-pop {
+            font-size: 16px;
+            padding-top: 60px;
+        }
+
+        .get37-pop {
+            font-size: 34px;
+            font-weight: 600 !important;
+            color: #4694EB;
+            margin: 0;
+            padding: 0;
+        }
+
+        .card-pop {
+            border-radius: 15px;
+            box-shadow: 0 10px 20px rgb(0 0 0 / 20%);
+            background-color: #fff;
+            max-width: 500px;
+            width: 100%;
+        }
+
+        .btn {
+            background-color: #DC688E;
+            border: none;
+            color: #fff
+        }
+
+        .btn:hover {
+            background-color: #DC688E;
+            border: none;
+            color: #fff
+        }
+
+        div#bookAdemopop .card-content {
+            width: 100%;
+            background: #fff;
+            border-radius: 10px;
+        }
+
+        div#bookAdemopop .modal-dialog {
+            position: relative;
+            top: 50%;
+            transform: translateY(-50%) !important;
+        }
+
+        .row.sub-text>div {
+            padding: 0;
+        }
+
+        .get37-pop>span {
+            font-weight: 400;
+            float: left;
+            margin-top: 0;
+            font-size: 12px;
+            line-height: 20px;
+        }
+    }
+</style>
+
+
+
+{{end}}

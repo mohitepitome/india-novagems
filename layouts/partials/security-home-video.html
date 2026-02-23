@@ -1,0 +1,67 @@
+<div class="video-container mt-3">
+    <video id="video1" controls playsinline>
+        <source src="/images/novagems-img/Security-Guard-Management-System.mp4" type="video/mp4">
+        <source src="/images/novagems-img/Security-Guard-Management-System.mp4" type="video/ogg">
+        Your browser does not support the video tag.
+    </video>
+
+    <button id="custom-play-button"></button>
+
+</div>
+
+<style>
+    .video-container {
+        position: relative;
+        width: 100%;
+        margin: auto;
+    }
+    
+    #video1 {
+        width: 100%;
+        border-radius: 30px;
+        display: block;
+        border: none !important;
+    }
+    
+    #custom-play-button {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 2;
+        width: 100%;
+        height: 100%;
+        background: url(../images/novagems-img/Security-Guard-Management-System.png) no-repeat center center;
+        background-size: cover;
+        border: none !important;
+        cursor: pointer;
+        padding: 0;
+        text-indent: -9999px;
+        border-radius: 25px;
+        display: block;
+    }
+    
+    #custom-play-button:hover {}
+    
+    video {
+        width: 100%;
+        border-radius: 20px;
+    }
+</style>
+
+
+<script>
+    const playButton = document.getElementById('custom-play-button');
+    const video = document.getElementById('video1');
+
+    function playVideo() {
+        video.play();
+        playButton.style.display = 'none';
+    }
+
+    playButton.addEventListener('click', playVideo);
+    playButton.addEventListener('touchstart', playVideo);
+
+    video.addEventListener('pause', function() {
+        playButton.style.display = 'block';
+    });
+</script>

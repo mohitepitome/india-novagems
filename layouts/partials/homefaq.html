@@ -1,0 +1,113 @@
+<div class=" container">
+    <!-- <div class="col-md-8 mx-auto"> -->
+    <div class="accordion">
+        <h3 class="mb-5">Frequently Asked Questions</h3>
+        <div class="accordion-item">
+            <input type="checkbox" id="accordion11">
+            <label for="accordion11" class="accordion-item-title"><span class="icon"></span><h2 style="font-size: 15px;letter-spacing: 1px;font-weight: 600;margin-bottom: 0px;">What is security guard tracking software, and how does it work?</h2></label>
+            <h3 class="accordion-item-desc">
+                Security guard tracking software helps security companies monitor, manage, and track their guards in real time. It uses GPS, geofencing, and mobile check-ins to ensure guards are present at assigned locations and performing their duties as scheduled.
+            </h3>
+        </div>
+
+        <div class="accordion-item">
+            <input type="checkbox" id="accordion12">
+            <label for="accordion12" class="accordion-item-title"><span class="icon"></span><h2 style="font-size: 15px;letter-spacing: 1px;font-weight: 600;margin-bottom: 0px;">How can I monitor guard patrols in real time?</h2></label>
+            <h3 class="accordion-item-desc">With Novagems, you can track guard patrols live through GPS and checkpoint tour monitoring. The system shows each guard’s current location, completed checkpoints, missed rounds, and time logs; everything updates instantly on your dashboard.
+
+            </h3>
+        </div>
+
+        <div class="accordion-item">
+            <input type="checkbox" id="accordion13">
+            <label for="accordion13" class="accordion-item-title"><span class="icon"></span><h2 style="font-size: 15px;letter-spacing: 1px;font-weight: 600;margin-bottom: 0px;">Is the software mobile-friendly for on-the-go guards and managers?</h2></label>
+            <h3 class="accordion-item-desc">Yes, Novagems offers a user-friendly mobile patrol app for both security guards and supervisors. Guards can clock in, complete tasks, and get updates directly from their phones, while managers can track everything from their mobile dashboards.</h3>
+        </div>
+    </div>
+</div>
+
+<style>
+    .accordion {
+        display: flex;
+        flex-direction: column;
+        font-family: "Sora", sans-serif;
+        margin: 50px auto;
+        padding: 0 50px;
+    }
+    
+    .accordion h1 {
+        font-size: 32px;
+        text-align: center;
+    }
+    
+    .accordion-item {
+        margin-top: 16px;
+        border: 1px solid #fcfcfc;
+        border-radius: 6px;
+        background: #ffffff;
+        box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
+    }
+    
+    .accordion-item .accordion-item-title {
+        position: relative;
+        margin: 0;
+        display: flex;
+        width: 100%;
+        font-size: 15px;
+        cursor: pointer;
+        justify-content: space-between;
+        flex-direction: row-reverse;
+        padding: 14px 20px;
+        box-sizing: border-box;
+        align-items: center;
+    }
+    
+    .accordion-item .accordion-item-desc {
+        display: none;
+        font-size: 14px;
+        line-height: 22px;
+        font-weight: 300;
+        color: #444;
+        border-top: 1px dashed #ddd;
+        padding: 10px 20px 20px;
+        box-sizing: border-box;
+    }
+    
+    .accordion-item input[type="checkbox"] {
+        position: absolute;
+        height: 0;
+        width: 0;
+        opacity: 0;
+    }
+    
+    .accordion-item input[type="checkbox"]:checked~.accordion-item-desc {
+        display: block;
+    }
+    
+    .accordion-item input[type="checkbox"]:checked~.accordion-item-title .icon:after {
+        content: "-";
+        font-size: 20px;
+    }
+    
+    .accordion-item input[type="checkbox"]~.accordion-item-title .icon:after {
+        content: "+";
+        font-size: 20px;
+    }
+    
+    .accordion-item:first-child {
+        margin-top: 0;
+    }
+    
+    .accordion-item .icon {
+        margin-left: 14px;
+    }
+    
+    @media screen and (max-width: 767px) {
+        .accordion {
+            padding: 0 16px;
+        }
+        .accordion h1 {
+            font-size: 22px;
+        }
+    }
+</style>

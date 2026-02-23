@@ -1,0 +1,372 @@
+{{$heading := .Get "heading" }} {{$formId := .Get "formid" | lower }} {{$btnpos := .Get "postion" | default "left" }}
+
+<div class="mb-4 mt-4 {{with $btnpos}} d-block text-{{.}}{{end}}">
+    <button type="button" class="btn btn-primary btn-arrow but-download" data-toggle="modal"
+        data-target="#{{replace $formId " " " - " }}">
+        {{.Inner | default "Download Now"}}
+    </button>
+</div>
+
+<script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/shell.js"></script>
+
+<!-- Modal HTML Markup -->
+<div id="{{replace $formId " " " - " }}" class="modal fade">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">{{$heading}}</h4>
+            </div>
+            <div class="modal-body pt-3 pb-0 pl-5 pr-5">
+
+
+                {{ if eq $formId "dbtn1" }}
+
+
+                <script>
+                    hbspt.forms.create({
+                        region: "na1",
+                        portalId: "4159731",
+                        formId: "9688c49e-5f7b-4c5e-86e4-e919005cfdfd"
+                    });
+                </script>
+
+                {{ else if eq $formId "dbtn2" }}
+
+
+                <script>
+                    hbspt.forms.create({
+                        region: "na1",
+                        portalId: "4159731",
+                        formId: "da0d908d-cda1-4c41-8c42-565d19b0de87"
+                    });
+                </script>
+
+                {{ else if eq $formId "dbtn3" }}
+
+
+                <script>
+                    hbspt.forms.create({
+                        region: "na1",
+                        portalId: "4159731",
+                        formId: "a3c4fbe3-252d-44b2-9fb2-e97269daf634"
+                    });
+                </script>
+
+
+                {{ else if eq $formId "dbtn4" }}
+
+
+
+                <script>
+                    hbspt.forms.create({
+                        region: "na1",
+                        portalId: "4159731",
+                        formId: "aa9ccfac-5310-47a8-aa65-e88013b658a0"
+                    });
+                </script>
+
+
+                {{ else if eq $formId "dbtn5" }}
+
+
+
+                <script>
+                    hbspt.forms.create({
+                        region: "na1",
+                        portalId: "4159731",
+                        formId: "477abe20-e4bc-4b14-b9bf-3bab5d02354d"
+                    });
+                </script>
+
+                <!-- Security Guard ID -->
+
+                {{ else if eq $formId "dbtn6" }}
+
+
+
+                <script>
+                    hbspt.forms.create({
+                        region: "na1",
+                        portalId: "4159731",
+                        formId: "cdb803e3-7d10-4a3e-a5b6-6a4039d0bcaf"
+                    });
+                </script>
+
+
+                {{ else if eq $formId "dbtn7" }}
+
+
+
+                <script>
+                    hbspt.forms.create({
+                        region: "na1",
+                        portalId: "4159731",
+                        formId: "97a65e66-5bad-4f1d-98a2-643e4fdc2051"
+                    });
+                </script>
+
+                {{ else if eq $formId "dbtn11" }}
+
+
+
+                <script>
+                    hbspt.forms.create({
+                        region: "na1",
+                        portalId: "4159731",
+                        formId: "695494ce-533c-4bc7-9d3a-9950c375bcd9"
+                    });
+                </script>
+
+                {{ else if eq $formId "dbtn12" }}
+
+
+
+                <script>
+                    hbspt.forms.create({
+                        region: "na1",
+                        portalId: "4159731",
+                        formId: "7adc52e7-e4b9-4bea-b240-69ac72f805c8"
+                    });
+                </script>
+                {{ else if eq $formId "dbtn21" }}
+
+
+                <script>
+                    hbspt.forms.create({
+                        region: "na1",
+                        portalId: "4159731",
+                        formId: "9b098ac9-f128-4353-8db9-af0b2a201ac9"
+                    });
+                </script>
+
+                <!-- Why You Need Professional Invoices -->
+                {{ else if eq $formId "dbtn31" }}
+                <script>
+                    hbspt.forms.create({
+                        region: "na1",
+                        portalId: "4159731",
+                        formId: "21469794-09c3-40b0-9d14-85cc920491c1"
+                    });
+                </script>
+                <!-- Benefits of Using Invoice Templates -->
+                {{ else if eq $formId "dbtn32" }}
+                <script>
+                    hbspt.forms.create({
+                        region: "na1",
+                        portalId: "4159731",
+                        formId: "6eb6f9de-8d85-4115-b3b4-8b44d2834ed5"
+                    });
+                </script>
+                <!-- Tips for Creating Your Own Invoices -->
+                {{ else if eq $formId "dbtn33" }}
+                <script>
+                    hbspt.forms.create({
+                        region: "na1",
+                        portalId: "4159731",
+                        formId: "d92acbea-b993-4602-b412-11cdbc4c0d43"
+                    });
+                </script>
+
+                <!-- Cleaning service agreement templates you can use -->
+                <!-- ---------------------1----------------------------->
+
+                {{ else if eq $formId "dbtn34" }}
+                <script>
+                    hbspt.forms.create({
+                        portalId: "4159731",
+                        formId: "5d3c5872-02cd-4a56-acdc-9cfe964cae84",
+                        region: "na1"
+                    });
+                </script>
+                <!-- ---------------------2----------------------------->
+                {{ else if eq $formId "dbtn35" }}
+                <script>
+                    hbspt.forms.create({
+                        portalId: "4159731",
+                        formId: "9e91a2b1-d64c-48d6-bc6c-7fc2e6648783",
+                        region: "na1"
+                    });
+                </script>
+                <!-- ---------------------3----------------------------->
+                {{ else if eq $formId "dbtn36" }}
+                <script>
+                    hbspt.forms.create({
+                        portalId: "4159731",
+                        formId: "5b255fda-6c1c-4ef0-a750-e17290b04e05",
+                        region: "na1"
+                    });
+                </script>
+
+
+                <!-- ---------------------37----------------------------->
+                {{ else if eq $formId "dbtn371" }}
+                <script>
+                    hbspt.forms.create({
+                        portalId: "4159731",
+                        formId: "ad4d4e75-b3c6-44e4-98bf-886c286b6fc9",
+                        region: "na1"
+                    });
+                </script>
+                <!-- ---------------------38----------------------------->
+                {{ else if eq $formId "dbtn381" }}
+                <script>
+                    hbspt.forms.create({
+                        portalId: "4159731",
+                        formId: "3c4968e2-5856-48b9-8c8e-da4167f89aff",
+                        region: "na1"
+                    });
+                </script>
+                <!-- ---------------------39----------------------------->
+                {{ else if eq $formId "dbtn391" }}
+                <script>
+                    hbspt.forms.create({
+                        portalId: "4159731",
+                        formId: "8f4f7be5-7221-49b1-9364-afb3c73dbe54",
+                        region: "na1"
+                    });
+                </script>
+                <!-- ---------------------40----------------------------->
+                {{ else if eq $formId "dbtn401" }}
+                <script>
+                    hbspt.forms.create({
+                        portalId: "4159731",
+                        formId: "7c9cfc95-f6fc-4bd5-9d64-0e8f0487baa1",
+                        region: "na1"
+                    });
+                </script>
+                <!-- ---------------------41----------------------------->
+                {{ else if eq $formId "dbtn411" }}
+                <script>
+                    hbspt.forms.create({
+                        portalId: "4159731",
+                        formId: "b720f414-0533-4549-987c-85be420f8b03",
+                        region: "na1"
+                    });
+                </script>
+                <!-- ----------------------50--------------------------------- -->
+                {{ else if eq $formId "dbtn50" }}
+                <script>
+                    hbspt.forms.create({
+                        portalId: "4159731",
+                        formId: "801740ad-9cec-43d2-a56a-74956516f69c",
+                        region: "na1"
+                    });
+                </script>
+                <!-- ----------------------51--------------------------------- -->
+                {{ else if eq $formId "dbtn51" }}
+                <script>
+                    hbspt.forms.create({
+                        portalId: "4159731",
+                        formId: "802110e9-e51c-4091-895f-6bbad7b97eaf",
+                        region: "na1"
+                    });
+                </script>
+                <!-- ----------------------52--------------------------------- -->
+                {{ else if eq $formId "dbtn52" }}
+                <script>
+                    hbspt.forms.create({
+                        portalId: "4159731",
+                        formId: "38db765f-87db-4c03-ae25-8b1a1935e3f1",
+                        region: "na1"
+                    });
+                </script>
+                <!-- ----------------------53--------------------------------- -->
+                {{ else if eq $formId "dbtn53" }}
+                <script>
+                    hbspt.forms.create({
+                        portalId: "4159731",
+                        formId: "9ae1a12b-badb-4c27-b2f2-48260198809d",
+                        region: "na1"
+                    });
+                </script>
+                <!-- ----------------------54--------------------------------- -->
+                {{ else if eq $formId "dbtn54" }}
+                <script>
+                    hbspt.forms.create({
+                        portalId: "4159731",
+                        formId: "661629a4-dac7-43ad-8dba-0b76ce6ec420",
+                        region: "na1"
+                    });
+                </script>
+                <!-- ----------------------55--------------------------------- -->
+                {{ else if eq $formId "dbtn55" }}
+                <script>
+                    hbspt.forms.create({
+                        portalId: "4159731",
+                        formId: "cc395ff0-d993-4f67-9176-583f3a9763ab",
+                        region: "na1"
+                    });
+                </script>
+                <!-- ----------------------Free timesheet templates for service businesses--------------------------------- -->
+                <!-- ----------------------Dailytimesheet--------------------------------- -->
+                 {{ else if eq $formId "dailytimesheet" }}
+                   <script>
+                    hbspt.forms.create({
+                        portalId: "4159731",
+                        formId: "c69a898f-3c60-48fb-8195-eb124a20e28c",
+                        region: "na1"
+                    });
+                    </script>
+
+                <!-- ----------------------WeeklyTimesheet--------------------------------- -->
+                 {{ else if eq $formId "weeklytimesheet" }}
+                    <script>
+                    hbspt.forms.create({
+                        portalId: "4159731",
+                        formId: "6c2ab65b-80d3-4b0b-bc79-9a9273ea0656",
+                        region: "na1"
+                    });
+                    </script>
+
+                <!-- ----------------------Biweekly--------------------------------- -->
+                 {{ else if eq $formId "biweekly" }}
+                    <script>
+                    hbspt.forms.create({
+                        portalId: "4159731",
+                        formId: "a5829aab-aca2-48d4-a6fd-c5c632e529e5",
+                        region: "na1"
+                    });
+                    </script>
+                
+                <!-- ----------------------MonthlyTimesheet--------------------------------- -->
+                 {{ else if eq $formId "monthlytimesheet" }}
+                    <script>
+                    hbspt.forms.create({
+                        portalId: "4159731",
+                        formId: "75a7d94b-2f43-4d80-baeb-05411c03d4e1",
+                        region: "na1"
+                    });
+                    </script>
+
+                <!-- ----------------------ClientBillingTimesheet--------------------------------- -->
+                 {{ else if eq $formId "clientbillingtimesheet" }}
+                    <script>
+                        hbspt.forms.create({
+                            portalId: "4159731",
+                            formId: "2c384bbb-fdfe-41d0-824f-a0fcff6c12a0",
+                            region: "na1"
+                        });
+                        </script>
+
+                <!-- ----------------------ActivityTimesheet--------------------------------- -->
+                 {{ else if eq $formId "activitytimesheet" }}
+                   <script>
+                    hbspt.forms.create({
+                        portalId: "4159731",
+                        formId: "b451479d-ba7e-40f0-9d83-035cbde5d678",
+                        region: "na1"
+                    });
+                    </script>
+
+                {{ end }}
+
+
+
+
+            </div>
+        </div>
+        <!-- /.modal-content -->
+    </div>
+    <!-- /.modal-dialog -->
+</div>
+<!-- /.modal -->

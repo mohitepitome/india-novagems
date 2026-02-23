@@ -1,0 +1,797 @@
+{{ define "main" }}
+<!-- schedule Section -->
+<div>
+    <div class="clock-in-out-bg2">
+        <div class="container example">
+            <div class="row header-subwrapper-top align-items-center">
+                <div class="col-lg-7 col-md-7 col-12">
+                    <div>
+                        <div>
+                            <h1 class="hero-h1">Scheduling Software for <span class="color5">Cleaning Business</span> </h1>
+                            <p>Schedule your cleaners from anywhere, anytime with ease. Get notified, track their progress, and manage invoices all in one place. Become one of the top choices for janitorial services and close more cleaning contracts.</p>
+                        </div>
+                        <div class="row my-5">
+                            <div class="col-lg-9 col-md-11 col-12">
+                                <div class="footer-newsletter">
+                                    <form id="get-started-for-free">
+                                        <input type="email" id="email" name="email" placeholder="Enter your email address">
+                                        <input class="home-btn" type="submit" value="Get Started for Free">
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-1 col-12"></div>
+                        </div>
+                        <div id="load">
+                            <div class="container p-md-0" id="clientscroll">
+                                <section class="customer-logos slider" aria-live="polite" aria-label="Client Logos Carousel">
+                                    {{ range .Site.Data.CleaningCompanyClients.items }}
+                                    <div class="slide" role="option" aria-roledescription="client logo">
+                                        <div class="client-slide"><img style="width: 100%;" src="{{ .image | absURL }}" alt="{{.brand}}"></div>
+                                    </div>
+                                    {{end}}
+                                </section>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-5 col-md-5 col-12 p-0 img-iped-head all-img-left">
+                    <img src="/images/novagems-img/scheduling-softwareCB/Main.png" alt="Main">
+                </div>
+            </div>
+            <div class="col-md-12 text-center key-schedule ">
+                <img type="button" class="video-btn " data-toggle="modal" data-target="#myModal" src='{{"/images/novagems-img/View-demo-btn.svg" | absURL}}' alt="view-demo">
+            </div>
+        </div>
+
+
+        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content" style="background-color: transparent;">
+
+
+                    <div class="modal-body">
+
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+
+                        <video controls id="video2">
+                            <source src="/images/novagems-img/cleaning-company/Cleaning-company.mp4" type="video/mp4">
+                            <source src="/images/novagems-img/cleaning-company/Cleaning-company.mp4" type="video/ogg">
+                            Your browser does not support the video tag.
+                        </video>
+
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="mt-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 text-center ">
+                        <p class="subheading color3">Features</p>
+                        <h2>Best Scheduling Software for Cleaning Business</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-3 col-md-4 col-6 mt-3">
+                        <div class="clients text-center">
+                            <a href="#Workforce-Scheduling">
+                                <figure style="margin-bottom: 20px;"><img class="key-img" src="/images/novagems-img/scheduling-softwareCB/Workforce-Scheduling.svg" alt="Scheduling image"></figure>
+                                <p class="clients-p">Workforce Scheduling<br><br></p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-6 mt-3">
+                        <div class="clients text-center">
+                            <a href="#Real-Time-Updates">
+                                <figure style="margin-bottom: 20px;"><img class="key-img" src="/images/novagems-img/scheduling-softwareCB/Real-Time-Updates.svg" alt="Invoice-icon image"></figure>
+                                <p class="clients-p">Real-Time
+                                    <br><br></p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-6 mt-3">
+                        <div class="clients text-center">
+                            <a href="#Mobile-Accessibility">
+                                <figure style="margin-bottom: 20px;"><img class="key-img" src="/images/novagems-img/scheduling-softwareCB/Mobile-Accessibility.svg" alt="Estimate-icon image"></figure>
+                                <p class="clients-p">Mobile Accessibility
+                                    <br><br></p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-6 mt-3">
+                        <div class="clients text-center">
+                            <a href="#Estimating">
+                                <figure style="margin-bottom: 20px;"><img class="key-img" src="/images/novagems-img/scheduling-softwareCB/Estimating.svg" alt="Timesheet image"></figure>
+                                <p class="clients-p">Estimating<br><br></p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-6 mt-5">
+                        <div class="clients text-center">
+                            <a href="#Invoices">
+                                <figure style="margin-bottom: 20px;"><img class="key-img" src="/images/novagems-img/scheduling-softwareCB/Invoices.svg" alt="Maintenance-Log-Sheet image"></figure>
+                                <p class="clients-p">Invoices<br><br></p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-6 mt-5">
+                        <div class="clients text-center">
+                            <a href="#Reporting">
+                                <figure style="margin-bottom: 20px;"><img class="key-img" src="/images/novagems-img/scheduling-softwareCB/Reporting.svg" alt="Client-Management image"></figure>
+                                <p class="clients-p">Reporting<br><br></p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-6 mt-5">
+                        <div class="clients text-center">
+                            <a href="#Work-order-managment">
+                                <figure style="margin-bottom: 20px;"><img class="key-img" src="/images/novagems-img/scheduling-softwareCB/Work-order-managment.svg" alt="Work-Order-Management image"></figure>
+                                <p class="clients-p">Work Order Management
+                                    <br><br></p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-6 mt-5">
+                        <div class="clients text-center">
+                            <a href="#Client-Management">
+                                <figure style="margin-bottom: 20px;"><img class="key-img" src="/images/novagems-img/scheduling-softwareCB/Client-Management.svg" alt="Inspection-Report image"></figure>
+                                <p class="clients-p">Client Management<br><br></p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="clearfix">
+        </div>
+    </div>
+
+    <!-- maintenance-log-sheet -->
+
+    <div id="Workforce-Scheduling" style="margin-top: 100px;">
+        <div class="container">
+            <div id="tabses" class="row ">
+                <div class="col-lg-6 col-md-6 col-12 ">
+                    <div class="img-iped">
+                        <div id="tabs-11">
+                            <figure><img src="/images/novagems-img/scheduling-softwareCB/Shift-Planning.png" alt="Paper-to-Digital-Cleaning-Log"></figure>
+
+                        </div>
+                        <div id="tabs-22">
+                            <figure><img src="/images/novagems-img/scheduling-softwareCB/Shift-Templates.png" alt="Real-Time-information"></figure>
+
+                        </div>
+                        <div id="tabs-33">
+                            <figure><img src="/images/novagems-img/scheduling-softwareCB/Instant-Employee-Replacement.png" alt="Problem-Reporting"></figure>
+
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-lg-6 col-md-6 col-12 ">
+                    <div>
+                        <h3>Workforce Scheduling</h3>
+                        <p>Manage recurring cleaning jobs easily and send the right people to the right place. Be it one-time cleaning contracts or recurring clients manage everything from one place. </p>
+                        <h4 class="open-features">Key Features</h4>
+                    </div>
+                    <ul class="tab-slaider" id="accordiones" role="tablist">
+                        <li>
+                            <a class="step circle active" href="#tabs-11">
+                                <div class="tag">
+                                    <img class="active-img" src="/images/novagems-img/dot.svg" alt="dot">
+                                    <span class="title headimg-color">Shift Planning </span>
+                                </div>
+                            </a>
+                            <div class="addon fadein addon-h">
+                                <span>Balance schedules, create rules, auto-approve requests, and change the number of people working in a shift automatically to save time and add flexibility to operations.
+                                </span>
+                            </div>
+                        </li>
+
+                        <li>
+                            <a href="#tabs-22">
+                                <div class="tag">
+                                    <img class="active-img" src="/images/novagems-img/dot.svg" alt="dot">
+                                    <span class="title headimg-color">Shift Templates</span>
+                                </div>
+                            </a>
+                            <div class="addon addon-h">
+                                <span>This feature in our cleaning scheduling software gets the work done with efficiency and enables your staff to meet project deadlines. With the numerous shift templates already in the software, you can save hours in allocating work.</span>
+                            </div>
+                        </li>
+
+                        <li>
+                            <a href="#tabs-33">
+                                <div class="tag">
+                                    <img class="active-img" src="/images/novagems-img/dot.svg" alt="dot">
+                                    <span class="title headimg-color">Instant Employee Replacement</span>
+                                </div>
+                            </a>
+                            <div class="addon addon-h">
+                                <span>It brings all the described benefits in addition to sending an alert to the supervisor if an employee has not clocked in and, if needed, means to quickly resolve the situation.
+                                </span>
+                            </div>
+                        </li>
+
+                    </ul>
+                    <div class="my-3" style="margin-left: 0px;">
+                        <div class="footer-newsletter features-newsletter">
+                            <form id="Check_Point_Tours">
+                                <input type="email" id="Check-Point-Tours" name="Check-Point-Tours" placeholder="Enter your email address">
+                                <input type="submit" value="Get Started for Free" class="background2" id="btnsunscribe">
+                            </form>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- inspection-report -->
+
+    <div id="Real-Time-Updates" class="mt-5">
+        <div class="mt-5">
+            <div class="container">
+                <div id="tabs4" class="row ">
+                    <div class="col-lg-6 col-md-6 col-12">
+                        <div>
+                            <h3>Real-Time Updates & Notifications</h3>
+                            <p>Make sure that both the management and the cleaning staff are aware of any changes or new assignments immediately. Boost client satisfaction and cleaner retention with Novagem's easy-to-use cleaning scheduling app. </p>
+                            <h4 class="open-features">Key Features</h4>
+                        </div>
+                        <ul class="tab-slaider" id="accordion4" role="tablist">
+                            <li>
+                                <a class="step circle active" href="#tabs-1">
+                                    <div class="tag">
+                                        <div class="icon">
+                                            <div class="block">
+                                                <div class="circle"></div>
+                                            </div>
+                                        </div>
+                                        <img class="active-img" src="/images/novagems-img/dot.svg" alt="dot">
+                                        <span class="title headimg-color">Instant Notifications</span>
+                                    </div>
+                                </a>
+                                <div class="addon fadein addon-h">
+                                    <span>Be aware if the cleaner has missed the shift, is late for the shift, or has missed any task assigned. This will boost the productivity and efficiency of the cleaning team. </span>
+                                </div>
+                            </li>
+
+                            <li>
+                                <a href="#tabs-2">
+                                    <div class="tag">
+                                        <div class="icon">
+                                            <div class="block">
+                                                <div class="circle"></div>
+                                            </div>
+                                        </div>
+                                        <img class="active-img" src="/images/novagems-img/dot.svg" alt="dot">
+                                        <span class="title headimg-color">Assign Work On The Go </span>
+                                    </div>
+                                </a>
+                                <div class="addon addon-h">
+                                    <span>No need to be stuck in the system all day. Notify your cleaners of any last-minute changes while using the app. No need to conduct numerous meetings and focus on growing your cleaning services.</span>
+                                </div>
+                            </li>
+
+                            <li>
+                                <a href="#tabs-3">
+                                    <div class="tag">
+                                        <img class="active-img " src="/images/novagems-img/dot.svg" alt="dot">
+                                        <span class="title headimg-color">Swift Action With Instant Alerts </span>
+                                    </div>
+                                </a>
+                                <div class="addon addon-h">
+                                    <span>Keep your cleaners and company safe with instant panic button functionality. Protect your brand reputation against any false claims, that is what makes us the best scheduling app for cleaning business. Cleaners can notify their managers and authorities if they face any issues. </span>
+                                </div>
+                            </li>
+
+
+
+                        </ul>
+                        <div class="my-3" style="margin-left: 0px;">
+                            <div class="footer-newsletter features-newsletter">
+                                <form id="Smart_Response">
+                                    <input type="email" id="Smart-Response" name="Smart-Response" placeholder="Enter your email address">
+                                    <input type="submit" value="Get Started for Free" class="background2">
+                                </form>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="col-lg-6 col-md-6 col-12 employee-scheduling-phone">
+                        <div class="img-iped">
+
+
+                            <div id="tabs-1">
+                                <figure><img src="/images/novagems-img/scheduling-softwareCB/Instant-Notifications.png" alt="Ensure-Quality-Cleaning"></figure>
+
+                            </div>
+                            <div id="tabs-2">
+                                <figure><img src="/images/novagems-img/scheduling-softwareCB/Assign-Work-On-The-Go.png" alt="Rate-the-Cleaners"></figure>
+
+                            </div>
+                            <div id="tabs-3">
+                                <figure><img src="/images/novagems-img/scheduling-softwareCB/Shift-Action-With-Instant-Alerts.png" alt="Record-Comments-and-Photos"></figure>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- work-order-management -->
+
+    <div id="Mobile-Accessibility" class="mt-5">
+        <div class="container">
+            <div id="tabs3" class="row ">
+                <div class="col-lg-6 col-md-6 col-12">
+                    <div class="img-iped">
+                        <div id="tabs-11">
+                            <figure><img src="/images/novagems-img/scheduling-softwareCB/GPS-Tracking.png" alt="Assign-Work-Orders-on-the-Go"></figure>
+
+                        </div>
+                        <div id="tabs-22">
+                            <figure><img src="/images/novagems-img/scheduling-softwareCB/Geofencing.png" alt="Timely-Work-Management"></figure>
+
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-lg-6 col-md-6 col-12">
+                    <div>
+                        <h3>Mobile Accessibility</h3>
+                        <p>View schedules, clock in and out of jobs, and receive updates while on the go. A mobile-friendly interface ensures that the staff can easily access their schedules from any device.</p>
+                        <h4 class="open-features">Key Features</h4>
+                    </div>
+                    <ul class="tab-slaider" id="accordion3" role="tablist">
+                        <li>
+                            <a class="step circle active" href="#tabs-11">
+                                <div class="tag">
+                                    <img class="active-img" src="/images/novagems-img/dot.svg" alt="dot">
+                                    <span class="title headimg-color">GPS Tracking</span>
+                                </div>
+                            </a>
+                            <div class="addon fadein addon-h">
+                                <span>Know the location of your cleaners with GPS tracking even in low internet connectivity areas. This is specially helpful in both - commercial and residential cleaning services where your staff is always on the go!
+                                </span>
+                            </div>
+                        </li>
+
+                        <li>
+                            <a href="#tabs-22">
+                                <div class="tag">
+                                    <img class="active-img" src="/images/novagems-img/dot.svg" alt="dot">
+                                    <span class="title headimg-color">Geofencing</span>
+                                </div>
+                            </a>
+                            <div class="addon addon-h">
+                                <span>This feature allows you to put a virtual boundary around your janitors while they are on the field. It is backed with time stamps and GPS trails to give a record of the exact location at any given moment. 
+                                </span>
+                            </div>
+                        </li>
+
+
+                    </ul>
+                    <div class="my-3" style="margin-left: 0px;">
+                        <div class="footer-newsletter features-newsletter">
+                            <form id="Mobile_Patrol">
+                                <input type="email" id="Mobile-Patrol" name="Mobile-Patrol" placeholder="Enter your email address">
+                                <input type="submit" value="Get Started for Free" class="background2">
+                            </form>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- instructions-&-checklist-->
+    <div id="Estimating" class="mt-5">
+        <div class="mt-5">
+            <div class="container">
+                <div id="tabs" class="row ">
+                    <div class="col-lg-6 col-md-6 col-12">
+                        <div>
+                            <h3>Estimating</h3>
+                            <p>Providing accurate and timely quotes is essential for winning new business and maintaining client satisfaction. A janitorial scheduling software must be more than just a scheduling software if they want to become the first
+                                choice. </p>
+                            <h4 class="open-features">Key Features</h4>
+                        </div>
+                        <ul class="tab-slaider" id="accordion" role="tablist">
+                            <li>
+                                <a class="step circle active" href="#tabs-1">
+                                    <div class="tag">
+                                        <div class="icon">
+                                            <div class="block">
+                                                <div class="circle"></div>
+                                            </div>
+                                        </div>
+                                        <img class="active-img" src="/images/novagems-img/dot.svg" alt="dot">
+                                        <span class="title headimg-color">
+                                            Create Professional Quotes Quickly</span>
+                                    </div>
+                                </a>
+                                <div class="addon fadein addon-h">
+                                    <span>Generate detailed and professional-looking quotes in minutes, saving you time and ensuring consistency. Customize templates to reflect your brand and service offerings.</span>
+                                </div>
+                            </li>
+
+                            <li>
+                                <a href="#tabs-2">
+                                    <div class="tag">
+                                        <div class="icon">
+                                            <div class="block">
+                                                <div class="circle"></div>
+                                            </div>
+                                        </div>
+                                        <img class="active-img" src="/images/novagems-img/dot.svg" alt="dot">
+                                        <span class="title headimg-color">Accurate Cost Estimation</span>
+                                    </div>
+                                </a>
+                                <div class="addon addon-h">
+                                    <span>Include labor, materials, and any additional costs to provide an accurate estimate. This encourages clients to pay hassle-free and quickly.</span>
+                                </div>
+                            </li>
+
+                        </ul>
+                        <div class="my-3" style="margin-left: 0px;">
+                            <div class="footer-newsletter features-newsletter">
+                                <form id="custom_incident_report">
+                                    <input type="email" id="custom-incident-report" name="custom-incident-report" placeholder="Enter your email address">
+                                    <input type="submit" value="Get Started for Free" class="background2">
+                                </form>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="col-lg-6 col-md-6 col-12  employee-scheduling-phone">
+                        <div class="img-iped">
+                            <div id="tabs-1">
+                                <figure><img src="/images/novagems-img/scheduling-softwareCB/Create-Professional-Estimate-Quickly.png" alt="Add-Job-Instructions"></figure>
+                            </div>
+                            <div id="tabs-2">
+                                <figure><img src="/images/novagems-img/scheduling-softwareCB/Accurate-Cost-Estimation.png" alt="Create-Checklists-for-Tasks"></figure>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- client-management-->
+
+    <div id="Invoices" class="mt-5">
+        <div class="container">
+            <div id="tabs5" class="row ">
+                <div class="col-lg-6 col-md-6 col-12">
+                    <div class="img-iped">
+                        <div id="tabs-11">
+                            <figure><img src="/images/novagems-img/scheduling-softwareCB/Offer-Complete-Transparency.png" alt="Keep-track-of-client-properties-&-tasks"></figure>
+
+                        </div>
+                        <div id="tabs-22">
+                            <figure><img src="/images/novagems-img/scheduling-softwareCB/Invoices-Templates.png" alt="Attach-before-and-after-photos"></figure>
+
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-lg-6 col-md-6 col-12">
+                    <div>
+                        <h3>Invoices</h3>
+                        <p>Maintain a healthy cash flow and ensure the financial stability of your cleaning business. Invest in the future of cleaning business management with our advanced scheduling software and unlock your full potential.
+                        </p>
+                        <h4 class="open-features">Key Features</h4>
+                    </div>
+                    <ul class="tab-slaider" id="accordion5" role="tablist">
+                        <li>
+                            <a class="step circle active" href="#tabs-11">
+                                <div class="tag">
+                                    <img class="active-img" src="/images/novagems-img/dot.svg" alt="dot">
+                                    <span class="title headimg-color">Offer Complete Transparency</span>
+                                </div>
+                            </a>
+                            <div class="addon fadein addon-h">
+                                <span>With Novagems you get scheduling software for cleaning business and a trustworthy technology that will manage your business from A to Z. Calculate the total hours scheduled and the actual hours worked and offer the right price range for the same. </span>
+                            </div>
+                        </li>
+
+                        <li>
+                            <a href="#tabs-22">
+                                <div class="tag">
+                                    <img class="active-img" src="/images/novagems-img/dot.svg" alt="dot">
+                                    <span class="title headimg-color">Invoices Templates</span>
+                                </div>
+                            </a>
+                            <div class="addon addon-h">
+                                <span>Now there is no need to worry about shifting between different software to generate invoices. Avoid any human error or overhead costs. Investing in software like that will help you get your business to new heights.</span>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="my-3" style="margin-left: 0px;">
+                        <div class="footer-newsletter features-newsletter">
+                            <form id="Dashboard_Analytics">
+                                <input type="email" id="Dashboard-Analytics" name="Dashboard-Analytics" placeholder="Enter your email address">
+                                <input type="submit" value="Get Started for Free" class="background2">
+                            </form>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- -------- -->
+    <div id="Reporting" class="mt-5">
+        <div class="container">
+            <div id="tabs7" class="row ">
+
+                <div class="col-lg-6 col-md-6 col-12">
+                    <div>
+                        <h3>Reporting</h3>
+                        <p>Generate reports at the end of every shift to track the performance of your employees. Give freedom to your cleaners to maintain the quality of their cleaning services and build a positive reputation. </p>
+                        <h4 class="open-features">Key Features</h4>
+                    </div>
+                    <ul class="tab-slaider" id="accordion7">
+                        <li>
+                            <a class="step circle active" href="#tabs-11">
+                                <div class="tag">
+                                    <img class="active-img" src="/images/novagems-img/dot.svg" alt="dot">
+                                    <span class="title headimg-color">In-depth Analysis </span>
+                                </div>
+                            </a>
+                            <div class="addon fadein addon-h">
+                                <span>Get insights into your janitors on site, inspection reports, and hours spent in completing one duty. Our scheduling software allows the cleaners to attach images and video proof to build trust. Hence it is the top choice for many cleaning services. </span>
+                            </div>
+                        </li>
+
+                        <li>
+                            <a href="#tabs-22">
+                                <div class="tag">
+                                    <img class="active-img" src="/images/novagems-img/dot.svg" alt="dot">
+                                    <span class="title headimg-color">Generate Inspection Reports 
+                                    </span>
+                                </div>
+                            </a>
+                            <div class="addon addon-h">
+                                <span>Ensure quality services with reports and proofs. Use those to get new cleaning contracts and build a loyal community of clients. This increases the accountability and efficiency of the employees. 
+                                </span>
+                            </div>
+                        </li>
+
+
+                    </ul>
+                    <div class="my-3" style="margin-left: 0px;">
+                        <div class="footer-newsletter features-newsletter">
+                            <form id="Mobile_Patrol">
+                                <input type="email" id="Mobile-Patrol" name="Mobile-Patrol" placeholder="Enter your email address">
+                                <input type="submit" value="Get Started for Free" class="background2">
+                            </form>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-lg-6 col-md-6 col-12">
+                    <div class="img-iped">
+                        <div id="tabs-11">
+                            <figure><img src="/images/novagems-img/scheduling-softwareCB/In-depth-Analysis.png" alt="Forecasting-Accuracy"></figure>
+                        </div>
+                        <div id="tabs-22">
+                            <figure><img src="/images/novagems-img/scheduling-softwareCB/Generate-Inspection-Reports.png" alt="Real-Time-Adjustments"></figure>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ------------------------ -->
+    <div id="Work-order-managment" class="mt-5">
+        <div class="container">
+            <div id="tabs8" class="row ">
+                <div class="col-lg-6 col-md-6 col-12">
+                    <div class="img-iped">
+                        <div id="tabs-11">
+                            <figure><img src="/images/novagems-img/scheduling-softwareCB/Timely-Work-Management.png" alt="Billing-Transparency"></figure>
+                        </div>
+                        <div id="tabs-22">
+                            <figure><img src="/images/novagems-img/scheduling-softwareCB/Task-Prioritization.png" alt="Customization-Options"></figure>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-lg-6 col-md-6 col-12">
+                    <div>
+                        <h3>Work Order Management</h3>
+                        <p>Manage the workflow without having to sit at your desk all day. Focus on building the company and not on manual tasks that can be easily done using technology.
+                        </p>
+                        <h4 class="open-features">Key Features</h4>
+                    </div>
+                    <ul class="tab-slaider" id="accordion8">
+                        <li>
+                            <a class="step circle active" href="#tabs-11">
+                                <div class="tag">
+                                    <img class="active-img" src="/images/novagems-img/dot.svg" alt="dot">
+                                    <span class="title headimg-color">Timely Work Management</span>
+                                </div>
+                            </a>
+                            <div class="addon fadein addon-h">
+                                <span>Organize, plan, and assign in record time. When you have things in order you can manage the pressure well and optimize performance. Once things are optimized to gain maximum efficiency, you will drive more growth and results.</span>
+                            </div>
+                        </li>
+
+                        <li>
+                            <a href="#tabs-22">
+                                <div class="tag">
+                                    <img class="active-img" src="/images/novagems-img/dot.svg" alt="dot">
+                                    <span class="title headimg-color">Task Prioritization</span>
+                                </div>
+                            </a>
+                            <div class="addon addon-h">
+                                <span>Allow the managers to see which job needs immediate looking after. The system will help the management to sort out which things need to be done first, which job duties are high priority, and which are not.</span>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="my-3" style="margin-left: 0px;">
+                        <div class="footer-newsletter features-newsletter">
+                            <form id="Mobile_Patrol">
+                                <input type="email" id="Mobile-Patrol" name="Mobile-Patrol" placeholder="Enter your email address">
+                                <input type="submit" value="Get Started for Free" class="background2">
+                            </form>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- -------------- -->
+    <div id="Client-Management" class="mt-5">
+        <div class="container">
+            <div id="tabs1" class="row ">
+
+                <div class="col-lg-6 col-md-6 col-12">
+                    <div>
+                        <h3>Client Management</h3>
+                        <p>Efficient client management enhances the personalized service you provide. This way you can get recurring business easily and stand out of the crowd. From sharing estimates to creating task reports and invoices, keep everything
+                            handy and easy to share.
+                        </p>
+                        <h4 class="open-features">Key Features</h4>
+                    </div>
+                    <ul class="tab-slaider" id="accordion1">
+                        <li>
+                            <a class="step circle active" href="#tabs-11">
+                                <div class="tag">
+                                    <img class="active-img" src="/images/novagems-img/dot.svg" alt="dot">
+                                    <span class="title headimg-color">Share Progress And Issues Reports  </span>
+                                </div>
+                            </a>
+                            <div class="addon fadein addon-h">
+                                <span>Keep clients in the loop with what is happening. Whether they are away from the site send them reports of the task completed and gain their trust. This depicts that you are professional and trustworthy.
+                                </span>
+                            </div>
+                        </li>
+
+                        <li>
+                            <a href="#tabs-22">
+                                <div class="tag">
+                                    <img class="active-img" src="/images/novagems-img/dot.svg" alt="dot">
+                                    <span class="title headimg-color">Improved Client Relationships 
+                                    </span>
+                                </div>
+                            </a>
+                            <div class="addon addon-h">
+                                <span>By maintaining detailed and organized client profiles, you can provide a more personalized service. Build stronger relationships and increase client satisfaction and loyalty.
+                                </span>
+                            </div>
+                        </li>
+
+
+                    </ul>
+                    <div class="my-3" style="margin-left: 0px;">
+                        <div class="footer-newsletter features-newsletter">
+                            <form id="Mobile_Patrol">
+                                <input type="email" id="Mobile-Patrol" name="Mobile-Patrol" placeholder="Enter your email address">
+                                <input type="submit" value="Get Started for Free" class="background2">
+                            </form>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-lg-6 col-md-6 col-12">
+                    <div class="img-iped">
+                        <div id="tabs-11">
+                            <figure><img src="/images/novagems-img/scheduling-softwareCB/Share-Progress-And-Issues-Reports.png" alt="Forecasting-Accuracy"></figure>
+                        </div>
+                        <div id="tabs-22">
+                            <figure><img src="/images/novagems-img/scheduling-softwareCB/Improved-Client-Relationships.png" alt="Real-Time-Adjustments"></figure>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ------------------------------------------------- -->
+
+    <div class="bottombg">
+        <div class="container-fluid my-5 example">
+            <div class="row">
+                <div class="col-md-12 mt-5 mb-5 text-center ">
+                    <p class="subheading tex-h color4">Our customer reviews</p>
+                    <h3 class="hero-h1">Join 100,000+ highly productive team members</h3>
+                </div>
+            </div>
+
+            <div>
+                {{- partial "customerReviews.html" . -}}
+            </div>
+        </div>
+
+
+        <div class="whychoose mt-5 mb-5">
+            <div class="container">
+                <div class="col-md-10 mx-auto">
+                    <div class="row">
+                        <div class="col-md-12 text-center mt-5 mb-2">
+                            <p class="subheading tex-h color2">Knowledge</p>
+                            <h3>Interesting Topics</h3>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-12 text-center">
+                            <div>
+                                <div class="owl-carousel owl-theme">
+                                    {{ if .Params.schedulingSoftware }} {{ range .Params.schedulingSoftware }}
+                                    <div class="item">
+                                        <div class="grids">
+                                            <div class="choosecontent text-center mb-5">
+                                                <h5>{{.title}}</h5>
+                                                <p>{{.text}}</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    {{ end }} {{ else }} {{ range .Site.Data.schedulingSoftware.items }}
+
+                                    <div class="item">
+                                        <div class="grids">
+                                            <div class="choosecontent text-center mb-5">
+                                                <h5>{{.title}}</h5>
+                                                <p>{{.text}}</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    {{end}} {{end}}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div> {{- partial "faq.html" . -}}</div>
+    <div>
+        {{- partial "resources.html" . -}}
+    </div>
+
+</div>
+
+
+{{end}}

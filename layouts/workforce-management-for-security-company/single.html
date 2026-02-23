@@ -1,0 +1,385 @@
+{{ define "main" }}
+<div>
+    <div>
+        <div class="cus-bg cus-dg-phone">
+            <div class="container example">
+                <div class="row header-subwrapper-top">
+                    <div class="col-lg-6 col-md-7 col-12">
+                        <!-- <div class="container-left"> -->
+                        <div>
+
+                            <div>
+                                <h1 class="hero-h1">Security Guard App & Tracking Software for Smarter Security
+                                    Management</h1>
+                                <p>From efficient scheduling to real-time GPS tracking and instant incident reporting,
+                                    our security guard app is designed to improve your security services and reduce
+                                    response time. </p>
+                            </div>
+                            <div class="my-5">
+                                <div class="footer-newsletter">
+                                    <form id="get-started-for-free">
+                                        <input type="email" id="email" name="email"
+                                            placeholder="Enter your email address">
+                                        <input class="home-btn" type="submit" value="Get Started for Free">
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="mt-5 mb-2">
+                                {{- partial "clients.html" . -}}
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6 col-md-5 col-12 p-md-0 img-iped-head all-img-left">
+                        <div class="scheduling-management-for-everyone">
+                            <img src='{{"/images/novagems-img/Schedule-main.png" | absURL}}' alt="Schedule-main">
+                        </div>
+                    </div>
+                    <div class="col-md-12 text-center key-schedule ">
+                        <img type="button" class="video-btn " data-toggle="modal" data-target="#workforceManagement"
+                            src='{{"/images/novagems-img/View-demo-btn.svg" | absURL}}' alt="view-demo">
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal fade" id="workforceManagement" tabindex="-1" role="dialog"
+                aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content" style="background-color: transparent;">
+
+
+                        <div class="modal-body">
+
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+
+                            <video controls id="video1">
+                                <source
+                                    src="/images/novagems-img/cleaning-company/Security-Guard-Management-System-novagems.mp4"
+                                    type="video/mp4">
+                                <source
+                                    src="/images/novagems-img/workforce-management/Security-Guard-Management-System-novagems.mp4"
+                                    type="video/ogg">
+                                Your browser does not support the video tag.
+                            </video>
+
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="container ">
+                <div class="row d-flex row-eq-height">
+                    <div class="col-md-12 text-center">
+                        <h2 class="mb-5 ">Security Guard Management Software</h2>
+                    </div>
+                    <div class="col-lg-4 creativecol-phone">
+                        <div class=" creativecol h-100">
+                            <div>
+                                <p class="everyone-p color2">Simplify your private security business</p>
+                                <hr>
+                                <br>
+                            </div>
+                            <figure style="margin-bottom: 20px;"><img
+                                    src='{{"/images/novagems-img/guard-Management.png" | absURL}}'
+                                    alt="guard-Management"></figure>
+                            <h4 style="margin-bottom: 20px;">Guard Management</h4>
+                            <p>Advance solution to monitor performance of security personnel and mobile patrol teams.
+                            </p>
+                            <div class=" transparentbtn-btn hvr-icon-wobble-horizontal">
+                                <a href="#reporting"><img
+                                        src='{{"/images/novagems-img/down-double-arrow.svg" | absURL}}'
+                                        alt="down-double-arrow"></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 creativecol-phone">
+                        <div class="creativecol h-100">
+                            <div>
+                                <p class="everyone-p color7">Smart security solution on your fingertips</p>
+                                <hr>
+                                <br>
+                            </div>
+                            <figure style="margin-bottom: 20px;"><img
+                                    src='{{"/images/novagems-img/mobile-Patrol.png" | absURL}}' alt="mobile-Patrol">
+                            </figure>
+                            <h4 style="margin-bottom: 20px;">Mobile Patrol</h4>
+                            <p>Solidify patrolling operations by managing your security officers efficiently.
+                            </p>
+                            <div class="transparentbtn-btn hvr-icon-wobble-horizontal">
+                                <a href="/mobile-patrol" class="btn-arrow transparentbtn">Explore More <img
+                                        class="fa fa-arrow-right hvr-icon arrow-icon"
+                                        src='{{"/images/novagems-img/Arrow.svg" | absURL}}' alt="Arrow"></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4">
+                        <div class="creativecol h-100">
+                            <div>
+                                <p class="everyone-p color3">Reduce time to respond to incidents</p>
+                                <hr>
+                                <br>
+                            </div>
+                            <figure style="margin-bottom: 20px;"><img
+                                    src='{{"/images/novagems-img/smart-Response.png" | absURL}}' alt="smart-Response">
+                            </figure>
+                            <h4 style="margin-bottom: 20px;">Smart Response (Dispatch)</h4>
+                            <p>Reduce the time taken to respond to unwarranted incidents. Send automatic alerts.
+                            </p>
+                            <div class="transparentbtn-btn hvr-icon-wobble-horizontal">
+                                <a href="/smart-response" class="btn-arrow transparentbtn">Explore More <img
+                                        class="fa fa-arrow-right hvr-icon arrow-icon"
+                                        src='{{"/images/novagems-img/Arrow.svg" | absURL}}' alt="Arrow"></a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="pb-5">
+        {{- partial "access.html" . -}}
+    </div>
+    <div>
+        {{- partial "howitswork.html" . -}}
+    </div>
+    <!-- <div class="container-fluid" style="background: #fff;">
+    <div class="row ">
+        <div class="col-md-2 p-0">
+            <img src="/images/novagems-img/Ellipse.png" alt="Ellipse">
+        </div>
+        <div class="col-md-4 ">
+            <h5>Latest Feature Updates</h5>
+            <p> <img class="task_alt_black" src="/images/novagems-img/task.png" alt="task"> Visitor Management</p>
+        </div>
+        <div class="col-md-6 p-0">
+            <img src="/images/novagems-img/latest-feature.png" alt="latest-feature">
+        </div>
+    </div>
+</div> -->
+    <!-- <div class="Managing-sec-rock">
+        <div class="container ">
+            <div class="col-md-8 mx-auto">
+                <div class="testimonial-wrapper">
+                    <div class="quote-left"><img src="/images/novagems-img/novagemsv2/customer-stories/quote-left.png"
+                            alt="Clock-In-Out"></div>
+                    <div class="testimonial-container">
+                        <div class="testimonial-text">
+                            <p class="testimonial-message">
+                                “Managing 1,500 Guards Used To Be Overwhelming—Now, Scheduling Takes Minutes, Not Hours”
+                                <br> - Ozzie Zarai, CEO
+                            </p>
+                        </div>
+                    </div>
+                    <div class="quote-right"><img src="/images/novagems-img/novagemsv2/customer-stories/quote-right.png"
+                            alt="Clock-In-Out"></div>
+                </div>
+            </div>
+
+        </div>
+    </div> -->
+
+    <div class="bg-white pt-5 Industrysection">
+        <div class="bg-Industry"></div>
+        <div class=" container">
+            <div class="col-md-9 mx-auto">
+                <div class="text-center">
+                    <h3 class="Workforce-h2">Customer success is our priority</h3>
+                    <!-- <p>Whether you manage a small team or a large-scale security operation, our security guard management app reduces manual errors, improves compliance, and gives full visibility over security guards.</p> -->
+                    <p><a style="color: #786CE6 !important;" href="/customer-stories/">Read Real Stories <img
+                                src="/images/novagems-img/novagemsv2/read.png" alt="Read"></a></p>
+                </div>
+                <div class="row my-5">
+                    <div class="col-md-4 col-12 ">
+                        <div class="no-underline pa3 bg-grey-1 br1 mb2 db raise w-100 text-center"
+                            style="border-radius:20px;background: #FFF8E7 0% 0% no-repeat padding-box;">
+                            <img style="border-radius: 20px 20px 0px 0px;width: 100%;"
+                                src="/images/novagems-img/novagemsv2/customer-stories/ugs.png" alt="UGS Security" />
+                            <div class="pl-2 pr-2 pt-2 pb-2">
+                                <p> <b>UGS Security </b></p>
+                                <p class="mt-2 mb0">750 Employees</p>
+                                <a style="color: #786CE6;text-decoration: underline;"
+                                    href="/customer-stories/ugs-security" class="link b dib black mb-5 color5 pb-3">Read
+                                    Story</a>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-12 cardstories-top-phone">
+                        <div class="no-underline pa3 bg-grey-1 br1 mb2 db raise w-100 text-center"
+                            style="border-radius: 20px;background: #FFF8E7 0% 0% no-repeat padding-box;">
+                            <img style="border-radius: 20px 20px 0px 0px;    width: 100%;"
+                                src="/images/novagems-img/novagemsv2/Industry2.png" alt="Industry2" />
+                            <div class="pl-2 pr-2 pt-2 pb-2">
+                                <p> <b>Securiwatch </b></p>
+                                <p class="mt-2 mb0">1,500+ Employees</p>
+                                <a style="color: #786CE6;text-decoration: underline;"
+                                    href="/customer-stories/securi-watch-security/" class="link pt-4">Read Story</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-12 cardstories-top-phone">
+                        <div class="no-underline pa3 bg-grey-1 br1 mb2 db raise w-100 text-center"
+                            style="border-radius:20px;background: #FFF8E7 0% 0% no-repeat padding-box;">
+                            <img style="border-radius: 20px 20px 0px 0px;width: 100%;"
+                                src="/images/novagems-img/novagemsv2/customer-stories/jms-home.png" alt="Industry3" />
+                            <div class="pl-2 pr-2 pt-2 pb-2">
+                                <p> <b>JMS Security</b></p>
+                                <p class="mt-2 mb0">50 Employees</p>
+                                <a style="color: #786CE6;text-decoration: underline;"
+                                    href="/customer-stories/jms-security/" class="link mt-3 ">Read Story</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div>
+        {{- partial "cta.html" . -}}
+    </div>
+    <div>
+        {{- partial "leaders.html" . -}}
+    </div>
+
+    <div> {{- partial "faq.html" . -}}</div>
+    <div>
+        {{- partial "resources.html" . -}}
+    </div>
+
+    <div class="modal fade refe-earn-pop refer-earn-form" id="schedulingmanagementpop" tabindex="-1" role="dialog"
+        aria-labelledby="refer-earnformTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class=" closemodal">
+                    <button type="button" class="close-blog" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <div class="container phonemodal">
+                        <div class="row align-items-center">
+                            <div class="col-lg-7 col-md-7 col-12 securitytex">
+                                <h2 class="securityh2">TURN YOUR <span class="securityspan">SECURITY</span> <span
+                                        class="securityGuards">GUARDS</span> INTO SUPER HEROES!</h2>
+                                <div class="mt-3">
+                                    <a href="/free-trial" class="securitybtn">START YOUR FREE TRIAL</a>
+                                </div>
+                            </div>
+                            <div class="col-lg-5 col-md-5 col-12">
+                                <img src="/images/novagems-img/closeweb/super-heroes.png" alt="super-heroes">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        window.onscroll = function () {
+            myFunction();
+        };
+
+        function myFunction() {
+            var winScroll =
+                document.body.scrollTop || document.documentElement.scrollTop;
+            var height =
+                document.documentElement.scrollHeight -
+                document.documentElement.clientHeight;
+            var scrolled = (winScroll / height) * 100;
+            var countScrollRatio = scrolled.toFixed(0);
+            var checkEnterVisitUser = true;
+
+            var checkAgainVisitUserScheduling = localStorage.getItem("againVisitUserScheduling");
+
+            if (checkAgainVisitUserScheduling) {
+                checkEnterVisitUser = false;
+            } else {
+                checkEnterVisitUser = true;
+            }
+            if (countScrollRatio == "15") {
+                if (checkEnterVisitUser) {
+                    localStorage.setItem("againVisitUserScheduling", true);
+                    $("#schedulingmanagementpop").modal("show");
+                }
+            }
+        }
+
+        window.onbeforeunload = function (e) {
+            window.onunload = function () {
+                window.localStorage.againVisitUserScheduling = "false";
+            }
+            return undefined;
+        };
+
+        window.onload = function () {
+            window.localStorage.againVisitUserScheduling = "true";
+        };
+    </script>
+
+    <style>
+        .blog-pop-cus .close-blog {
+            border-radius: 50%;
+            display: block;
+            z-index: 999;
+            opacity: 1;
+            border: none;
+            font-size: 27px;
+            clear: both;
+            line-height: 30px;
+            background-color: #fff;
+            box-shadow: 0 0px 5px rgb(0 0 0 / 20%);
+            height: 30px;
+            width: 30px;
+            text-align: center;
+            padding: 0;
+            position: absolute;
+            right: -15px;
+            font-weight: 700;
+            top: -15px;
+            color: red !important;
+        }
+
+        .securitytex {
+            padding-left: 75px;
+        }
+
+        @media screen and (max-width:767px) {
+            .blog-pop-cus .close-blog {
+                right: -6px;
+                top: -19px;
+            }
+
+            .phonemodal {
+                padding-top: 50px;
+            }
+
+            .securitytex {
+                padding-left: 15px;
+            }
+        }
+
+        @media only screen and (min-width:768px) and (max-width:1023px) {
+            .modal-top-for {
+                margin: 0px 0px 0px -41px;
+            }
+
+            .phonemodal {
+                padding-top: 25px;
+            }
+        }
+    </style>
+
+</div>
+{{end}}

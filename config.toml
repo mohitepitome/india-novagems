@@ -1,0 +1,196 @@
+baseURL = "https://novagems.com/"  # base url update
+languageCode = "en-us"
+title = "Novagems - #1 Workforce Management solutions"
+
+############################## navigation ###############################
+[menu]
+
+  [[menu.main]]
+    identifier = "Features"
+    name = "Features" 
+    weight = 1
+
+  [[menu.main]]
+    identifier = "Features2"
+    name = "Employee Scheduling"
+    url = "/employee-scheduling"
+    parent = "Features"
+    weight = 2
+
+  [[menu.main]]
+    identifier = "Features3"
+    name = "Time Tracking & Attendance"
+    url = "/time-tracking-and-attendance-management-software"
+    parent = "Features"
+    weight = 3
+
+   [[menu.main]]
+    identifier = "Features4"
+    name = "GPS Tracking & Geofencing"
+    url = "/gps-tracking-and-geofencing"
+    parent = "Features"
+    weight = 4
+
+  [[menu.main]]
+    identifier = "Features5"
+    name = "Task Management "
+    url = "/task-management"
+    parent = "Features"
+    weight = 5
+
+  [[menu.main]]
+    identifier = "Features6"
+    name = "Alerts & Notifications"
+    url = "/alerts-and-notifications"
+    parent = "Features"
+    weight = 6
+
+  [[menu.main]]
+    identifier = "Features7"
+    name = "Reporting & Analytics"
+    url = "/reporting-and-analytics"
+    parent = "Features"
+    weight = 7
+  
+
+  [[menu.main]]
+    identifier = "Industries"
+    name = "Industries" 
+    weight = 2
+
+
+  [[menu.main]]
+    identifier = "Products1"
+    name = " Security  "
+    url = "/workforce-management-for-security-company"
+    parent = "Industries"
+    weight = 1
+
+  [[menu.main]]
+    identifier = "Products2"
+    name = " Cleaning  "
+    url = "/cleaning-company-software"
+    parent = "Industries"
+    weight = 2
+
+  [[menu.main]]
+    identifier = "Products3"
+    name = " Workforce  "
+    url = "/best-workforce-management-software"
+    parent = "Industries"
+    weight = 3
+
+  [[menu.main]]
+    identifier = "Products4"
+    name = " Healthcare  "
+    url = "/healthcare"
+    parent = "Industries"
+    weight = 4 
+
+  [[menu.main]]
+    identifier = "Products5"
+    name = " Retail "
+    url = "/retail-industry"
+    parent = "Industries"
+    weight = 5 
+
+  [[menu.main]]
+    identifier = "Products6"
+    name = " Food "
+    url = "/food-industry"
+    parent = "Industries"
+    weight = 6 
+
+  [[menu.main]]
+    identifier = "Resources"
+    name = "Resources" 
+    weight = 2
+
+    [[menu.main]]
+    identifier = "Resources1"
+    name = "Blog"
+    url = "/blog"
+    parent = "Resources"
+    weight = 1
+
+  [[menu.main]]
+    identifier = "Resources2"
+    name = " Information Centre"
+    url = "/information-centre"
+    parent = "Resources"
+    weight = 2
+
+  [[menu.main]]
+    identifier = "Resources3"
+    name = " Free Templates Library"
+    url = "/free-templates-library"
+    parent = "Resources"
+    weight = 3
+
+   [[menu.main]]
+    identifier = "Resources4"
+    name = "Customer Stories"
+    url = "/customer-stories"
+    parent = "Resources"
+    weight = 4
+
+[[menu.main]]
+  name = "Language"
+  identifier = "language"
+  weight = 3
+
+  enableRobotsTXT = true
+
+[[menu.main]]
+  name = "Start a free trial"
+  identifier = "Book a Demo"
+  URL = "https://app.novagems.org/"
+  weight = 4
+
+  [[menu.main]]
+  name = "Log In"
+  identifier = "login"
+  URL = "https://app.novagems.org/"
+  weight = 5
+
+
+
+[taxonomies]
+category = "categories"
+series = "series"
+tag = "tags"
+author = "authors"
+
+[params]
+logo = "/images/novagems-img/Logo.svg"
+
+[[params.apps]]
+title = "googlePlay"
+url = "https://play.google.com/store/apps/developer?id=Novagems"
+image= "/images/novagems-img/playstore.png"
+
+[[params.apps]]
+title = "IOSapp"
+url = "https://apps.apple.com/in/developer/epitome-technologies/id1325518724"
+image= "/images/novagems-img/appstore.png"
+
+[permalinks]
+  blog = "/:filename/"
+
+
+
+  
+  
+
+  
+ 
+
+
+
+
+
+
+
+
+
+
